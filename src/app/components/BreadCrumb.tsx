@@ -13,8 +13,6 @@ export default function Breadcrumb({ product }) {
 
   if (!product) return null
 
-//   const params = new URLSearchParams(location.search)
-
   const category = selectedCategory || product.category
   const brand = selectedBrand || product.brand
 
