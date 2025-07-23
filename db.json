@@ -1,0 +1,2819 @@
+{
+  "categories": [
+    {
+      "name": "Smartphones",
+      "brands": [
+        { "id": 1, "name": "Samsung" },
+        { "id": 2, "name": "Apple" },
+        { "id": 3, "name": "Xiaomi" },
+        { "id": 4, "name": "OnePlus" },
+        { "id": 5, "name": "Realme" },
+        { "id": 6, "name": "Google Pixel" },
+        { "id": 7, "name": "Motorola" }
+      ]
+    },
+    {
+      "name": "Laptops",
+      "brands": [
+        { "id": 1, "name": "Acer" },
+        { "id": 2, "name": "Apple" },
+        { "id": 3, "name": "Asus" },
+        { "id": 4, "name": "Dell" },
+        { "id": 5, "name": "Gigabyte" },
+        { "id": 6, "name": "HP" },
+        { "id": 7, "name": "Lenovo" },
+        { "id": 8, "name": "LG" },
+        { "id": 9, "name": "MSI" },
+        { "id": 10, "name": "Samsung" },
+        { "id": 11, "name": "Huawei" },
+        { "id": 11, "name": "Razer" }
+      ]
+    },
+    {
+      "name": "Tablets",
+      "brands": [
+        { "id": 1, "name": "Apple" },
+        { "id": 2, "name": "Samsung" },
+        { "id": 3, "name": "Lenovo" },
+        { "id": 4, "name": "Xiaomi" },
+        { "id": 5, "name": "Amazon" },
+        { "id": 6, "name": "Huawei" }
+      ]
+    },
+    {
+      "name": "Photo Cameras",
+      "brands": [
+        { "id": 1, "name": "Canon" },
+        { "id": 2, "name": "Nikon" },
+        { "id": 3, "name": "Sony" },
+        { "id": 4, "name": "Fujifilm" },
+        { "id": 5, "name": "Olympus" },
+        { "id": 6, "name": "Panasonic" },
+        { "id": 7, "name": "Leica" }
+      ]
+    },
+    {
+      "name": "Watches",
+      "brands": [
+        { "id": 1, "name": "Apple Watch" },
+        { "id": 2, "name": "Samsung Galaxy Watch" },
+        { "id": 6, "name": "Huawei Watch" },
+        { "id": 7, "name": "Xiaomi Watch" }
+      ]
+    },
+
+    {
+      "name": "Gaming Consoles",
+      "brands": [
+        { "id": 1, "name": "Sony" },
+        { "id": 2, "name": "Microsoft" },
+        { "id": 3, "name": "Bosch" },
+        { "id": 4, "name": "Nintendo " },
+        { "id": 5, "name": "Sega" }
+      ]
+    },
+    {
+      "name": "Home Appliances",
+      "brands": [
+        { "id": 1, "name": "LG" },
+        { "id": 2, "name": "Samsung" },
+        { "id": 3, "name": "Bosch" },
+        { "id": 4, "name": "Whirlpool" },
+        { "id": 5, "name": "Electrolux" },
+        { "id": 6, "name": "Dyson" }
+      ]
+    },
+    {
+      "name": "PC",
+      "brands": [
+        { "id": 1, "name": "Apple" },
+        { "id": 2, "name": "Microsoft" },
+        { "id": 3, "name": "Lenovo" },
+        { "id": 4, "name": "Dell" },
+        { "id": 5, "name": "Asus" },
+        { "id": 6, "name": "Acer" }
+      ]
+    },
+    {
+      "name": "Monitors",
+      "brands": [
+        { "id": 1, "name": "Samsung" },
+        { "id": 2, "name": "LG" },
+        { "id": 3, "name": "Asus" },
+        { "id": 4, "name": "Acer" },
+        { "id": 5, "name": "BenQ" },
+        { "id": 6, "name": "ViewSonic" }
+      ]
+    },
+    {
+      "name": "TV",
+      "brands": [
+        { "id": 1, "name": "Samsung" },
+        { "id": 2, "name": "LG" },
+        { "id": 3, "name": "Sony" },
+        { "id": 4, "name": "Panasonic" },
+        { "id": 5, "name": "TCL" },
+        { "id": 6, "name": "Asus" }
+      ]
+    },
+    {
+      "name": "Audio Video Equipment",
+      "brands": [
+        { "id": 1, "name": "Sony" },
+        { "id": 2, "name": "Panasonic" },
+        { "id": 3, "name": "Bose" },
+        { "id": 4, "name": "JBL" },
+        { "id": 5, "name": "Logitech" },
+        { "id": 6, "name": "Generic" }
+      ]
+    },
+    {
+      "name": "Accessories",
+      "brands": [
+        { "id": 1, "name": "Anker" },
+        { "id": 2, "name": "Baseus" },
+        { "id": 3, "name": "Ugreen" },
+        { "id": 4, "name": "Spigen" },
+        { "id": 5, "name": "Logitech" }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "category": "Smartphones",
+      "brand": "Apple",
+      "title": "IPhone 15 Pro 128GB (Natural Titanium)",
+      "price": 394000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2023/09/15-pro-natural.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" },
+        { "id": 3, "color": "Blue", "hex": "#22304D" }
+      ],
+      "parameters": {
+        "core": "Apple A18 Pro",
+        "ram": "8GB",
+        "memory": "128GB",
+        "display": "6.3\" LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 2000 nits (HBM)",
+        "sim": "1 Sim, E-Sim",
+        "camera": "48MP + 48MP",
+        "front Camera": "12MP",
+        "os": "iOS 18",
+        "battery": "3582 mAh",
+        "weight": "180 g"
+      }
+    },
+    {
+      "id": 2,
+      "category": "Smartphones",
+      "brand": "Apple",
+      "title": "IPhone 15 Pro 256GB (Blue Titanium)",
+      "price": 439000,
+      "currency": "AMD",
+      "inStock": false,
+      "image": "https://3dplanet.am/wp-content/uploads/2023/09/15-pro-blue.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "core": "Apple A18 Pro",
+        "ram": "8GB",
+        "memory": "256GB",
+        "display": "6.3\" LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 2000 nits (HBM)",
+        "sim": "1 Sim, E-Sim",
+        "camera": "48MP + 48MP",
+        "front Camera": "12MP",
+        "os": "iOS 18",
+        "battery": "3875 mAh",
+        "weight": "185 g"
+      }
+    },
+    {
+      "id": 3,
+      "category": "Smartphones",
+      "brand": "Apple",
+      "title": "IPhone 15 Pro 512GB (White Titanium)",
+      "price": 538000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2023/09/15-pro-white.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" },
+        { "id": 3, "color": "Gold", "hex": "#fae8a2" },
+        { "id": 4, "color": "Silver", "hex": "#d4d2cd" }
+      ],
+      "parameters": {
+        "core": "Apple A18 Pro",
+        "ram": "8GB",
+        "memory": "512GB",
+        "display": "6.3\" LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 2000 nits (HBM)",
+        "sim": "1 Sim, E-Sim",
+        "camera": "54MP + 48MP",
+        "front Camera": "12MP",
+        "os": "iOS 18",
+        "battery": "3875 mAh",
+        "weight": "192 g"
+      }
+    },
+    {
+      "id": 4,
+      "category": "Smartphones",
+      "brand": "Apple",
+      "title": "IPhone 15 Pro 1TB (Black Titanium)",
+      "price": 619000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2023/09/15-pro-black.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" },
+        { "id": 3, "color": "Silver", "hex": "#d4d2cd" }
+      ],
+      "parameters": {
+        "core": "Apple A18 Pro",
+        "ram": "8GB",
+        "memory": "1TB",
+        "display": "6.3\" LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 2000 nits (HBM)",
+        "sim": "1 Sim, E-Sim",
+        "camera": "54MP + 48MP",
+        "front Camera": "12MP",
+        "os": "iOS 18",
+        "battery": "3875 mAh",
+        "weight": "185 g"
+      }
+    },
+    {
+      "id": 5,
+      "category": "Smartphones",
+      "brand": "Apple",
+      "title": "IPhone 15 Pro Max 256GB (Natural Titanium)",
+      "price": 165000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2024/09/16pro-natural-1.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" },
+        { "id": 3, "color": "Silver", "hex": "#d4d2cd" }
+      ],
+      "parameters": {
+        "core": "Apple A18 Pro",
+        "ram": "8GB",
+        "memory": "256GB",
+        "display": "6.7\" LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 2000 nits (HBM)",
+        "sim": "1 Sim, E-Sim",
+        "camera": "48MP + 48MP",
+        "front Camera": "12MP",
+        "os": "iOS 18",
+        "battery": "3875 mAh",
+        "weight": "192 g"
+      }
+    },
+    {
+      "id": 6,
+      "category": "Smartphones",
+      "brand": "Apple",
+      "title": "IPhone 15 Pro Max 256GB (Blue Titanium)",
+      "price": 465000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2024/09/16pro-black.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" },
+        { "id": 3, "color": "Silver", "hex": "#d4d2cd" }
+      ],
+      "parameters": {
+        "core": "Apple A18 Pro",
+        "ram": "8GB",
+        "memory": "256GB",
+        "display": "6.7\" LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 2000 nits (HBM)",
+        "sim": "1 Sim, E-Sim",
+        "camera": "48MP + 48MP",
+        "front Camera": "12MP",
+        "os": "iOS 18",
+        "battery": "3875 mAh",
+        "weight": "195 g"
+      }
+    },
+    {
+      "id": 7,
+      "category": "Smartphones",
+      "brand": "Apple",
+      "title": "IPhone 15 Pro Max 512GB (Natural Titanium)",
+      "price": 555000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2024/09/16pro-natural-1.jpg",
+
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" },
+        { "id": 3, "color": "Silver", "hex": "#d4d2cd" }
+      ],
+      "parameters": {
+        "core": "Apple A18 Pro",
+        "ram": "8GB",
+        "memory": "512GB",
+        "display": "6.7\" LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 2000 nits (HBM)",
+        "sim": "1 Sim, E-Sim",
+        "camera": "48MP + 48MP",
+        "front Camera": "12MP",
+        "os": "iOS 18",
+        "battery": "3875 mAh",
+        "weight": "215 g"
+      }
+    },
+    {
+      "id": 1000,
+      "category": "Smartphones",
+      "brand": "Samsung",
+      "title": "Samsung Sample Product",
+      "price": 250000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2025/03/A56-graphite1.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" },
+        { "id": 3, "color": "Silver", "hex": "#d4d2cd" }
+      ],
+      "parameters": {
+        "core": "Samsung A18",
+        "ram": "16GB",
+        "memory": "512GB",
+        "display": "6.7\" LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 2000 nits (HBM)",
+        "sim": "1 Sim, E-Sim",
+        "camera": "128MP + 64MP",
+        "front Camera": "12MP",
+        "os": "Android 16",
+        "battery": "3955 mAh",
+        "weight": "205 g"
+      }
+    },
+    {
+      "id": 1001,
+      "category": "Smartphones",
+      "brand": "Xiaomi",
+      "title": "Xiaomi Sample Product",
+      "price": 100000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2025/05/pppp.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" },
+        { "id": 3, "color": "Silver", "hex": "#d4d2cd" }
+      ],
+      "parameters": {
+        "core": "Xiaomi ",
+        "ram": "8GB",
+        "memory": "512GB",
+        "display": "6.7\" LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 2000 nits (HBM)",
+        "sim": "1 Sim, E-Sim",
+        "camera": "112MP + 85MP",
+        "front Camera": "12MP",
+        "os": "Android 14",
+        "battery": "5125 mAh",
+        "weight": "195 g"
+      }
+    },
+    {
+      "id": 1002,
+      "category": "Smartphones",
+      "brand": "Xiaomi",
+      "title": "Redmi Note 12 Plus",
+      "price": 100000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2023/06/nord-ce3-lite-2.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" },
+        { "id": 3, "color": "Silver", "hex": "#d4d2cd" }
+      ],
+      "parameters": {
+        "core": "OnePlus ",
+        "ram": "8GB",
+        "memory": "512GB",
+        "display": "6.7\" LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 2000 nits (HBM)",
+        "sim": "2 Sim, E-Sim",
+        "camera": "82MP + 75MP",
+        "front Camera": "12MP",
+        "os": "Android 14",
+        "battery": "4200 mAh",
+        "weight": "187 g"
+      }
+    },
+    {
+      "id": 1003,
+      "category": "Smartphones",
+      "brand": "Realme",
+      "title": "Realme Sample Product",
+      "price": 250000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://kursor-shop.kz/image/cache/catalog/realme/c63/c63_1-600x600.jpeg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" },
+        { "id": 3, "color": "Silver", "hex": "#d4d2cd" }
+      ],
+      "parameters": {
+        "core": "Realme ",
+        "ram": "8GB",
+        "memory": "512GB",
+        "display": "6.7\" LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 2000 nits (HBM)",
+        "sim": "2 Sim, E-Sim",
+        "camera": "82MP + 75MP",
+        "front Camera": "12MP",
+        "os": "Android 14",
+        "battery": "5600 mAh",
+        "weight": "190 g"
+      }
+    },
+    {
+      "id": 1004,
+      "category": "Smartphones",
+      "brand": "Google Pixel",
+      "title": "Google Pixel Sample Product",
+      "price": 100900,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2024/09/9pro.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" },
+        { "id": 3, "color": "Pink", "hex": "#ffdbfe" }
+      ],
+      "parameters": {
+        "core": "Google Pixel ",
+        "ram": "8GB",
+        "memory": "512GB",
+        "display": "6.7\" LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 2000 nits (HBM)",
+        "sim": "2 Sim, E-Sim",
+        "camera": "120MP + 75MP",
+        "front Camera": "58MP",
+        "os": "Android 14",
+        "battery": "5150 mAh",
+        "weight": "195 g"
+      }
+    },
+    {
+      "id": 1005,
+      "category": "Smartphones",
+      "brand": "Asus",
+      "title": "Asus Sample Product",
+      "price": 195000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2023/09/71-MagXgYeL._AC_SL1500_.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "core": "Asus ",
+        "ram": "8GB",
+        "memory": "512GB",
+        "display": "6.7\" LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 2000 nits (HBM)",
+        "sim": "2 Sim, E-Sim",
+        "camera": "125MP + 80MP",
+        "front Camera": "85MP",
+        "os": "Android 14",
+        "battery": "5150 mAh",
+        "weight": "195 g"
+      }
+    },
+    {
+      "id": 1006,
+      "category": "Laptops",
+      "brand": "Dell",
+      "title": "Ultrabooks Sample Product",
+      "price": 145000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2023/01/Dell-G15-GAMING.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "core": "Intel Core i7-12700H",
+        "ram": "16GB DDR5",
+        "memory": "512GB SSD",
+        "display": "15.6\" FHD IPS, 144Hz",
+        "os": "Windows 11 Home",
+        "battery": "86 Wh",
+        "weight": "2.4 kg"
+      }
+    },
+    {
+      "id": 1007,
+      "category": "Laptops",
+      "brand": "MSI",
+      "title": "Gaming laptops Sample Product",
+      "price": 270000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2023/04/MSI-GF63-THIN-GAMING.jpg",
+
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "core": "Intel Core i7-12700H",
+        "ram": "16GB DDR5",
+        "memory": "512GB SSD",
+        "display": "15.6\" FHD IPS, 144Hz",
+        "os": "Windows 11 Home",
+        "battery": "86 Wh",
+        "weight": "2.5 kg"
+      }
+    },
+    {
+      "id": 1008,
+      "category": "Laptops",
+      "brand": "Lenovo",
+      "title": "New Arrivals Sample Product",
+      "price": 350000,
+      "currency": "AMD",
+      "inStock": false,
+      "image": "https://3dplanet.am/wp-content/uploads/2023/01/615K2f30PML._AC_SL1280_.jpg",
+
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "core": "Intel Core i7-12700H",
+        "ram": "16GB DDR5",
+        "memory": "512GB SSD",
+        "display": "15.6\" FHD IPS, 144Hz",
+        "os": "Windows 11 Home",
+        "battery": "86 Wh",
+        "weight": "2.3 kg"
+      }
+    },
+    {
+      "id": 1009,
+      "category": "Laptops",
+      "brand": "Acer",
+      "title": "Acer Sample Product",
+      "price": 245000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2024/05/61tsspJBtuL._AC_SL1188_.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "core": "Intel Core i7-12700H",
+        "ram": "16GB DDR5",
+        "memory": "512GB SSD",
+        "display": "15.6\" FHD IPS, 144Hz",
+        "os": "Windows 11 Home",
+        "battery": "86 Wh"
+      }
+    },
+    {
+      "id": 1010,
+      "category": "Laptops",
+      "brand": "Apple",
+      "title": "Apple Sample Product",
+      "price": 213000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2023/11/mac14m3_black.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "core": "Apple M3",
+        "ram": "8GB Unified Memory",
+        "memory": "256GB SSD",
+        "display": "14.2\" Liquid Retina XDR, 120Hz, HDR",
+        "os": "macOS Sonoma",
+        "battery": "70 Wh",
+        "weight": "1.4 kg"
+      }
+    },
+    {
+      "id": 1011,
+      "category": "Laptops",
+      "brand": "Asus",
+      "title": "Asus Sample Product",
+      "price": 180000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2022/02/asus_rog_flow_x13_134_120hz_gaming_laptop_r95900hs_16gb_512gb_3050_w10h_touch_ac45717.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "core": "Intel Core i7-12700H",
+        "ram": "16GB DDR5",
+        "memory": "512GB SSD",
+        "display": "15.6\" FHD IPS, 144Hz",
+        "os": "Windows 11 Home",
+        "battery": "86 Wh",
+        "weight": "2.1 kg"
+      }
+    },
+    {
+      "id": 1012,
+      "category": "Laptops",
+      "brand": "Dell",
+      "title": "Dell Sample Product",
+      "price": 150000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2024/10/81ItuDRTLpL.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "core": "Intel Core i7-12700H",
+        "ram": "16GB DDR5",
+        "memory": "512GB SSD",
+        "display": "16.6\" FHD IPS, 144Hz",
+        "os": "Windows 11 Home",
+        "battery": "86 Wh",
+        "weight": "2.2 kg"
+      }
+    },
+    {
+      "id": 1013,
+      "category": "Laptops",
+      "brand": "Gigabyte",
+      "title": "Gigabyte Sample Product",
+      "price": 220000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://www.ubuy.ug/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNzFkd1B6dGJtR1MuX0FDX1NMMTUwMF8uanBn.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "core": "Intel Core i7-12700H",
+        "ram": "16GB DDR5",
+        "memory": "1TB SSD",
+        "display": "15.6\" FHD IPS, 144Hz",
+        "os": "Windows 11 Home",
+        "battery": "86 Wh",
+        "weight": "2.1 kg"
+      }
+    },
+    {
+      "id": 1014,
+      "category": "Laptops",
+      "brand": "Razer",
+      "title": "Razer Sample Product",
+      "price": 212000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2023/01/blade-14-1.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "core": "Intel Core i7-12700H",
+        "ram": "16GB DDR5",
+        "memory": "512GB SSD",
+        "display": "15.6\" FHD IPS, 144Hz",
+        "os": "Windows 11 Home",
+        "battery": "96 Wh",
+        "weight": "2.2 kg"
+      }
+    },
+    {
+      "id": 1015,
+      "category": "Laptops",
+      "brand": "HP",
+      "title": "HP Sample Product",
+      "price": 195000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2023/12/envy-x360.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "core": "Intel Core i7-12700H",
+        "ram": "16GB DDR5",
+        "memory": "512GB SSD",
+        "display": "15.6\" FHD IPS, 144Hz",
+        "os": "Windows 11 Home",
+        "battery": "86 Wh",
+        "weight": "2.3 kg"
+      }
+    },
+    {
+      "id": 1016,
+      "category": "Laptops",
+      "brand": "Lenovo",
+      "title": "Lenovo Sample Product",
+      "price": 200000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2023/04/6e835238-6b12-443d-8d8a-1a86b1b082ce.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "core": "Intel Core i7-12700H",
+        "ram": "16GB DDR5",
+        "memory": "512GB SSD",
+        "display": "15.6\" FHD IPS, 144Hz",
+        "os": "Windows 11 Home",
+        "battery": "186 Wh",
+        "weight": "2.2 kg"
+      }
+    },
+    {
+      "id": 1017,
+      "category": "Laptops",
+      "brand": "LG",
+      "title": "LG Sample Product",
+      "price": 185000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2024/08/71SVP-CL5YL._AC_SL1500_.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "core": "Intel Core i7-12800H",
+        "ram": "32GB DDR5",
+        "memory": "256GB SSD",
+        "display": "15.6\" FHD IPS, 144Hz",
+        "os": "Windows 11 Home",
+        "battery": "86 Wh",
+        "weight": "2.3 kg"
+      }
+    },
+    {
+      "id": 1018,
+      "category": "Laptops",
+      "brand": "MSI",
+      "title": "MSI Sample Product",
+      "price": 245000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2025/01/71cVQ6piiqL._AC_SL1500_.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "core": "Intel Core i7-12700H",
+        "ram": "16GB DDR5",
+        "memory": "512GB SSD",
+        "display": "15.6\" FHD IPS, 144Hz",
+        "os": "Windows 11 Home",
+        "battery": "86 Wh",
+        "weight": "2.3 kg"
+      }
+    },
+    {
+      "id": 1019,
+      "category": "Tablets",
+      "brand": "Apple",
+      "title": "Apple iPad Sample Product",
+      "price": 165000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2022/12/ipad-10_yellow-600x600.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "core": "Apple A14 Bionic",
+        "ram": "4GB",
+        "memory": "64GB",
+        "display": "10.9\" Liquid Retina IPS LCD, 60Hz, 500 nits",
+        "os": "iPadOS 17",
+        "battery": "28.6 Wh",
+        "camera": "12MP (rear)",
+        "front Camera": "12MP Ultra Wide",
+        "weight": "0.9 kg"
+      }
+    },
+    {
+      "id": 1020,
+      "category": "Tablets",
+      "brand": "Samsung",
+      "title": "Samsung Galaxy Tab Sample Product",
+      "price": 145000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2024/02/taba-9-bl1.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "core": "Samsung Exynos 850",
+        "ram": "4GB",
+        "memory": "64GB",
+        "display": "10.4\" Liquid Retina IPS LCD, 60Hz, 500 nits",
+        "os": "Android 13",
+        "battery": "28.6 Wh",
+        "camera": "12MP (rear)",
+        "front Camera": "12MP Ultra Wide",
+        "weight": "0.8 kg"
+      }
+    },
+    {
+      "id": 1021,
+      "category": "Tablets",
+      "brand": "Lenovo",
+      "title": "Lenovo Tab Sample Product",
+      "price": 80000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2024/02/taba-9-bl1.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "core": "Lenovo Helio G95",
+        "ram": "4GB",
+        "memory": "64GB",
+        "display": "10.4\" Liquid Retina IPS LCD, 60Hz, 500 nits",
+        "os": "Android 13",
+        "battery": "28.6 Wh",
+        "camera": "12MP (rear)",
+        "front Camera": "12MP Ultra Wide",
+        "weight": "0.95 kg"
+      }
+    },
+    {
+      "id": 1022,
+      "category": "Tablets",
+      "brand": "Xiaomi",
+      "title": "Xiaomi Pad Sample Product",
+      "price": 120000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2025/05/pad-7-black.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "core": "Xiaomi Helio G95",
+        "ram": "4GB",
+        "memory": "64GB",
+        "display": "10.4\" Liquid Retina IPS LCD, 60Hz, 500 nits",
+        "os": "Android 13",
+        "battery": "28.6 Wh",
+        "camera": "12MP (rear)",
+        "front Camera": "12MP Ultra Wide",
+        "weight": "0.9 kg"
+      }
+    },
+    {
+      "id": 1023,
+      "category": "Tablets",
+      "brand": "Xiaomi",
+      "title": "Poco Fire Sample Product",
+      "price": 100000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2024/09/purple-back_.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "core": "Xiaomi Helio G95",
+        "ram": "4GB",
+        "memory": "64GB",
+        "display": "10.4\" Liquid Retina IPS LCD, 60Hz, 500 nits",
+        "os": "Android 13",
+        "battery": "28.6 Wh",
+        "camera": "12MP (rear)",
+        "front Camera": "12MP Ultra Wide",
+        "weight": "0.85 kg"
+      }
+    },
+    {
+      "id": 1024,
+      "category": "Tablets",
+      "brand": "Xiaomi",
+      "title": "Xiaomi Pad 7",
+      "price": 95000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2025/05/xiaomi-pad-7-pro-blue-512gb-and-12gb-ram.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "core": "Xiaomi Pad 7",
+        "ram": "4GB",
+        "memory": "64GB",
+        "display": "10.4\" Liquid Retina IPS LCD, 60Hz, 500 nits",
+        "os": "Android 13",
+        "battery": "28.6 Wh",
+        "camera": "12MP (rear)",
+        "front Camera": "12MP Ultra Wide",
+        "weight": "0.7 kg"
+      }
+    },
+    {
+      "id": 1025,
+      "category": "Photo Cameras",
+      "brand": "Canon",
+      "title": "DSLR Sample Product",
+      "price": 120000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2022/05/71m-zkZTbML._AC_SX679_.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "sensor": "24.1MP APS-C CMOS",
+        "video": "Full HD 1080p at 30fps",
+        "display": "3.0\" Vari-angle LCD",
+        "lens": "EF-S 18-55mm f/3.5-5.6 IS II",
+        "isoRange": "100–6400 (expandable to 12800)",
+        "connectivity": "Wi-Fi, NFC, USB",
+        "battery": "LP-E10 Rechargeable Lithium-Ion",
+        "weight": "0.95 kg"
+      }
+    },
+    {
+      "id": 1026,
+      "category": "Photo Cameras",
+      "brand": "Sony",
+      "title": "Mirrorless Sample Product",
+      "price": 110000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2022/05/71m-zkZTbML._AC_SX679_.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "sensor": "24.1MP APS-C CMOS",
+        "video": "Full HD 1080p at 30fps",
+        "display": "3.0\" Vari-angle LCD",
+        "lens": "EF-S 18-55mm f/3.5-5.6 IS II",
+        "isoRange": "100–6400 (expandable to 12800)",
+        "connectivity": "Wi-Fi, NFC, USB",
+        "battery": "LP-E10 Rechargeable Lithium-Ion",
+        "weight": "0.95 kg"
+      }
+    },
+    {
+      "id": 1027,
+      "category": "Photo Cameras",
+      "brand": "GoPro",
+      "title": "Action Cameras Sample Product",
+      "price": 150000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2022/05/71m-zkZTbML._AC_SX679_.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "sensor": "24.1MP APS-C CMOS",
+        "video": "Full HD 1080p at 30fps",
+        "display": "3.0\" Vari-angle LCD",
+        "lens": "EF-S 18-55mm f/3.5-5.6 IS II",
+        "isoRange": "100–6400 (expandable to 12800)",
+        "connectivity": "Wi-Fi, NFC, USB",
+        "battery": "LP-E10 Rechargeable Lithium-Ion",
+        "weight": "0.9 kg"
+      }
+    },
+    {
+      "id": 1028,
+      "category": "Photo Cameras",
+      "brand": "Fujifilm",
+      "title": "Instant Cameras Sample Product",
+      "price": 410000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_8/img/product_01_01.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "sensor": "24.1MP APS-C CMOS",
+        "video": "Full HD 1080p at 30fps",
+        "display": "3.0\" Vari-angle LCD",
+        "lens": "EF-S 18-55mm f/3.5-5.6 IS II",
+        "isoRange": "100–6400 (expandable to 12800)",
+        "connectivity": "Wi-Fi, NFC, USB",
+        "battery": "LP-E10 Rechargeable Lithium-Ion",
+        "weight": "0.75 kg"
+      }
+    },
+    {
+      "id": 1029,
+      "category": "Photo Cameras",
+      "brand": "Canon",
+      "title": "Canon Sample Product",
+      "price": 320000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "canon_product.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "sensor": "24.1MP APS-C CMOS",
+        "video": "Full HD 1080p at 30fps",
+        "display": "4.0\" Vari-angle LCD",
+        "lens": "EF-S 18-55mm f/3.5-5.6 IS II",
+        "isoRange": "100–8500 (expandable to 12800)",
+        "connectivity": "Wi-Fi, NFC, USB",
+        "battery": "LP-E10 Rechargeable Lithium-Ion",
+        "weight": "0.95 kg"
+      }
+    },
+    {
+      "id": 1030,
+      "category": "Photo Cameras",
+      "brand": "Nikon",
+      "title": "Nikon Sample Product",
+      "price": 265000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_8/img/product_01_01.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "sensor": "24.1MP APS-C CMOS",
+        "video": "Full HD 1080p at 30fps",
+        "display": "3.0\" Vari-angle LCD",
+        "lens": "EF-S 18-55mm f/3.5-5.6 IS II",
+        "isoRange": "100–8000 (expandable to 12800)",
+        "connectivity": "Wi-Fi, NFC, USB",
+        "battery": "LP-E10 Rechargeable Lithium-Ion",
+        "weight": "0.75 kg"
+      }
+    },
+    {
+      "id": 1031,
+      "category": "Photo Cameras",
+      "brand": "Sony",
+      "title": "Sony Sample Product",
+      "price": 280000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://www.camtecphoto.com/userdata/categories/sony-aps-c-cameras-1652725547_thumbnail.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "sensor": "25.1MP APS-C CMOS",
+        "video": "Full HD 1080p at 30fps",
+        "display": "4.0\" Vari-angle LCD",
+        "lens": "EF-S 18-55mm f/3.5-5.6 IS II",
+        "isoRange": "100–6400 (expandable to 12800)",
+        "connectivity": "Wi-Fi, NFC, USB",
+        "battery": "LP-E10 Rechargeable Lithium-Ion",
+        "weight": "0.95 kg"
+      }
+    },
+    {
+      "id": 1032,
+      "category": "Photo Cameras",
+      "brand": "Fujifilm",
+      "title": "Fujifilm Sample Product",
+      "price": 230000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://asset.fujifilm.com/www/us/files/styles/600x400/public/2022-11/cd0c64b74ba5cebf444856761e9e4b12/pic_xsystem_66.jpg?itok=zhlJrR8i",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "sensor": "24.1MP APS-C CMOS",
+        "video": "Full HD 1080p at 30fps",
+        "display": "3.0\" Vari-angle LCD",
+        "lens": "EF-S 18-55mm f/3.5-5.6 IS II",
+        "isoRange": "100–6400 (expandable to 12800)",
+        "connectivity": "Wi-Fi, NFC, USB",
+        "battery": "LP-E10 Rechargeable Lithium-Ion",
+        "weight": "0.75 kg"
+      }
+    },
+    {
+      "id": 1033,
+      "category": "Watches",
+      "brand": "Xiaomi Watch",
+      "title": "Smartwatches Sample Product",
+      "price": 75000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2022/09/download-2-768x768.png",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "display": "1.9\" Retina LTPO OLED, 1000 nits",
+        "os": "watchOS 10",
+        "chip": "Xiaomi S9 SiP",
+        "storage": "64GB",
+        "connectivity": "Wi‑Fi, Bluetooth 5.3, NFC",
+        "features": [
+          "Heart Rate Sensor",
+          "ECG",
+          "Blood Oxygen",
+          "GPS",
+          "Water Resistant 50m",
+          "Always-On Display"
+        ],
+        "battery": "308mAh, up to 18 hours",
+        "weight": "0.15 kg"
+      }
+    },
+    {
+      "id": 10331,
+      "category": "Watches",
+      "brand": "Apple",
+      "title": "Smartwatches Sample Product",
+      "price": 45000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2022/09/download-2-768x768.png",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "display": "1.9\" Retina LTPO OLED, 1000 nits",
+        "os": "watchOS 10",
+        "chip": "Apple S9 SiP",
+        "storage": "64GB",
+        "connectivity": "Wi‑Fi, Bluetooth 5.3, NFC",
+        "features": [
+          "Heart Rate Sensor",
+          "ECG",
+          "Blood Oxygen",
+          "GPS",
+          "Water Resistant 50m",
+          "Always-On Display"
+        ],
+        "battery": "308mAh, up to 18 hours",
+        "weight": "0.15 kg"
+      }
+    },
+    {
+      "id": 10332,
+      "category": "Watches",
+      "brand": "Huawei Watch",
+      "title": "Smartwatches Sample Product",
+      "price": 65000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2022/09/download-2-768x768.png",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "display": "1.9\" Retina LTPO OLED, 1000 nits",
+        "os": "watchOS 10",
+        "chip": "Huawei S9 SiP",
+        "storage": "64GB",
+        "connectivity": "Wi‑Fi, Bluetooth 5.3, NFC",
+        "features": [
+          "Heart Rate Sensor",
+          "ECG",
+          "Blood Oxygen",
+          "GPS",
+          "Water Resistant 50m",
+          "Always-On Display"
+        ],
+        "battery": "308mAh, up to 18 hours",
+        "weight": "0.15 kg"
+      }
+    },
+    {
+      "id": 1034,
+      "category": "Gaming consoles",
+      "brand": "Microsoft",
+      "title": "Xbox Series X Sample Product",
+      "price": 350000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2025/05/98747.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "storage": "1TB SSD",
+        "ram": "16GB GDDR6",
+        "cpu": "8-Core AMD Zen 2 @ 3.8 GHz",
+        "gpu": "12 TFLOPS, 52 CUs @ 1.825 GHz (RDNA 2)",
+        "resolution": "Up to 8K HDR",
+        "frameRate": "Up to 120 FPS",
+        "opticalDrive": "4K UHD Blu-ray",
+        "connectivity": ["HDMI 2.1", "Wi-Fi 5", "Ethernet", "3x USB 3.1"],
+        "features": [
+          "Ray Tracing",
+          "Quick Resume",
+          "Backward Compatibility",
+          "Game Pass Support"
+        ],
+        "weight": "3.5 kg"
+      }
+    },
+    {
+      "id": 1035,
+      "category": "Gaming consoles",
+      "brand": "Microsoft",
+      "title": "Xbox Series S Sample Product",
+      "price": 420000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2025/05/98747.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "storage": "1TB SSD",
+        "ram": "16GB GDDR6",
+        "cpu": "8-Core AMD Zen 2 @ 3.8 GHz",
+        "gpu": "12 TFLOPS, 52 CUs @ 1.825 GHz (RDNA 2)",
+        "resolution": "Up to 8K HDR",
+        "frameRate": "Up to 120 FPS",
+        "opticalDrive": "4K UHD Blu-ray",
+        "connectivity": ["HDMI 2.1", "Wi-Fi 5", "Ethernet", "3x USB 3.1"],
+        "features": [
+          "Ray Tracing",
+          "Quick Resume",
+          "Backward Compatibility",
+          "Game Pass Support"
+        ],
+        "weight": "3.7 kg"
+      }
+    },
+    {
+      "id": 1039,
+      "category": "Gaming consoles",
+      "brand": "Sony",
+      "title": "PlayStation Sample Product",
+      "price": 290000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2024/12/sony-playstation-ps5-pro-console-digital-editionTcGy.jpeg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "storage": "1TB SSD",
+        "ram": "32GB GDDR6",
+        "cpu": "8-Core AMD Zen 2 @ 3.8 GHz",
+        "gpu": "12 TFLOPS, 52 CUs @ 1.825 GHz (RDNA 2)",
+        "resolution": "Up to 8K HDR",
+        "frameRate": "Up to 120 FPS",
+        "opticalDrive": "4K UHD Blu-ray",
+        "connectivity": ["HDMI 2.1", "Wi-Fi 5", "Ethernet", "3x USB 3.1"],
+        "features": [
+          "Ray Tracing",
+          "Quick Resume",
+          "Backward Compatibility",
+          "Game Pass Support"
+        ],
+        "weight": "3.7 kg"
+      }
+    },
+    {
+      "id": 1040,
+      "category": "Gaming consoles",
+      "brand": "Microsoft",
+      "title": "Xbox Sample Product",
+      "price": 340000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2024/12/sony-playstation-ps5-pro-console-digital-editionTcGy.jpeg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "storage": "1TB SSD",
+        "ram": "32GB GDDR6",
+        "cpu": "8-Core AMD Zen 2 @ 3.8 GHz",
+        "gpu": "12 TFLOPS, 52 CUs @ 1.825 GHz (RDNA 2)",
+        "resolution": "Up to 8K HDR",
+        "frameRate": "Up to 120 FPS",
+        "opticalDrive": "4K UHD Blu-ray",
+        "connectivity": ["HDMI 2.1", "Wi-Fi 5", "Ethernet", "3x USB 3.1"],
+        "features": [
+          "Ray Tracing",
+          "Quick Resume",
+          "Backward Compatibility",
+          "Game Pass Support"
+        ],
+        "weight": "3.9 kg"
+      }
+    },
+    {
+      "id": 1041,
+      "category": "Gaming consoles",
+      "brand": "Nintendo",
+      "title": "Nintendo Switch Sample Product",
+      "price": 460000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2024/05/portal1.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "storage": "1TB SSD",
+        "ram": "32GB GDDR6",
+        "cpu": "8-Core AMD Zen 2 @ 3.8 GHz",
+        "gpu": "12 TFLOPS, 52 CUs @ 1.825 GHz (RDNA 2)",
+        "resolution": "Up to 8K HDR",
+        "frameRate": "Up to 120 FPS",
+        "opticalDrive": "4K UHD Blu-ray",
+        "connectivity": ["HDMI 2.1", "Wi-Fi 5", "Ethernet", "3x USB 3.1"],
+        "features": [
+          "Ray Tracing",
+          "Quick Resume",
+          "Backward Compatibility",
+          "Game Pass Support"
+        ],
+        "weight": "3.9 kg"
+      }
+    },
+    {
+      "id": 1042,
+      "category": "Gaming consoles",
+      "brand": "Atari",
+      "title": "Retro Consoles Sample Product",
+      "price": 345000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2020/11/playstation-5-digital-edition-with-dualsense-front-product-shot-01-ps5-en-30jul20.png",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "storage": "1TB SSD",
+        "ram": "32GB GDDR6",
+        "cpu": "8-Core AMD Zen 2 @ 3.8 GHz",
+        "gpu": "12 TFLOPS, 52 CUs @ 1.825 GHz (RDNA 2)",
+        "resolution": "Up to 8K HDR",
+        "frameRate": "Up to 120 FPS",
+        "opticalDrive": "4K UHD Blu-ray",
+        "connectivity": ["HDMI 2.1", "Wi-Fi 5", "Ethernet", "3x USB 3.1"],
+        "features": [
+          "Ray Tracing",
+          "Quick Resume",
+          "Backward Compatibility",
+          "Game Pass Support"
+        ],
+        "weight": "3.9 kg"
+      }
+    },
+    {
+      "id": 1043,
+      "category": "Gaming consoles",
+      "brand": "Razer",
+      "title": "Gaming Accessories Sample Product",
+      "price": 365000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://3dplanet.am/wp-content/uploads/2020/11/playstation-5-digital-edition-with-dualsense-front-product-shot-01-ps5-en-30jul20.png",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "storage": "1TB SSD",
+        "ram": "128GB GDDR6",
+        "cpu": "12-Core AMD Zen 2 @ 3.8 GHz",
+        "gpu": "12 TFLOPS, 52 CUs @ 1.825 GHz (RDNA 2)",
+        "resolution": "Up to 8K HDR",
+        "frameRate": "Up to 120 FPS",
+        "opticalDrive": "4K UHD Blu-ray",
+        "connectivity": ["HDMI 2.1", "Wi-Fi 5", "Ethernet", "3x USB 3.1"],
+        "features": [
+          "Ray Tracing",
+          "Quick Resume",
+          "Backward Compatibility",
+          "Game Pass Support"
+        ],
+        "weight": "3.8 kg"
+      }
+    },
+    {
+      "id": 1044,
+      "category": "Home Appliances",
+      "brand": "Dyson",
+      "title": "Vacuum Cleaners Sample Product",
+      "price": 245000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2024/Dekteber/Anlar%20Poshekul/DYSON%20V11%20ADVANCED%20%20(2)-2000x1500.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "type": "Cordless Stick Vacuum",
+        "model": "Dyson V11 Advanced",
+        "batteryLife": "Up to 60 minutes",
+        "power": "545W",
+        "suctionPower": "185 AW",
+        "binVolume": "0.76 L",
+        "weight": "3.05 kg",
+        "filter": "Advanced whole-machine filtration",
+        "features": [
+          "LCD Display",
+          "Three cleaning modes",
+          "Wall-mounted charging dock",
+          "Click-in battery",
+          "HEPA Filtration"
+        ],
+        "warranty": "1 years"
+      }
+    },
+    {
+      "id": 1045,
+      "category": "Home Appliances",
+      "brand": "LG",
+      "title": "Air Conditioners Sample Product",
+      "price": 186000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://vega.am/image/cachewebp/catalog/1HRACH/2020/2021/2025/April/Odorakich/DC%20SFTOI-09HN1%20(3)-2000x1500.webp",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "type": "Split Air Conditioner",
+        "model": "DC SFTOI-09HN1",
+        "coolingCapacity": "Up to 3.5 Ton",
+        "energyEfficiency": "A+",
+        "noiseLevel": "55 dB",
+        "powerConsumption": "1200 W",
+        "warranty": "1 years"
+      }
+    },
+    {
+      "id": 1046,
+      "category": "Home Appliances",
+      "brand": "Samsung",
+      "title": "Washing Machines Sample Product",
+      "price": 150000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://www.summerecho.sa/wp-content/uploads/2024/10/90c06da9e8c89fd40a5d075e94089360.webp",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "type": "Front Load Washing Machine",
+        "model": "WJ30F",
+        "capacity": "7.5 kg",
+        "speed": "1200 RPM",
+        "energyRating": "A+++",
+        "programs": ["Cotton", "Delicate", "Quick Wash", "Eco Wash"],
+        "noiseLevel": "54 dB",
+        "dimensions": "60 x 85 x 55 cm",
+        "warranty": "1 year"
+      }
+    },
+    {
+      "id": 1047,
+      "category": "Home Appliances",
+      "brand": "Whirlpool",
+      "title": "Refrigerators Sample Product",
+      "price": 450000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://www.courts.com/media/catalog/product/3/1/311037_fridge213c_ze0rrwejgczwdon4.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=1000&width=1000&canvas=1000:1000",
+
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "type": "Double Door Refrigerator",
+        "model": "WRB30D",
+        "capacity": "300 L",
+        "energyRating": "A++",
+        "coolingSystem": "No Frost",
+        "features": ["LED Lighting", "Fast Cooling", "Humidity Control"],
+        "dimensions": "60 x 170 x 65 cm",
+        "warranty": "2 years"
+      }
+    },
+    {
+      "id": 1048,
+      "category": "Home Appliances",
+      "brand": "Panasonic",
+      "title": "Microwaves Sample Product",
+      "price": 240000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://i5.walmartimages.com/seo/Panasonic-1-3-Cu-Ft-1100W-Countertop-Stainless-Steel-Microwave-Oven-with-Genius-Sensor_16b9ba37-d310-4233-93c6-c2668504bac2_1.4538f4ea487c43c7c3e3d227b8ebc278.jpeg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "type": "Convection Microwave Oven",
+        "model": "Panasonic 1.3 Cu Ft 1100W Countertop Stainless Steel Microwave Oven with Genius Sensor",
+        "capacity": "1.3 Cu Ft",
+        "power": "1100W",
+        "warranty": "1 years"
+      }
+    },
+    {
+      "id": 1049,
+      "category": "Home Appliances",
+      "brand": "Bosch",
+      "title": "Dishwashers Sample Product",
+      "price": 180000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://www.espo.org/media/catalog/product/X/1/X176207_1.jpg?width=560&height=560&canvas=560,560&quality=80&bg-color=255,255,255&fit=bounds",
+
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "type": "Built-in Dishwasher",
+        "model": "Bosch Serie 6",
+        "capacity": "13 place settings",
+        "energyRating": "A++",
+        "noiseLevel": "44 dB",
+        "programs": ["Eco", "Intensive", "Quick Wash", "Auto", "Pre-Rinse"],
+        "features": [
+          "Flexible baskets",
+          "Half load option",
+          "Delay start timer",
+          "Child lock",
+          "Water protection system"
+        ],
+        "dimensions": {
+          "height": "81.5 cm",
+          "width": "59.8 cm",
+          "depth": "55 cm"
+        },
+        "warranty": "1 years",
+        "weight": "15 kg"
+      }
+    },
+
+    {
+      "id": 1050,
+      "category": "PC",
+      "brand": "Acer",
+      "title": "Gaming PCs Sample Product",
+      "price": 195000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://m.media-amazon.com/images/I/61uJrJTD63S.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "processor": "Intel Core i7-12700K",
+        "graphicsCard": "NVIDIA GeForce RTX 3070",
+        "ram": "16GB DDR4",
+        "storage": "1TB NVMe SSD",
+        "coolingSystem": "Liquid Cooling",
+        "powerSupply": "750W Gold Certified",
+        "ports": [
+          "USB 3.2 x 4",
+          "HDMI x 1",
+          "DisplayPort x 1",
+          "Ethernet",
+          "Audio Jack"
+        ],
+        "os": "Windows 11 Home",
+        "features": ["RGB Lighting", "Wi-Fi 6", "Bluetooth 5.2"],
+        "dimensions": {
+          "height": "40 cm",
+          "width": "18 cm",
+          "depth": "42 cm"
+        },
+        "weight": "3.5 kg"
+      }
+    },
+    {
+      "id": 1051,
+      "category": "PC",
+      "brand": "Dell",
+      "title": "Office PCs Sample Product",
+      "price": 170000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://images-cdn.ubuy.com.sa/65f1abea6f15032e663e11fe-dell-optiplex-7040-desktop-computer-pc.jpg  ",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "processor": "Intel Core i7-12700K",
+        "graphicsCard": "NVIDIA GeForce RTX 3070",
+        "ram": "16GB DDR4",
+        "storage": "1TB NVMe SSD",
+        "coolingSystem": "Liquid Cooling",
+        "powerSupply": "750W Gold Certified",
+        "ports": [
+          "USB 3.2 x 4",
+          "HDMI x 1",
+          "DisplayPort x 1",
+          "Ethernet",
+          "Audio Jack"
+        ],
+        "os": "Windows 11 Home",
+        "features": ["RGB Lighting", "Wi-Fi 6", "Bluetooth 5.2"],
+        "dimensions": {
+          "height": "40 cm",
+          "width": "18 cm",
+          "depth": "42 cm"
+        },
+        "weight": "3.5 kg"
+      }
+    },
+    {
+      "id": 1052,
+      "category": "PC",
+      "brand": "Intel NUC",
+      "title": "Mini PCs Sample Product",
+      "price": 210000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://s.list.am/g/189/80987189.webp",
+
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "processor": "Intel Core i5-1240P",
+        "graphics": "Intel Iris Xe Graphics",
+        "ram": "16GB DDR4",
+        "storage": "512GB NVMe SSD",
+        "ports": [
+          "Thunderbolt 4 x 2",
+          "USB 3.2 Gen 2 x 2",
+          "HDMI 2.0",
+          "Ethernet",
+          "Audio Jack"
+        ],
+        "operatingSystem": "Windows 11 Pro",
+        "connectivity": ["Wi-Fi 6", "Bluetooth 5.1"],
+        "dimensions": {
+          "height": "4.3 cm",
+          "width": "11.5 cm",
+          "depth": "11.2 cm"
+        },
+        "features": [
+          "Compact design",
+          "Energy efficient",
+          "VESA mount compatible"
+        ],
+        "weight": "1.5 kg"
+      }
+    },
+    {
+      "id": 1053,
+      "category": "PC",
+      "brand": "HP",
+      "title": "Workstations Sample Product",
+      "price": 345000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://i5.walmartimages.com/seo/HP-Slim-27-Desktop-Bundle-Intel-Core-i3-10105-8GB-RAM-256GB-SSD-Dark-Black-Windows-11-Home-S01-pF2003wb-M27fe_747beed0-b12e-4f75-94bd-909d0918def9.78d78711c2ad687c390599836246fc99.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "processor": "Intel Core i3-10105",
+        "ram": "8GB DDR4",
+        "storage": "256GB SSD",
+        "graphics": "Intel UHD Graphics 630",
+        "operatingSystem": "Windows 11 Home",
+        "ports": [
+          "USB 3.1 Type-A",
+          "USB 2.0",
+          "HDMI",
+          "Ethernet",
+          "Audio Jack"
+        ],
+        "connectivity": ["Wi-Fi 5", "Bluetooth 4.2"],
+        "dimensions": {
+          "height": "4.2 cm",
+          "width": "53.4 cm",
+          "depth": "19.5 cm"
+        },
+        "features": [
+          "Slim design",
+          "Energy efficient",
+          "Pre-installed Windows 11"
+        ],
+        "weight": "2.5 kg"
+      }
+    },
+    {
+      "id": 1054,
+      "category": "PC",
+      "brand": "Lenovo",
+      "title": "All-in-One PCs Sample Product",
+      "price": 410000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://p3-ofp.static.pub//fes/cms/2024/04/09/dw2ue6pemnd13gw4qnteqipf70w3i3759855.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "processor": "Intel Core i5-12400",
+        "ram": "16GB DDR4",
+        "storage": "512GB SSD",
+        "graphics": "Intel Iris Xe Graphics",
+        "display": "23.8\" Full HD (1920x1080) IPS",
+        "operatingSystem": "Windows 11 Pro",
+        "ports": [
+          "USB 3.2 Type-A",
+          "USB-C",
+          "HDMI Out",
+          "Ethernet",
+          "Audio Jack"
+        ],
+        "connectivity": ["Wi-Fi 6", "Bluetooth 5.1"],
+        "dimensions": {
+          "height": "42.8 cm",
+          "width": "54.1 cm",
+          "depth": "18.4 cm"
+        },
+        "features": [
+          "Touchscreen (optional)",
+          "Built-in webcam with privacy shutter",
+          "Stereo speakers",
+          "All-in-one compact design"
+        ],
+        "weight": "2.5 kg"
+      }
+    },
+    {
+      "id": 1055,
+      "category": "PC",
+      "brand": "CyberPowerPC",
+      "title": "Custom Builds Sample Product",
+      "price": 500000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://i5.walmartimages.com/seo/CyberPowerPC-Gamer-Supreme-Gaming-PC-Intel-Core-Ultra-7-265KF-NVIDIA-GeForce-RTX-5070-12GB-32GB-DDR5-2TB-SSD-SLC8960CPGV20_10953e8d-4f42-4786-b911-079dde4e5b26.56572c4453983365ebe18ea630202e2c.jpeg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "processor": "Intel Core i7-13700K",
+        "ram": "32GB DDR5",
+        "storage": "2TB NVMe SSD",
+        "graphics": "NVIDIA GeForce RTX 4070 12GB",
+        "motherboard": "ASUS ROG Strix Z790",
+        "cooling": "Liquid Cooling System",
+        "powerSupply": "750W 80+ Gold",
+        "operatingSystem": "Windows 11 Home",
+        "ports": [
+          "USB 3.2 Gen 2 Type-A",
+          "USB-C",
+          "HDMI",
+          "DisplayPort",
+          "Ethernet",
+          "Audio Jacks"
+        ],
+        "connectivity": ["Wi-Fi 6E", "Bluetooth 5.2"],
+        "features": [
+          "Custom RGB lighting",
+          "Tempered glass side panel",
+          "High airflow case design"
+        ],
+        "dimensions": {
+          "height": "42.8 cm",
+          "width": "54.1 cm",
+          "depth": "18.4 cm"
+        }
+      }
+    },
+    {
+      "id": 1056,
+      "category": "Monitors",
+      "brand": "Asus",
+      "title": "Gaming Monitors Sample Product",
+      "price": 180000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://eldorado.am/media/catalog/product/cache/b636eac9f5e866652b5cbe8cee86d97c/t/u/tuf_gaming_vg259qm_1_.webp",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "screenSize": "24.5 inches",
+        "resolution": "1920x1080 (Full HD)",
+        "refreshRate": "280Hz",
+        "responseTime": "1ms",
+        "panelType": "IPS",
+        "ports": ["DisplayPort 1.2", "HDMI 2.0", "Audio Out"],
+        "features": [
+          "G-Sync Compatible",
+          "HDR10 Support",
+          "Flicker-Free Technology",
+          "Shadow Boost"
+        ],
+        "connectivity": ["Headphone Jack"],
+        "dimensions": {
+          "height": "27.5 cm",
+          "width": "54 cm",
+          "depth": "12 cm"
+        },
+        "weight": "2.5 kg"
+      }
+    },
+    {
+      "id": 1057,
+      "category": "Monitors",
+      "brand": "LG",
+      "title": "4K Monitors Sample Product",
+      "price": 45000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://www.lg.com/ru/images/monitors/md07533567/gallery/medium01.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "screenSize": "27 inches",
+        "resolution": "3840x2160 (4K UHD)",
+        "refreshRate": "60Hz",
+        "responseTime": "5ms",
+        "panelType": "IPS",
+        "ports": ["HDMI", "DisplayPort", "USB-C"],
+        "features": ["HDR10", "Reader Mode", "Flicker Safe", "AMD FreeSync"],
+        "connectivity": ["Headphone Jack", "USB Hub"],
+        "dimensions": {
+          "height": "27.5 cm",
+          "width": "54 cm",
+          "depth": "12 cm"
+        },
+        "weight": "2.1 kg"
+      }
+    },
+    {
+      "id": 1058,
+      "category": "Monitors",
+      "brand": "Samsung",
+      "title": "Ultrawide Monitors Sample Product",
+      "price": 39000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://image-us.samsung.com/SamsungUS/samsungbusiness/computing/monitors/flat/22--led-monitor-with-borderless-design-lf22t350fhnxza/LF22T350FHNXZA_001_Front_Black_1600x1200.jpg?$product-details-jpg$",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "screenSize": "32 inches",
+        "resolution": "2560x1440 (4K UHD)",
+        "refreshRate": "60Hz",
+        "responseTime": "5ms",
+        "panelType": "IPS",
+        "ports": ["HDMI", "DisplayPort", "USB-C"],
+        "features": ["HDR10", "Reader Mode", "Flicker Safe", "AMD FreeSync"],
+        "connectivity": ["Headphone Jack", "USB Hub"],
+        "dimensions": {
+          "height": "27.5 cm",
+          "width": "54 cm",
+          "depth": "12 cm"
+        },
+        "weight": "2.1 kg"
+      }
+    },
+    {
+      "id": 1059,
+      "category": "Monitors",
+      "brand": "BenQ",
+      "title": "144Hz+ Sample Product",
+      "price": 42000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://www.zigzag.am/media/catalog/product/cache/811d9bdbaebf1cf745388b9849057259/n/e/new437440.png",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "screenSize": "32 inches",
+        "resolution": "2560x1440 (4K UHD)",
+        "refreshRate": "144Hz",
+        "responseTime": "5ms",
+        "panelType": "IPS",
+        "ports": ["HDMI", "DisplayPort", "USB-C"],
+        "features": ["HDR10", "Reader Mode", "Flicker Safe", "AMD FreeSync"],
+        "connectivity": ["Headphone Jack", "USB Hub"],
+        "dimensions": {
+          "height": "27.5 cm",
+          "width": "54 cm",
+          "depth": "12 cm"
+        },
+        "weight": "2.2 kg"
+      }
+    },
+    {
+      "id": 1060,
+      "category": "Monitors",
+      "brand": "ViewSonic",
+      "title": "Curved Monitors Sample Product",
+      "price": 35000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://www.coxo.ru/upload/resize_cache/iblock/21b/eiwug4zbeaxsh0mgzcavau9rju7lhzpo/500_500_1/67627b28_2f2c_11eb_80dd_00155dc86407_67627b29_2f2c_11eb_80dd_00155dc86407.resize1.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "screenSize": "32 inches",
+        "resolution": "2560x1440 (4K UHD)",
+        "refreshRate": "144Hz",
+        "responseTime": "5ms",
+        "panelType": "IPS",
+        "ports": ["HDMI", "DisplayPort", "USB-C"],
+        "features": ["HDR10", "Reader Mode", "Flicker Safe", "AMD FreeSync"],
+        "connectivity": ["Headphone Jack", "USB Hub"],
+        "dimensions": {
+          "height": "27.5 cm",
+          "width": "54 cm",
+          "depth": "12 cm"
+        },
+        "weight": "2.2 kg"
+      }
+    },
+
+    {
+      "id": 1061,
+      "category": "Monitors",
+      "brand": "Generic",
+      "title": "Professional Monitors Sample Product",
+      "price": 46000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://m.media-amazon.com/images/I/61Jv1u-M+RL._AC_UF894,1000_QL80_.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "screenSize": "32 inches",
+        "resolution": "2560x1440 (4K UHD)",
+        "refreshRate": "144Hz",
+        "responseTime": "5ms",
+        "panelType": "IPS",
+        "ports": ["HDMI", "DisplayPort", "USB-C"],
+        "features": ["HDR10", "Reader Mode", "Flicker Safe", "AMD FreeSync"],
+        "connectivity": ["Headphone Jack", "USB Hub"],
+        "dimensions": {
+          "height": "27.5 cm",
+          "width": "54 cm",
+          "depth": "12 cm"
+        },
+        "weight": "2.2 kg"
+      }
+    },
+    {
+      "id": 1062,
+      "category": "TV",
+      "brand": "Samsung",
+      "title": "Smart TVs Sample Product",
+      "price": 524000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://p.turbosquid.com/ts-thumb/Vl/dx15oG/rryIqJwx/generic_led_tv_360/jpg/1450355891/1920x1080/turn_fit_q99/d08697dc3baabf8967c01ee90dfc21154bac7cbe/generic_led_tv_360-1.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "screenSize": "55 inches",
+        "resolution": "3840x2160 (4K UHD)",
+        "smartFeatures": [
+          "Wi-Fi",
+          "Streaming Apps",
+          "Voice Control",
+          "Screen Mirroring"
+        ],
+        "ports": ["HDMI x3", "USB x2", "Ethernet"],
+        "refreshRate": "60Hz",
+        "connectivity": ["Headphone Jack", "USB Hub"],
+        "dimensions": {
+          "height": "27.5 cm",
+          "width": "54 cm",
+          "depth": "12 cm"
+        },
+        "weight": "2.2 kg"
+      }
+    },
+    {
+      "id": 1063,
+      "category": "TV",
+      "brand": "Asus",
+      "title": "4K UHD Sample Product",
+      "price": 450000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://5.imimg.com/data5/AT/VX/XI/SELLER-32694888/unbrand-led-tv-24-inches.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" },
+        { "id": 4, "color": "Gold", "hex": "#fae8a2" }
+      ],
+      "parameters": {
+        "screenSize": "24 inches",
+        "resolution": "3840x2160 (4K UHD)",
+        "smartFeatures": [
+          "Wi-Fi",
+          "Streaming Apps",
+          "HDMI-CEC",
+          "USB Playback"
+        ],
+        "ports": ["HDMI x2", "USB x1", "Ethernet"],
+        "refreshRate": "60Hz",
+        "audio": {
+          "speakers": "2 x 8W",
+          "audioTechnologies": ["Dolby Audio"]
+        },
+        "connectivity": ["Headphone Jack", "USB Hub"],
+        "dimensions": {
+          "height": "27.5 cm",
+          "width": "54 cm",
+          "depth": "12 cm"
+        },
+        "weight": "2.2 kg"
+      }
+    },
+    {
+      "id": 1064,
+      "category": "TV",
+      "brand": "TCL",
+      "title": "8K TVs Sample Product",
+      "price": 650000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://www.intex.in/cdn/shop/products/1_9b8014ad-124e-4742-a628-9a4c4affe617_1024x1024.jpg?v=1648711109",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "screenSize": "32 inches",
+        "resolution": "7680x4320 (8K UHD)",
+        "smartFeatures": [
+          "Wi-Fi",
+          "Streaming Apps",
+          "HDMI-CEC",
+          "USB Playback"
+        ],
+        "ports": ["HDMI x2", "USB x1", "Ethernet"],
+        "refreshRate": "60Hz",
+        "connectivity": ["Headphone Jack", "USB Hub"],
+        "dimensions": {
+          "height": "27.5 cm",
+          "width": "54 cm",
+          "depth": "12 cm"
+        },
+        "weight": "2.2 kg"
+      }
+    },
+    {
+      "id": 1065,
+      "category": "TV",
+      "brand": "LG",
+      "title": "OLED Sample Product",
+      "price": 480000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://www.intex.in/cdn/shop/products/1_9b8014ad-124e-4742-a628-9a4c4affe617_1024x1024.jpg?v=1648711109",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "screenSize": "55 inches",
+        "resolution": "3840x2160 (4K UHD)",
+        "smartFeatures": [
+          "Wi-Fi",
+          "Streaming Apps",
+          "HDMI-CEC",
+          "USB Playback"
+        ],
+        "ports": ["HDMI x2", "USB x1", "Ethernet"],
+        "refreshRate": "60Hz",
+        "speakers": "2 x 8W",
+        "audioTechnologies": ["Dolby Audio"],
+        "connectivity": ["Headphone Jack", "USB Hub"],
+        "dimensions": {
+          "height": "27.5 cm",
+          "width": "54 cm",
+          "depth": "12 cm"
+        },
+        "weight": "2.2 kg"
+      }
+    },
+    {
+      "id": 1066,
+      "category": "TV",
+      "brand": "Samsung",
+      "title": "QLED Sample Product",
+      "price": 320000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://akai.com.au/wp-content/uploads/2021/04/AK3220HD-32-hd-tv.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "screenSize": "55 inches",
+        "resolution": "3840x2160 (4K UHD)",
+        "smartFeatures": [
+          "Wi-Fi",
+          "Streaming Apps",
+          "HDMI-CEC",
+          "USB Playback"
+        ],
+        "ports": ["HDMI x2", "USB x1", "Ethernet"],
+        "refreshRate": "60Hz",
+        "speakers": "2 x 8W",
+        "audioTechnologies": ["Dolby Audio"],
+        "connectivity": ["Headphone Jack", "USB Hub"],
+        "dimensions": {
+          "height": "27.5 cm",
+          "width": "54 cm",
+          "depth": "12 cm"
+        },
+        "weight": "2.2 kg"
+      }
+    },
+    {
+      "id": 1067,
+      "category": "TV",
+      "brand": "Sony",
+      "title": "LED Sample Product",
+      "price": 180000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://akai.com.au/wp-content/uploads/2021/04/AK3221NF-32-hd-smart-tv.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "screenSize": "55 inches",
+        "resolution": "3840x2160 (4K UHD)",
+        "smartFeatures": [
+          "Wi-Fi",
+          "Streaming Apps",
+          "HDMI-CEC",
+          "USB Playback"
+        ],
+        "ports": ["HDMI x2", "USB x1", "Ethernet"],
+        "refreshRate": "60Hz",
+        "speakers": "2 x 8W",
+        "audioTechnologies": ["Dolby Audio"],
+        "connectivity": ["Headphone Jack", "USB Hub"],
+        "dimensions": {
+          "height": "27.5 cm",
+          "width": "54 cm",
+          "depth": "12 cm"
+        },
+        "weight": "2.2 kg"
+      }
+    },
+    {
+      "id": 1068,
+      "category": "TV",
+      "brand": "Panasonic",
+      "title": "Android TV Sample Product",
+      "price": 240000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://akai.com.au/wp-content/uploads/2021/04/AK3220HD-32-hd-tv.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "screenSize": "65 inches",
+        "resolution": "3840x2500 (4K UHD)",
+        "smartFeatures": [
+          "Wi-Fi",
+          "Streaming Apps",
+          "HDMI-CEC",
+          "USB Playback"
+        ],
+        "ports": ["HDMI x2", "USB x1", "Ethernet"],
+        "refreshRate": "60Hz",
+        "speakers": "2 x 8W",
+        "audioTechnologies": ["Dolby Audio"],
+        "connectivity": ["Headphone Jack", "USB Hub"],
+        "dimensions": {
+          "height": "27.5 cm",
+          "width": "54 cm",
+          "depth": "12 cm"
+        },
+        "weight": "2.2 kg"
+      }
+    },
+
+    {
+      "id": 1069,
+      "category": "TV",
+      "brand": "LG",
+      "title": "LG WebOS Sample Product",
+      "price": 320000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://akai.com.au/wp-content/uploads/2021/04/AK3221NF-32-hd-smart-tv.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "screenSize": "55 inches",
+        "resolution": "3840x2160 (4K UHD)",
+        "smartFeatures": [
+          "Wi-Fi",
+          "Streaming Apps",
+          "HDMI-CEC",
+          "USB Playback"
+        ],
+        "ports": ["HDMI x2", "USB x1", "Ethernet"],
+        "refreshRate": "65Hz",
+        "speakers": "2 x 8W",
+        "audioTechnologies": ["Dolby Audio"],
+        "connectivity": ["Headphone Jack", "USB Hub"],
+        "dimensions": {
+          "height": "27.5 cm",
+          "width": "54 cm",
+          "depth": "12 cm"
+        },
+        "weight": "2.2 kg"
+      }
+    },
+    {
+      "id": 1070,
+      "category": "Audio Video Equipment",
+      "brand": "Sony",
+      "title": "Headphones Sample Product",
+      "price": 110000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://m.media-amazon.com/images/I/51bk-NYjctL._AC_UF350,350_QL80_.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "type": "Over-Ear",
+        "connectivity": "Wired",
+        "features": [
+          "Noise Cancelling",
+          "Built-in Microphone",
+          "Adjustable Headband",
+          "Foldable Design"
+        ],
+        "frequencyResponse": "20Hz - 20kHz",
+        "impedance": "32 Ohms",
+        "sensitivity": "105 dB",
+        "cableLength": "1.2 meters",
+        "weight": "0.3 kg",
+        "warranty": "1 year"
+      }
+    },
+
+    {
+      "id": 1071,
+      "category": "Audio Video Equipment",
+      "brand": "Panasonic",
+      "title": "Speakers Sample Product",
+      "price": 87000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://m.media-amazon.com/images/I/51bk-NYjctL._AC_UF350,350_QL80_.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "type": "Bluetooth Wireless",
+        "powerOutput": "20W RMS",
+        "connectivity": ["Bluetooth 5.0", "3.5mm AUX", "USB"],
+        "features": [
+          "Portable",
+          "Rechargeable Battery",
+          "Built-in Microphone",
+          "Stereo Sound"
+        ],
+        "batteryLife": "10 hours"
+      }
+    },
+    {
+      "id": 1072,
+      "category": "Audio Video Equipment",
+      "brand": "Bose",
+      "title": "Soundbars Sample Product",
+      "price": 95000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://denver.eu/Admin/Public/GetImage.ashx?image=%2fFiles%2fImages%2fHigh+resolution+images%2fDENVER+BTL-360R+(1).png&width=960&format=webp",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "type": "2.1 Channel Soundbar",
+        "powerOutput": "40W RMS",
+        "connectivity": ["Bluetooth 5.0", "HDMI ARC", "Optical", "AUX"],
+        "features": [
+          "Wall-mountable",
+          "Wireless Subwoofer",
+          "Remote Control",
+          "LED Display"
+        ],
+        "dimensions": "900 x 60 x 75 mm",
+        "weight": "2.5 kg"
+      }
+    },
+    {
+      "id": 1073,
+      "category": "Audio Video Equipment",
+      "brand": "JBL",
+      "title": "Home Theater Sample Product",
+      "price": 105000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://denver.eu/Admin/Public/GetImage.ashx?image=%2fFiles%2fImages%2fHigh+resolution+images%2fDENVER+BTL-360R+(1).png&width=960&format=webp",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "type": "5.1 Channel Home Theater System",
+        "powerOutput": "120W RMS",
+        "connectivity": [
+          "Bluetooth",
+          "HDMI ARC",
+          "Optical In",
+          "USB",
+          "AUX",
+          "FM Radio"
+        ],
+        "features": [
+          "Surround Sound",
+          "Subwoofer Included",
+          "Remote Control",
+          "Multiple Sound Modes",
+          "LED Display Panel"
+        ],
+        "includedComponents": [
+          "1x Subwoofer",
+          "5x Satellite Speakers",
+          "1x Remote Control",
+          "1x HDMI Cable"
+        ],
+        "dimensions": "Subwoofer: 250 x 300 x 250 mm; Satellites: 100 x 150 x 100 mm",
+        "weight": "7.2 kg (total)",
+        "warranty": "12 months"
+      }
+    },
+    {
+      "id": 1074,
+      "category": "Audio Video Equipment",
+      "brand": "JBL",
+      "title": "Microphones Sample Product",
+      "price": 100000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://denver.eu/Admin/Public/GetImage.ashx?image=%2fFiles%2fImages%2fHigh+resolution+images%2fDENVER+BTL-360R+(1).png&width=960&format=webp",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "type": "Condenser Microphone",
+        "connectivity": ["USB", "3.5mm Jack"],
+        "features": [
+          "Plug and Play",
+          "Cardioid Pickup Pattern",
+          "Adjustable Tripod Stand",
+          "Mute Button",
+          "Volume Control",
+          "Noise Reduction"
+        ],
+        "includedComponents": [
+          "1x Microphone",
+          "1x Tripod Stand",
+          "1x USB Cable",
+          "1x Pop Filter"
+        ],
+        "compatibility": [
+          "Windows",
+          "macOS",
+          "Linux",
+          "PlayStation",
+          "Android (with adapter)"
+        ],
+        "dimensions": "45 x 150 mm (mic body)",
+        "weight": "0.3 kg",
+        "warranty": "12 months"
+      }
+    },
+    {
+      "id": 1075,
+      "category": "Audio Video Equipment",
+      "brand": "Generic",
+      "title": "Webcams Sample Product",
+      "price": 200000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://m.media-amazon.com/images/I/61-K2lXmHQL.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "resolution": "1080p Full HD",
+        "frameRate": "30 FPS",
+        "fieldOfView": "90° Wide Angle",
+        "connectivity": "USB 2.0 / 3.0",
+        "features": [
+          "Auto Focus",
+          "Built-in Microphone",
+          "Low Light Correction",
+          "Plug & Play",
+          "Adjustable Clip Mount"
+        ],
+        "includedComponents": ["1x Webcam", "1x USB Cable", "1x User Manual"],
+        "compatibility": [
+          "Windows",
+          "macOS",
+          "Linux",
+          "Zoom",
+          "Skype",
+          "Microsoft Teams"
+        ],
+        "dimensions": "85 x 45 x 60 mm",
+        "weight": "0.14 kg",
+        "warranty": "12 months"
+      }
+    },
+    {
+      "id": 1076,
+      "category": "Audio Video Equipment",
+      "brand": "Logitech",
+      "title": "Amplifiers Sample Product",
+      "price": 45000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://img.av-connection.com/2/AVimg_45689.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "powerOutput": "100W RMS",
+        "connectivity": ["USB", "3.5mm Jack"],
+        "features": [
+          "Plug and Play",
+          "Cardioid Pickup Pattern",
+          "Adjustable Tripod Stand",
+          "Mute Button",
+          "Volume Control",
+          "Noise Reduction"
+        ],
+        "includedComponents": [
+          "1x Amplifier",
+          "1x Tripod Stand",
+          "1x USB Cable",
+          "1x Pop Filter"
+        ],
+        "compatibility": ["Windows", "macOS", "Linux"],
+        "dimensions": "45 x 150 mm (mic body)",
+        "weight": "0.3 kg",
+        "warranty": "12 months"
+      }
+    },
+    {
+      "id": 1077,
+      "category": "Accessories",
+      "brand": "Generic",
+      "title": "Chargers Sample Product",
+      "price": 21000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://assets.umart.com.au/newsite/images/202407/source_img/Powerboards-and-Adapters-Generic-40W-Dual-USB-Type-C-PD-Charger-with-SAA-Approval-CH-PD40W-USB-C-C-1.webp",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "resolution": "1080p Full HD",
+        "frameRate": "30 FPS",
+        "fieldOfView": "90° Wide Angle",
+        "connectivity": "USB 2.0 / 3.0",
+        "features": [
+          "Auto Focus",
+          "Built-in Microphone",
+          "Low Light Correction",
+          "Plug & Play",
+          "Adjustable Clip Mount"
+        ],
+        "includedComponents": ["1x Webcam", "1x USB Cable", "1x User Manual"],
+        "compatibility": [
+          "Windows",
+          "macOS",
+          "Linux",
+          "Zoom",
+          "Skype",
+          "Microsoft Teams"
+        ],
+        "dimensions": "85 x 45 x 60 mm",
+        "weight": "0.14 kg",
+        "warranty": "12 months"
+      }
+    },
+    {
+      "id": 1078,
+      "category": "Accessories",
+      "brand": "Generic",
+      "title": "Cables Sample Product",
+      "price": 5800,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/09/2288301/1.jpg?0478",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "length": "1.5 meters",
+        "type": "USB-C to USB-A",
+        "compatibility": [
+          "Windows",
+          "macOS",
+          "Linux",
+          "Smartphones",
+          "Tablets"
+        ],
+        "features": ["Fast Charging", "Data Transfer", "Durable Braided Cable"],
+        "includedComponents": ["1x USB-C to USB-A Cable", "1x User Manual"],
+        "warranty": "6 months",
+        "weight": "0.02 kg"
+      }
+    },
+    {
+      "id": 1079,
+      "category": "Accessories",
+      "brand": "Ugreen",
+      "title": "Cases Sample Product",
+      "price": 4500,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://www.woolnut.com/cdn/shop/files/WOOLNUT_iphone_16_leather_case_black_1.jpg?v=1725888259&width=1080",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "material": "Genuine Leather",
+        "compatibility": ["iPhone 16", "iPhone 16 Pro"],
+        "features": [
+          "Shock Absorption",
+          "Slim Fit",
+          "Wireless Charging Compatible",
+          "Scratch Resistant"
+        ],
+        "includedComponents": ["1x Leather Case", "1x Cleaning Cloth"],
+        "dimensions": "15 x 7.5 x 1 cm",
+        "weight": "0.05 kg",
+        "warranty": "12 months"
+      }
+    },
+    {
+      "id": 1080,
+      "category": "Accessories",
+      "brand": "Spigen",
+      "title": "Screen Protectors Sample Product",
+      "price": 1000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://www.woolnut.com/cdn/shop/files/WOOLNUT_iphone_16_leather_case_black_1.jpg?v=1725888259&width=1080",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "material": "Tempered Glass",
+        "compatibility": ["iPhone 16", "iPhone 16 Pro"],
+        "features": [
+          "Anti-Scratch",
+          "Oleophobic Coating",
+          "High Transparency",
+          "Bubble-Free Installation"
+        ],
+        "includedComponents": ["1x Screen Protector", "1x Cleaning Kit"],
+        "dimensions": "14.7 x 7.1 x 0.03 cm",
+        "weight": "0.015 kg",
+        "warranty": "6 months"
+      }
+    },
+    {
+      "id": 1081,
+      "category": "Accessories",
+      "brand": "Ugreen",
+      "title": "Mounts Sample Product",
+      "price": 45000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://www.woolnut.com/cdn/shop/files/WOOLNUT_iphone_16_leather_case_black_1.jpg?v=1725888259&width=1080",
+      "colors": [
+        { "id": 2, "color": "White", "hex": "#ffffff" },
+        { "id": 3, "color": "Silver", "hex": "#d4d2cd" },
+        { "id": 4, "color": "Gold", "hex": "#fae8a2" }
+      ],
+      "parameters": {
+        "material": "Aluminum Alloy",
+        "compatibility": ["Smartphones", "Tablets", "GPS Devices"],
+        "features": [
+          "Adjustable Angle",
+          "360° Rotation",
+          "Strong Adhesive Base",
+          "Compact Design"
+        ],
+        "includedComponents": [
+          "1x Mount Holder",
+          "1x Adhesive Pad",
+          "1x User Manual"
+        ],
+        "dimensions": "10 x 7 x 5 cm",
+        "weight": "0.012 kg",
+        "warranty": "12 months"
+      }
+    },
+    {
+      "id": 1082,
+      "category": "Accessories",
+      "brand": "Anker",
+      "title": "Power Banks Sample Product",
+      "price": 6500,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://www.ikea.com/sa/en/images/products/varmfront-power-bank-dark-blue__1172519_pe893862_s5.jpg?f=xl",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "capacity": "10000mAh",
+        "output": "2.4A USB-A, 3A USB-C",
+        "input": "5V/2A USB-C",
+        "features": [
+          "Fast Charging",
+          "Compact Design",
+          "LED Power Indicator",
+          "Multi-Device Charging"
+        ],
+        "dimensions": "10.5 x 6.5 x 2 cm",
+        "weight": "0.021 kg",
+        "warranty": "18 months"
+      }
+    },
+    {
+      "id": 1083,
+      "category": "Accessories",
+      "brand": "Baseus",
+      "title": "Adapters Sample Product",
+      "price": 8000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://www.ikea.com/sa/en/images/products/varmfront-power-bank-dark-blue__1172519_pe893862_s5.jpg?f=xl",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 3, "color": "Silver", "hex": "#d4d2cd" },
+        { "id": 4, "color": "Gold", "hex": "#fae8a2" }
+      ],
+      "parameters": {
+        "type": "USB-C to HDMI",
+        "supportedResolution": "4K UHD",
+        "features": [
+          "Plug and Play",
+          "Durable Aluminum Body",
+          "Compact and Lightweight"
+        ],
+        "dimensions": "6 x 3 x 1 cm",
+        "weight": "0.05 kg",
+        "warranty": "12 months"
+      }
+    },
+    {
+      "id": 1084,
+      "category": "Accessories",
+      "brand": "Logitech",
+      "title": "Keyboards Sample Product",
+      "price": 12000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://m.media-amazon.com/images/I/614GO7cAxaL._AC_SX466_.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "connection": "Wireless Bluetooth",
+        "layout": "QWERTY",
+        "features": ["Rechargeable Battery", "Compact Design", "Quiet Keys"],
+        "dimensions": "28 x 12 x 2.5 cm",
+        "weight": "0.045 kg",
+        "warranty": "24 months"
+      }
+    },
+    {
+      "id": 1085,
+      "category": "Accessories",
+      "brand": "Logitech",
+      "title": "Mice Sample Product",
+      "price": 15000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://media.guitarcenter.com/is/image/MMGS7/485178000000000-00-2000x2000.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "White", "hex": "#ffffff" }
+      ],
+      "parameters": {
+        "connection": "Wireless Bluetooth",
+        "dpi": "1000-4000 adjustable",
+        "features": [
+          "Ergonomic Design",
+          "Rechargeable Battery",
+          "Silent Click"
+        ],
+        "dimensions": "11 x 6 x 3.5 cm",
+        "weight": "0.01 kg",
+        "warranty": "24 months"
+      }
+    }
+  ]
+}

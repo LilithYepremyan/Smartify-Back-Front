@@ -1,0 +1,20 @@
+{
+  "home": "Home",
+  "about": "About us",
+  "contact": "Contacts",
+  "welcome": "Welcome to Smartify",
+  "address": "Address",
+  "location": "4/3 Nikoghayos Adonts Street, Yerevan, Armenia",
+  "noProducts": "There are no products matching the selected filters",
+  "inStock": "In Stock",
+  "color": "Color",
+  "price": "Price",
+  "outOfStock": "Out of Stock",
+  "productNotFound": "Product not found",
+  "aboutUs": "The purpose of Smartify is to assist every customer with expert advice in selecting the right products, backed by high-quality service delivered by our knowledgeable and friendly staff.Since day one, Smartify has followed a customer-first approach with a flexible pricing policy, ensuring that everyone can find the right product that meets their needs and budget.We offer a curated selection of trusted and innovative products — including smart devices, mobile phones, laptops, and accessories — from leading global brands.In a world that’s constantly evolving with technology, our mission is to ensure that every customer always has access to reliable, high-quality solutions at affordable prices — anytime, anywhere.",
+  "phone": "Phone",
+  "email": "Email",
+  "workingHours": "Working hours",
+  "everyday": "Everyday",
+  "category": "Category"
+}
