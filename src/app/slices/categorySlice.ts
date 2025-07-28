@@ -9,10 +9,21 @@ export const getAllCategories = createAsyncThunk(
   },
 )
 
+
+export const getAllBrands = createAsyncThunk(
+  "category/getAllBrands",
+  async () => {
+    const response = await fetch("http://localhost:3004/brands")
+    const data = await response.json()
+    return data
+  },
+)
+
 const CategoriesSlice = createSlice({
   name: "category",
   initialState: {
     categories: [],
+    brands: [],
     selectedCategory: null,
     selectedBrand: null,
     selectedColor: null,
@@ -34,6 +45,10 @@ const CategoriesSlice = createSlice({
   extraReducers: builder => {
     builder.addCase(getAllCategories.fulfilled, (state, action) => {
       state.categories = action.payload
+    })
+    builder.addCase(getAllBrands.fulfilled, (state, action) => {
+      state.brands = action.payload
+      console.log(state.brands, " state brands") 
     })
   },
 })

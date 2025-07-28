@@ -55,10 +55,10 @@
     {
       "name": "Watches",
       "brands": [
-        { "id": 1, "name": "Apple Watch" },
-        { "id": 2, "name": "Samsung Galaxy Watch" },
-        { "id": 6, "name": "Huawei Watch" },
-        { "id": 7, "name": "Xiaomi Watch" }
+        { "id": 1, "name": "Apple" },
+        { "id": 2, "name": "Samsung" },
+        { "id": 6, "name": "Huawei" },
+        { "id": 7, "name": "Xiaomi" }
       ]
     },
 
@@ -136,6 +136,203 @@
         { "id": 4, "name": "Spigen" },
         { "id": 5, "name": "Logitech" }
       ]
+    }
+  ],
+  "brands": [
+    {
+      "id": 1,
+      "name": "Samsung",
+      "icon": "https://3dplanet.am/wp-content/uploads/2020/05/1200px-Samsung_Logo.svg.png"
+    },
+    {
+      "id": 2,
+      "name": "Apple",
+      "icon": "https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo-768x432.png"
+    },
+    {
+      "id": 3,
+      "name": "Xiaomi",
+      "icon": "https://3dplanet.am/wp-content/uploads/2020/05/xiaomi.png"
+    },
+    {
+      "id": 4,
+      "name": "OnePlus",
+      "icon": "https://3dplanet.am/wp-content/uploads/2020/05/OnePlus_LU_Red_RGB-e1589542476987.png"
+    },
+    {
+      "id": 5,
+      "name": "Realme",
+      "icon": "https://i.ytimg.com/vi/CXLjB4f0Pvc/maxresdefault.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Google Pixel",
+      "icon": "https://static.cdnlogo.com/logos/g/69/google-pixel.svg"
+    },
+    {
+      "id": 7,
+      "name": "Motorola",
+      "icon": "https://logos-world.net/wp-content/uploads/2022/07/Motorola-Symbol.png"
+    },
+    {
+      "id": 8,
+      "name": "Acer",
+      "icon": "https://3dplanet.am/wp-content/uploads/2020/05/Acer-logo-e1589161496823.png"
+    },
+    {
+      "id": 9,
+      "name": "Asus",
+      "icon": "https://3dplanet.am/wp-content/uploads/2020/05/asus-logo.png"
+    },
+    {
+      "id": 10,
+      "name": "Lenovo",
+      "icon": "https://3dplanet.am/wp-content/uploads/2020/05/Lenovo_logo.png"
+    },
+    {
+      "id": 11,
+      "name": "Dell",
+      "icon": "https://3dplanet.am/wp-content/uploads/2020/05/dell.png"
+    },
+    {
+      "id": 12,
+      "name": "LG",
+      "icon": "https://3dplanet.am/wp-content/uploads/2020/05/LG-logo.png"
+    },
+    {
+      "id": 13,
+      "name": "HP",
+      "icon": "https://logotyp.us/file/hp.svg"
+    },
+    {
+      "id": 14,
+      "name": "MSI",
+      "icon": "https://logos-world.net/wp-content/uploads/2020/11/MSI-Logo.png"
+    },
+    {
+      "id": 15,
+      "name": "Gigabyte",
+      "icon": "https://1000logos.net/wp-content/uploads/2020/05/Gigabyte-Logo.png"
+    },
+
+    {
+      "id": 17,
+      "name": "Razer",
+      "icon": "https://3dplanet.am/wp-content/uploads/2020/12/Razer_Inc.-Logo.wine-1-1.png"
+    },
+    {
+      "id": 19,
+      "name": "Canon",
+      "icon": "https://1000logos.net/wp-content/uploads/2016/10/Canon-Logo.png"
+    },
+    {
+      "id": 20,
+      "name": "Nikon",
+      "icon": "https://1000logos.net/wp-content/uploads/2017/03/Nikon-Logo.png"
+    },
+    {
+      "id": 21,
+      "name": "Sony",
+      "icon": "https://3dplanet.am/wp-content/uploads/2020/05/sony.png"
+    },
+    {
+      "id": 22,
+      "name": "Fujifilm",
+      "icon": "https://logos-world.net/wp-content/uploads/2020/12/Fujifilm-Logo-700x394.png"
+    },
+
+    {
+      "id": 26,
+      "name": "Olympus",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Olympus_Corporation_logo.svg/1200px-Olympus_Corporation_logo.svg.png"
+    },
+    {
+      "id": 27,
+      "name": "Panasonic",
+      "icon": "https://kreafolk.com/cdn/shop/articles/panasonic-logo-design-history-and-evolution-kreafolk_e22aef50-03d3-44ad-9c51-839d87728434.jpg?v=1717725026&width=2048"
+    },
+
+    {
+      "id": 29,
+      "name": "Microsoft",
+      "icon": "https://3dplanet.am/wp-content/uploads/2023/05/Microsoft-Logo-PNG-Transparent-Image.png"
+    },
+    {
+      "id": 30,
+      "name": "Bosch",
+      "icon": "https://1000logos.net/wp-content/uploads/2016/10/Bosch-Logo-640x400.png"
+    },
+    {
+      "id": 31,
+      "name": "Nintendo",
+      "icon": "https://3dplanet.am/wp-content/uploads/2023/08/nintendo-logo-vector-format-11.png"
+    },
+
+    {
+      "id": 33,
+      "name": "Whirlpool",
+      "icon": "https://1000logos.net/wp-content/uploads/2017/12/Whirlpool-logo.jpg"
+    },
+    {
+      "id": 34,
+      "name": "Electrolux",
+      "icon": "https://1000logos.net/wp-content/uploads/2021/05/Electrolux-logo-768x432.png"
+    },
+    {
+      "id": 35,
+      "name": "Dyson",
+      "icon": "https://1000logos.net/wp-content/uploads/2023/06/Dyson-logo.jpg"
+    },
+    {
+      "id": 36,
+      "name": "BenQ",
+      "icon": "https://images.seeklogo.com/logo-png/30/1/benq-logo-png_seeklogo-304510.png"
+    },
+    {
+      "id": 37,
+      "name": "ViewSonic",
+      "icon": "https://images.seeklogo.com/logo-png/14/1/viewsonic-logo-png_seeklogo-149057.png"
+    },
+    {
+      "id": 38,
+      "name": "TCL",
+      "icon": "https://www.tcltech.com/_ipx/f_webp/brand-tcl.png"
+    },
+    {
+      "id": 39,
+      "name": "Bose",
+      "icon": "https://i.pinimg.com/736x/01/0c/78/010c78e03eaa6c29985b1521f034e0e9.jpg"
+    },
+    {
+      "id": 42,
+      "name": "Generic",
+      "icon": "https://images.seeklogo.com/logo-png/6/2/generic-logo-png_seeklogo-60089.png"
+    },
+    {
+      "id": 43,
+      "name": "Anker",
+      "icon": "https://getvectorlogo.com/wp-content/uploads/2023/04/anker-vector-logo.png"
+    },
+    {
+      "id": 44,
+      "name": "Baseus",
+      "icon": "https://3dplanet.am/wp-content/uploads/2020/07/unnamed.jpg"
+    },
+    {
+      "id": 45,
+      "name": "Ugreen",
+      "icon": "https://a.allegroimg.com/s600/113398/b9c1469d4d00a04512404f349953"
+    },
+
+    {
+      "id": 47,
+      "name": "Logitech",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/1/17/Logitech_logo.svg"
+    },
+    {
+      "id": 48,
+      "name": "JBL",
+      "icon": "https://3dplanet.am/wp-content/uploads/2020/07/JBL-Logo.jpg"
     }
   ],
   "products": [
@@ -330,6 +527,33 @@
       }
     },
     {
+      "id": 8,
+      "category": "Smartphones",
+      "brand": "OnePlus",
+      "title": "OnePlus 12 5G 256GB",
+      "price": 379000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://oneplus.com.ru/uploads/product/12/images/12-green.png",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#1b1b1b" },
+        { "id": 2, "color": "Green", "hex": "#2e7c6f" }
+      ],
+      "parameters": {
+        "core": "Snapdragon 8 Gen 3",
+        "ram": "12GB",
+        "memory": "256GB",
+        "display": "6.82\" AMOLED, 120Hz, HDR10+, Dolby Vision, 1440x3168 pixels",
+        "sim": "Dual SIM (Nano-SIM, dual stand-by)",
+        "camera": "50MP (wide) + 64MP (periscope telephoto) + 48MP (ultrawide)",
+        "front Camera": "32MP",
+        "os": "Android 14, OxygenOS",
+        "battery": "5400 mAh",
+        "weight": "220 g"
+      }
+    },
+
+    {
       "id": 1000,
       "category": "Smartphones",
       "brand": "Samsung",
@@ -462,6 +686,33 @@
         "os": "Android 14",
         "battery": "5150 mAh",
         "weight": "195 g"
+      }
+    },
+    {
+      "id": 10051,
+      "category": "Smartphones",
+      "brand": "Motorola",
+      "title": "Motorola Moto G54 5G (8/256GB, Blue)",
+      "price": 89900,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://eldorado.am/media/catalog/product/cache/f8f376667ef841560f3ecb714414579d/m/o/motorola_xt2343-2_moto_g54_5g_8.jpg",
+      "colors": [
+        { "id": 1, "color": "Midnight Blue", "hex": "#191970" },
+        { "id": 2, "color": "Black", "hex": "#000000" },
+        { "id": 3, "color": "Green", "hex": "#2E8B57" }
+      ],
+      "parameters": {
+        "core": "MediaTek Dimensity 7020",
+        "ram": "8GB",
+        "memory": "256GB",
+        "display": "6.5\" IPS LCD, 120Hz, FHD+",
+        "sim": "Dual SIM (Nano-SIM, dual stand-by)",
+        "camera": "50MP + 2MP",
+        "front Camera": "16MP",
+        "os": "Android 13",
+        "battery": "5000 mAh",
+        "weight": "192 g"
       }
     },
     {
@@ -1013,6 +1264,30 @@
       }
     },
     {
+      "id": 10281,
+      "category": "Photo Cameras",
+      "brand": "Olympus",
+      "title": "Olympus OM-D E-M10 Mark IV Mirrorless Camera",
+      "price": 280000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://www.bhphotovideo.com/images/fb/olympus_v207132su000_om_d_e_m10_mark_iv_1576158.jpg",
+      "colors": [
+        { "id": 1, "color": "Black", "hex": "#000000" },
+        { "id": 2, "color": "Silver", "hex": "#C0C0C0" }
+      ],
+      "parameters": {
+        "sensor": "20.3MP Live MOS",
+        "video": "4K UHD at 30fps",
+        "display": "3.0\" 1.04m-Dot Tilting Touchscreen LCD",
+        "lens": "M.Zuiko 14-42mm f/3.5-5.6 EZ Lens",
+        "isoRange": "200–25600 (expandable to 100)",
+        "connectivity": "Wi-Fi, Bluetooth, USB",
+        "battery": "BLS-50 Rechargeable Lithium-Ion",
+        "weight": "0.38 kg"
+      }
+    },
+    {
       "id": 1028,
       "category": "Photo Cameras",
       "brand": "Fujifilm",
@@ -1472,6 +1747,38 @@
           "HEPA Filtration"
         ],
         "warranty": "1 years"
+      }
+    },
+    {
+      "id": 10445,
+      "category": "Home Appliances",
+      "brand": "Electrolux",
+      "title": "Electrolux Pure Q9 Cordless Vacuum Cleaner",
+      "price": 198000,
+      "currency": "AMD",
+      "inStock": true,
+      "image": "https://media.electrolux.se/i/electrolux/pureq9_pq91-3ob_front-2000x2000",
+      "colors": [
+        { "id": 1, "color": "Ebony Black", "hex": "#1a1a1a" },
+        { "id": 2, "color": "Mahogany Bronze", "hex": "#4b3a2f" }
+      ],
+      "parameters": {
+        "type": "Cordless Stick Vacuum",
+        "model": "Pure Q9 PQ91-3OB",
+        "batteryLife": "Up to 55 minutes",
+        "power": "450W",
+        "suctionPower": "140 AW",
+        "binVolume": "0.3 L",
+        "weight": "2.9 kg",
+        "filter": "Washable E10 filter",
+        "features": [
+          "Quiet performance technology",
+          "LED Nozzle Lights",
+          "Self-standing design",
+          "Easy-clean brush roll",
+          "Telescopic reach system"
+        ],
+        "warranty": "2 years"
       }
     },
     {

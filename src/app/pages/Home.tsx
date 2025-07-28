@@ -5,6 +5,7 @@ import { useEffect, useMemo } from "react"
 import { useAppDispatch, useAppSelector } from "../hooks"
 import { getAllProducts } from "../slices/productsSlice"
 import {
+  getAllBrands,
   setSelectedBrand,
   setSelectedCategory,
   setSelectedColor,
@@ -14,7 +15,7 @@ import ProductCard from "../components/ProductCard"
 import useIsMobile from "../hooks/useIsMobile"
 import CategoryAccordion from "../components/CategoryAccordion"
 import { useNavigate, useSearchParams } from "react-router-dom"
-import Breadcrumb from "../components/BreadCrumb"
+import BrandFilter from "../components/BrandFilter"
 
 export default function Home() {
   const { t } = useTranslation()
@@ -57,6 +58,7 @@ export default function Home() {
 
   useEffect(() => {
     dispatch(getAllProducts())
+    dispatch(getAllBrands())
 
     const categoryFromURL = searchParams.get("category")
     const brandFromURL = searchParams.get("brand")
@@ -87,7 +89,7 @@ export default function Home() {
         : true
       return matchCategory && matchBrand && matchColor
     })
-  }, [products,selectedCategory, selectedBrand, selectedColor])
+  }, [products, selectedCategory, selectedBrand, selectedColor])
 
   return (
     <Box
@@ -137,6 +139,12 @@ export default function Home() {
           onColorClick={(colorName: string) => {
             // dispatch(setSelectedColor(colorName))4
             showProductList(selectedCategory, selectedBrand, colorName)
+          }}
+        />
+        <BrandFilter
+          onBrandClick={(brandName: string) => {
+            // dispatch(setSelectedBrand(brandName))
+            showProductList(selectedCategory, brandName, selectedColor)
           }}
         />
       </Box>
