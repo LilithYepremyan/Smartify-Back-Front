@@ -1,4 +1,4 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
+import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit"
 
 export const getAllProducts = createAsyncThunk(
   "product/getAllProducts",
@@ -8,17 +8,22 @@ export const getAllProducts = createAsyncThunk(
   },
 )
 
-const ProductsSlice = createSlice({
+interface initialState {
+  products: []
+  loading: boolean
+  error: string | null
+}
+
+const ProductsSlice: initialState = createSlice({
   name: "product",
   initialState: {
     products: [],
-    selectedProduct: null,
     loading: false,
     error: null,
   },
   reducers: {},
   extraReducers: builder => {
-    builder.addCase(getAllProducts.pending, (state) => {
+    builder.addCase(getAllProducts.pending, state => {
       state.loading = true
     })
     builder.addCase(getAllProducts.fulfilled, (state, action) => {

@@ -1,7 +1,7 @@
 import CategorySelect from "../components/CategorySelect"
 import ColorFilter from "../components/ColorFilter"
-import { Box, CircularProgress, Typography } from "@mui/material"
-import { useEffect, useMemo } from "react"
+import { Box, CircularProgress, Pagination, Typography } from "@mui/material"
+import { useEffect, useMemo, useState } from "react"
 import { useAppDispatch, useAppSelector } from "../hooks"
 import { getAllProducts } from "../slices/productsSlice"
 import {
@@ -16,6 +16,7 @@ import useIsMobile from "../hooks/useIsMobile"
 import CategoryAccordion from "../components/CategoryAccordion"
 import { useNavigate, useSearchParams } from "react-router-dom"
 import BrandFilter from "../components/BrandFilter"
+import RangeSlider from "../components/RangeSlider"
 
 export default function Home() {
   const { t } = useTranslation()
@@ -27,6 +28,8 @@ export default function Home() {
   const selectedBrand = useAppSelector(state => state.categories.selectedBrand)
   const selectedColor = useAppSelector(state => state.categories.selectedColor)
   const loading = useAppSelector(state => state.products.loading)
+  const priceRange = useAppSelector(state => state.categories.priceRange)
+
 
   const dispatch = useAppDispatch()
   const navigate = useNavigate()
@@ -87,9 +90,32 @@ export default function Home() {
       const matchColor = selectedColor
         ? product.colors.some(c => c.color.toLowerCase() === selectedColor)
         : true
-      return matchCategory && matchBrand && matchColor
+      const matchPrice =
+        product.price >= priceRange[0] && product.price <= priceRange[1]
+
+      return matchCategory && matchBrand && matchColor && matchPrice
     })
-  }, [products, selectedCategory, selectedBrand, selectedColor])
+  }, [products, selectedCategory, selectedBrand, selectedColor, priceRange])
+
+  const itemsPerPage = 12
+  const totalPages = useMemo(() => {
+    return Math.ceil(filteredProducts.length / itemsPerPage)
+  }, [filteredProducts])
+
+  const [currentPage, setCurrentPage] = useState(1)
+
+  const paginatedProducts = filteredProducts.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage,
+  )
+
+  const handleChange = (_, value: number) => {
+    setCurrentPage(value)
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
 
   return (
     <Box
@@ -128,55 +154,65 @@ export default function Home() {
             ) => showProductList(categoryName, brandName, color)}
           />
         )}
-        {/* <CategorySelect
-          onBrandClick={(
-            categoryName: string,
-            brandName: string,
-            color: string,
-          ) => showProductList(categoryName, brandName, color)}
-        /> */}
+
         <ColorFilter
           onColorClick={(colorName: string) => {
-            // dispatch(setSelectedColor(colorName))4
             showProductList(selectedCategory, selectedBrand, colorName)
           }}
         />
         <BrandFilter
           onBrandClick={(brandName: string) => {
-            // dispatch(setSelectedBrand(brandName))
             showProductList(selectedCategory, brandName, selectedColor)
           }}
         />
+        <RangeSlider />
       </Box>
 
       <Box
         sx={{
-          width: "70%",
           display: "flex",
-          flexWrap: "wrap",
-          justifyContent: { xs: "center", md: "space-between" },
-          backgroundColor: "#fff",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          alignItems: "center",
           borderRadius: 2,
+          width: "100%",
           p: { xs: 1, md: 2 },
           boxShadow: 2,
-          gap: { xs: 1, md: 2 },
         }}
       >
-        {/* <Breadcrumb product={products} /> */}
-        {loading ? (
-          <CircularProgress />
-        ) : filteredProducts.length === 0 ? (
-          <Typography
-            variant="h6"
-            sx={{ textAlign: "center", width: "100%", mt: 2 }}
-          >
-            {t("noProducts")}
-          </Typography>
-        ) : (
-          filteredProducts.map(product => (
-            <ProductCard key={product.id} product={product} />
-          ))
-        )}
+        <Box
+          sx={{
+            width: "100%",
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: { xs: "center", md: "space-between" },
+            gap: { xs: 1, md: 4 },
+          }}
+        >
+          {loading ? (
+            <CircularProgress />
+          ) : filteredProducts.length === 0 ? (
+            <Typography
+              variant="h6"
+              sx={{ textAlign: "center", width: "100%", mt: 2 }}
+            >
+              {t("noProducts")}
+            </Typography>
+          ) : (
+            <>
+              {paginatedProducts.map(product => (
+                <ProductCard key={product.id} product={product} />
+              ))}
+            </>
+          )}
+        </Box>
+        <Pagination
+          count={totalPages || 1}
+          variant="outlined"
+          shape="rounded"
+          page={currentPage}
+          onChange={handleChange}
+        />
       </Box>
     </Box>
   )

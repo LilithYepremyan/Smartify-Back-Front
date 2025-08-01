@@ -9,7 +9,6 @@ export const getAllCategories = createAsyncThunk(
   },
 )
 
-
 export const getAllBrands = createAsyncThunk(
   "category/getAllBrands",
   async () => {
@@ -24,6 +23,7 @@ const CategoriesSlice = createSlice({
   initialState: {
     categories: [],
     brands: [],
+    priceRange: [50000, 1000000],
     selectedCategory: null,
     selectedBrand: null,
     selectedColor: null,
@@ -41,6 +41,16 @@ const CategoriesSlice = createSlice({
     resetBrand: state => {
       state.selectedBrand = null
     },
+    setPriceRange: (state, action: PayloadAction<[number, number]>) => {
+      state.priceRange = action.payload
+      console.log(state.priceRange, "priceRange")
+    },
+    filterByPrice: state => {
+      const [min, max] = state.priceRange
+      state.filteredProducts = state.products.filter(
+        product => product.price >= min && product.price <= max,
+      )
+    },
   },
   extraReducers: builder => {
     builder.addCase(getAllCategories.fulfilled, (state, action) => {
@@ -48,12 +58,18 @@ const CategoriesSlice = createSlice({
     })
     builder.addCase(getAllBrands.fulfilled, (state, action) => {
       state.brands = action.payload
-      console.log(state.brands, " state brands") 
+      console.log(state.brands, " state brands")
     })
   },
 })
 
 export const categoriesReducer = CategoriesSlice.reducer
 
-export const { setSelectedCategory, setSelectedBrand, setSelectedColor , resetBrand} =
-  CategoriesSlice.actions
+export const {
+  setSelectedCategory,
+  setSelectedBrand,
+  setSelectedColor,
+  resetBrand,
+  setPriceRange,
+  filterByPrice,
+} = CategoriesSlice.actions

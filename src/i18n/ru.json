@@ -17,5 +17,7 @@
   "workingHours": "Рабочие часы",
   "everyday": "Каждый день",
   "category": "Категория",
-  "brands":"Бренды"
+  "brands": "Бренды",
+  "filter": "Фильтрoвать",
+  "search": "Поиск"
 }

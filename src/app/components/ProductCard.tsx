@@ -169,12 +169,12 @@ const ProductCard = ({ product }: { product: Product }) => {
         >
           {product.price} {product.currency}
         </Typography>
-
+        {/* 
         <Box sx={{ display: "flex", justifyContent: "center", gap: 1 }}>
           {product.colors.map(color => (
             <ColorDot key={color.id} color={color.hex} />
           ))}
-        </Box>
+        </Box> */}
       </CardContent>
       {product.inStock && (
         <Box

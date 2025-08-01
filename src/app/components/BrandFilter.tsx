@@ -32,7 +32,7 @@ export default function BrandFilter({
   }
 
   return (
-    <Box>
+    <Box sx={{ borderBottom: "1px solid rgb(79, 84, 94)", pb: 2 }}>
       <Typography
         sx={{
           cursor: "pointer",

@@ -17,6 +17,9 @@
   "workingHours": "Working hours",
   "everyday": "Everyday",
   "category": "Category",
-  "brands":"Brands"
+  "brands":"Brands",
+  "filter": "Filter",
+  "search": "Search"
+
 
 }
