@@ -1,10 +1,11 @@
 import { TextField, InputAdornment } from "@mui/material"
 import SearchIcon from "@mui/icons-material/Search"
 import { useState } from "react"
+import { useTranslation } from "react-i18next"
 
 const SearchInput = ({ onSearch }: { onSearch: (value: string) => void }) => {
   const [value, setValue] = useState("")
-
+  const { t } = useTranslation()
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newValue = e.target.value
     setValue(newValue)
@@ -15,7 +16,7 @@ const SearchInput = ({ onSearch }: { onSearch: (value: string) => void }) => {
     <TextField
       variant="outlined"
       size="small"
-      placeholder={$t("search")}
+      placeholder={t("search")}
       value={value}
       onChange={handleChange}
       fullWidth

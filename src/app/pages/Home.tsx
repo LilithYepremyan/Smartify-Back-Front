@@ -17,6 +17,7 @@ import CategoryAccordion from "../components/CategoryAccordion"
 import { useNavigate, useSearchParams } from "react-router-dom"
 import BrandFilter from "../components/BrandFilter"
 import RangeSlider from "../components/RangeSlider"
+import SearchInput from "../components/SearchInput"
 
 export default function Home() {
   const { t } = useTranslation()
@@ -29,7 +30,6 @@ export default function Home() {
   const selectedColor = useAppSelector(state => state.categories.selectedColor)
   const loading = useAppSelector(state => state.products.loading)
   const priceRange = useAppSelector(state => state.categories.priceRange)
-
 
   const dispatch = useAppDispatch()
   const navigate = useNavigate()
@@ -200,6 +200,8 @@ export default function Home() {
             </Typography>
           ) : (
             <>
+              <SearchInput />
+
               {paginatedProducts.map(product => (
                 <ProductCard key={product.id} product={product} />
               ))}

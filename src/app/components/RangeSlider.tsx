@@ -5,7 +5,7 @@ import { useAppDispatch, useAppSelector } from "../hooks"
 import { useState } from "react"
 
 const RangeSlider = () => {
-  const priceRange = useAppSelector(state => state.products.priceRange)
+  const priceRange = useAppSelector(state => state.categories.priceRange)
   const { t } = useTranslation()
 
   const dispatch = useAppDispatch()
