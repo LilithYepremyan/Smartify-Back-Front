@@ -35,6 +35,12 @@ export default function Home() {
   const navigate = useNavigate()
   const [searchParams] = useSearchParams()
 
+  const searchQuery = searchParams.get("search")?.toLowerCase() || ""
+
+  useEffect(() => {
+    setCurrentPage(1)
+  }, [searchQuery])
+
   const showProductList = (
     categoryName: string,
     brandName: string,
@@ -93,9 +99,20 @@ export default function Home() {
       const matchPrice =
         product.price >= priceRange[0] && product.price <= priceRange[1]
 
-      return matchCategory && matchBrand && matchColor && matchPrice
+      const matchSearch = product.title.toLowerCase().includes(searchQuery)
+
+      return (
+        matchCategory && matchBrand && matchColor && matchPrice && matchSearch
+      )
     })
-  }, [products, selectedCategory, selectedBrand, selectedColor, priceRange])
+  }, [
+    products,
+    selectedCategory,
+    selectedBrand,
+    selectedColor,
+    priceRange,
+    searchQuery,
+  ])
 
   const itemsPerPage = 12
   const totalPages = useMemo(() => {

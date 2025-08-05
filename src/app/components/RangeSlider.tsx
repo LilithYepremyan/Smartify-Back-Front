@@ -23,7 +23,7 @@ const RangeSlider = () => {
 
   return (
     <Box sx={{ width: "100%", textAlign: "left" }}>
-      <Typography>{t("price")}</Typography>
+      <Typography sx={{ fontSize: "14px" }}>{t("price")}</Typography>
       <Slider
         getAriaLabel={() => "By price"}
         value={value}
@@ -34,8 +34,8 @@ const RangeSlider = () => {
         getAriaValueText={value => `${value} AMD`}
         step={1000}
       ></Slider>
-      <Typography>{`${t("price")}: ${value[0]} AMD - ${value[1]} AMD`}</Typography>
-      <Button sx={{ mt: 2 }} variant="outlined" onClick={handleFilterClick}>
+      <Typography sx={{ fontSize: "14px" }}>{`${t("price")}: ${value[0]} AMD - ${value[1]} AMD`}</Typography>
+      <Button sx={{ mt: 2, fontSize: "14px" }} variant="outlined" onClick={handleFilterClick}>
         {t("filter")}
       </Button>
     </Box>

@@ -6,9 +6,11 @@ import {
   Typography,
   useTheme,
 } from "@mui/material"
-import ColorDot from "./ColorDot"
 import { useTranslation } from "react-i18next"
 import { useNavigate, useSearchParams } from "react-router-dom"
+import SearchIcon from "@mui/icons-material/Search"
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder"
+import theme from "../theme/theme"
 
 type ProductParameters = {
   core?: string
@@ -106,16 +108,6 @@ const ProductCard = ({ product }: { product: Product }) => {
   const [searchParams, setSearchParams] = useSearchParams()
 
   const handleClick = () => {
-    // const category = searchParams.get("category")
-    // const brand = searchParams.get("brand")
-
-    // const params = new URLSearchParams()
-    // if (category && category !== "null") params.set("category", category)
-    // if (brand && brand !== "null") params.set("brand", brand)
-
-    // // navigate(`/product/${product.id}/${params.toString()}`)
-    // navigate(`/product/${product.id}?category=${category}&brand=${brand}`)
-
     const category = searchParams.get("category")
     const brand = searchParams.get("brand")
 
@@ -133,25 +125,27 @@ const ProductCard = ({ product }: { product: Product }) => {
 
   return (
     <Card
-      onClick={handleClick}
       sx={{
         marginBottom: 2,
         width: 200,
         maxHeight: 400,
         cursor: "pointer",
-        ":hover": { transform: "scale(1.05)" },
+        "&:hover": { transform: "scale(1.05)" },
+        "&:hover .icons": { opacity: 1, visibility: "visible" },
         transition: "transform 0.3s ease-in-out",
         position: "relative",
         zIndex: 1,
       }}
     >
       <CardContent
+        onClick={handleClick}
         sx={{
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
           gap: 1,
+          padding: "16px 12px 0px 16px",
         }}
       >
         <CardMedia
@@ -169,13 +163,33 @@ const ProductCard = ({ product }: { product: Product }) => {
         >
           {product.price} {product.currency}
         </Typography>
-        {/* 
-        <Box sx={{ display: "flex", justifyContent: "center", gap: 1 }}>
-          {product.colors.map(color => (
-            <ColorDot key={color.id} color={color.hex} />
-          ))}
-        </Box> */}
       </CardContent>
+      <Box sx={{ display: "flex", justifyContent: "center" }}>
+        <Box
+          className="icons"
+          sx={{
+            display: "flex",
+            gap: 3,
+            padding: 1,
+            opacity: 0,
+            visibility: "hidden",
+            transition: "opacity 0.3s ease-in-out",
+          }}
+        >
+          <FavoriteBorderIcon
+            sx={{ "&:hover": { color: theme.palette.secondary.dark } }}
+            onClick={() => {
+              console.log("clicked")
+            }}
+          />
+          <SearchIcon
+            sx={{ "&:hover": { color: theme.palette.secondary.dark } }}
+            onClick={() => {
+              console.log("clicked search")
+            }}
+          />
+        </Box>
+      </Box>
       {product.inStock && (
         <Box
           sx={{
