@@ -43,7 +43,6 @@ const CategoriesSlice = createSlice({
     },
     setPriceRange: (state, action: PayloadAction<[number, number]>) => {
       state.priceRange = action.payload
-      console.log(state.priceRange, "priceRange")
     },
     filterByPrice: state => {
       const [min, max] = state.priceRange
@@ -58,7 +57,6 @@ const CategoriesSlice = createSlice({
     })
     builder.addCase(getAllBrands.fulfilled, (state, action) => {
       state.brands = action.payload
-      console.log(state.brands, " state brands")
     })
   },
 })

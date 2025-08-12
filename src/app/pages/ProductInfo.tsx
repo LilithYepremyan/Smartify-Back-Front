@@ -25,10 +25,8 @@ const ProductPage = () => {
     if (brand && brand !== "null") dispatch(setSelectedBrand(brand))
   }, [location.search])
 
-  console.log(products, "products")
   const product = products.find(product => Number(product.id) === Number(id))
 
-  console.log(product, "product")
 
   if (!product)
     return <Typography sx={{ mt: 2 }}>{t("productNotFound")}</Typography>

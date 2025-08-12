@@ -3,6 +3,7 @@ import {
   Card,
   CardContent,
   CardMedia,
+  Modal,
   Typography,
   useTheme,
 } from "@mui/material"
@@ -10,7 +11,10 @@ import { useTranslation } from "react-i18next"
 import { useNavigate, useSearchParams } from "react-router-dom"
 import SearchIcon from "@mui/icons-material/Search"
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder"
-import theme from "../theme/theme"
+import { addToFavorites } from "../slices/favoritesSlice"
+import { useAppDispatch, useAppSelector } from "../hooks"
+import { useState } from "react"
+import CloseIcon from "@mui/icons-material/Close"
 
 type ProductParameters = {
   core?: string
@@ -90,15 +94,31 @@ type ProductParameters = {
   connection?: string
 }
 
-type Product = {
+export type Product = {
   id: number
   title: string
+  brand: string
   price: number
   currency: string
+  isFavorite?: boolean
   image: string
   inStock: boolean
   colors: { id: number; color: string; hex: string }[]
   parameters: ProductParameters
+}
+
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 400,
+  bgcolor: "background.paper",
+  boxShadow: 24,
+  borderRadius: 2,
+  pt: 2,
+  px: 4,
+  pb: 3,
 }
 
 const ProductCard = ({ product }: { product: Product }) => {
@@ -106,6 +126,21 @@ const ProductCard = ({ product }: { product: Product }) => {
   const { t } = useTranslation()
   const navigate = useNavigate()
   const [searchParams, setSearchParams] = useSearchParams()
+  const [open, setOpen] = useState(false)
+
+  const favorites = useAppSelector(state => state.favorites.favorites)
+  const brands = useAppSelector(state => state.categories.brands)
+
+  const isFavorite = favorites.find(item => item.id === product.id)
+  const brandLogo = brands.find(item => item.name === product.brand)
+
+  const dispatch = useAppDispatch()
+
+  const handleOpen = () => setOpen(true)
+
+  const handleClose = () => {
+    setOpen(false)
+  }
 
   const handleClick = () => {
     const category = searchParams.get("category")
@@ -177,17 +212,57 @@ const ProductCard = ({ product }: { product: Product }) => {
           }}
         >
           <FavoriteBorderIcon
-            sx={{ "&:hover": { color: theme.palette.secondary.dark } }}
+            sx={{
+              "&:hover": { color: theme.palette.secondary.dark },
+              color: isFavorite
+                ? theme.palette.secondary.dark
+                : theme.palette.primary.main,
+            }}
             onClick={() => {
-              console.log("clicked")
+              !isFavorite && dispatch(addToFavorites(product))
             }}
           />
           <SearchIcon
             sx={{ "&:hover": { color: theme.palette.secondary.dark } }}
             onClick={() => {
-              console.log("clicked search")
+              handleOpen(product.id)
             }}
           />
+          <Modal open={open} onClose={handleClose}>
+            <Box sx={{ ...style, width: "800px", height: "500px" }}>
+              <CloseIcon
+                sx={{
+                  cursor: "pointer",
+                  position: "absolute",
+                  top: 15,
+                  right: 15,
+                }}
+                onClick={handleClose}
+              />
+              <Box sx={{ width: "100%", display: "flex", gap: 2, padding: 2 }}>
+                <img
+                  src={product.image}
+                  alt={product.title}
+                  style={{ width: "40%" }}
+                />
+                <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+                  <Typography sx={{ fontWeight: 600, fontSize: "22px" }}>
+                    {product.title}
+                  </Typography>
+                  <img style={{ width: "100px" }} src={brandLogo?.icon}></img>
+
+                  <Typography
+                    sx={{
+                      color: theme.palette.secondary.dark,
+                      fontSize: "18px",
+                    }}
+                  >
+                    {product.price} {product.currency}
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
+          </Modal>
         </Box>
       </Box>
       {product.inStock && (

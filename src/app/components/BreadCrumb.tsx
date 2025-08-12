@@ -21,13 +21,11 @@ export default function Breadcrumb({ product }) {
     brand?: boolean
     color?: boolean
   }) => {
-    console.log(include, "include")
     const params = new URLSearchParams()
 
     if (include.category && category  && category !=="null") params.set("category", category)
     if (include.brand && brand && brand !=="null") params.set("brand", brand)
     if (include.color && selectedColor ) params.set("color", selectedColor)
-    console.log(params, "params")
     return params.toString()
   }
 

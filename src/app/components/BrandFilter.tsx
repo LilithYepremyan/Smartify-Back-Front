@@ -65,7 +65,6 @@ export default function BrandFilter({
               <ListItemButton
                 selected={isSelected}
                 onClick={() => {
-                  console.log(name, "name1212")
                   dispatch(setSelectedBrand(name))
                   onBrandClick(name)
                 }}

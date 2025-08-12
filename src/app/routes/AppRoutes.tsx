@@ -4,6 +4,7 @@ import About from "../pages/About"
 import Contact from "../pages/Contact"
 import Layout from "../../layout"
 import ProductInfo from "../pages/ProductInfo"
+import Favorites from "../pages/Favorites"
 
 export default function AppRoutes() {
   return (
@@ -13,6 +14,7 @@ export default function AppRoutes() {
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="product/:id" element={<ProductInfo />} />
+        <Route path="favorites" element={<Favorites />} />
 
         {/* <Route path="*" element={<NotFound/>} /> */}
       </Route>

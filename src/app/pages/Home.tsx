@@ -1,6 +1,12 @@
 import CategorySelect from "../components/CategorySelect"
 import ColorFilter from "../components/ColorFilter"
-import { Box, CircularProgress, Pagination, Typography } from "@mui/material"
+import {
+  Badge,
+  Box,
+  CircularProgress,
+  Pagination,
+  Typography,
+} from "@mui/material"
 import { useEffect, useMemo, useState } from "react"
 import { useAppDispatch, useAppSelector } from "../hooks"
 import { getAllProducts } from "../slices/productsSlice"
@@ -18,6 +24,7 @@ import { useNavigate, useSearchParams } from "react-router-dom"
 import BrandFilter from "../components/BrandFilter"
 import RangeSlider from "../components/RangeSlider"
 import SearchInput from "../components/SearchInput"
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder"
 
 export default function Home() {
   const { t } = useTranslation()
@@ -30,6 +37,10 @@ export default function Home() {
   const selectedColor = useAppSelector(state => state.categories.selectedColor)
   const loading = useAppSelector(state => state.products.loading)
   const priceRange = useAppSelector(state => state.categories.priceRange)
+
+  const favoritesCount = useAppSelector(
+    state => state.favorites.favorites.length,
+  )
 
   const dispatch = useAppDispatch()
   const navigate = useNavigate()
@@ -197,15 +208,7 @@ export default function Home() {
           boxShadow: 2,
         }}
       >
-        <Box
-          sx={{
-            width: "100%",
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: { xs: "center", md: "space-between" },
-            gap: { xs: 1, md: 4 },
-          }}
-        >
+        <Box sx={{ width: "100%" }}>
           {loading ? (
             <CircularProgress />
           ) : filteredProducts.length === 0 ? (
@@ -217,11 +220,42 @@ export default function Home() {
             </Typography>
           ) : (
             <>
-              <SearchInput />
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  width: "100%",
+                  alignItems: "center",
+                  gap: 2,
+                }}
+              >
+                <SearchInput />
+                <Badge
+                  badgeContent={favoritesCount}
+                  color="primary"
+                  sx={{ "&:hover": { opacity: 0.8 } }}
+                  onClick={() => navigate("/favorites")}
+                >
+                  <FavoriteBorderIcon
+                    sx={{ fontSize: 32, cursor: "pointer" }}
+                  />
+                </Badge>
+              </Box>
 
-              {paginatedProducts.map(product => (
-                <ProductCard key={product.id} product={product} />
-              ))}
+              <Box
+                sx={{
+                  width: "100%",
+                  display: "flex",
+                  flexWrap: "wrap",
+                  justifyContent: { xs: "center", md: "space-between" },
+                  gap: { xs: 1, md: 4 },
+                  mt: 2,
+                }}
+              >
+                {paginatedProducts.map(product => (
+                  <ProductCard key={product.id} product={product} />
+                ))}
+              </Box>
             </>
           )}
         </Box>
