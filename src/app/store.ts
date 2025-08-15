@@ -10,7 +10,6 @@ const rootReducer = combineSlices({
   products: productsReducer,
   favorites: favoritesReducer,
 })
-export type RootState = ReturnType<typeof rootReducer>
 
 export const makeStore = () => {
   const store = configureStore({
@@ -23,6 +22,7 @@ export const makeStore = () => {
 
 export const store = makeStore()
 
+export type RootState = ReturnType<typeof store.getState>
 export type AppStore = typeof store
 export type AppDispatch = AppStore["dispatch"]
 export type AppThunk<ThunkReturnType = void> = ThunkAction<

@@ -17,6 +17,18 @@ type Props = {
   onBrandClick: (categoryName: string, brand: string, color: string) => void
 }
 
+ export type Category = {
+  id: string
+  name: string
+  brands: Brand[]
+}
+
+ export type Brand = {
+  id: number
+  name: string
+  icon: string
+}
+
 const CategorySelect = ({ onBrandClick }: Props) => {
   const dispatch = useAppDispatch()
   const { t } = useTranslation()
@@ -27,6 +39,7 @@ const CategorySelect = ({ onBrandClick }: Props) => {
   )
 
   const selectedColor = useAppSelector(state => state.categories.selectedColor)
+
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
   const [open, setOpen] = useState(false)
@@ -39,7 +52,7 @@ const CategorySelect = ({ onBrandClick }: Props) => {
 
   const handleCategoryEnter = (
     event: React.MouseEvent<HTMLElement>,
-    category: any,
+    category: string,
   ) => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current)
     setAnchorEl(event.currentTarget)
@@ -76,11 +89,6 @@ const CategorySelect = ({ onBrandClick }: Props) => {
     }, 200)
   }
 
-  // const handleBrandClick = (category: string, brand: string, color: string) => {
-  //   dispatch(setSelectedCategory(category))
-  //   onBrandClick(category, brand, color)
-  // }
-
   return (
     <Box display="flex" flexDirection="column" gap={1}>
       <Box
@@ -108,7 +116,7 @@ const CategorySelect = ({ onBrandClick }: Props) => {
       {showAllCategories && (
         <Paper>
           <List>
-            {categories.map(category => (
+            {categories.map((category: Category) => (
               <ListItemButton
                 key={category.name}
                 onMouseEnter={e => handleCategoryEnter(e, category)}
@@ -152,7 +160,7 @@ const CategorySelect = ({ onBrandClick }: Props) => {
         {selectedCategory?.brands?.length > 0 && (
           <Paper sx={{ mt: 0.5, p: 1, width: 200 }}>
             <List>
-              {selectedCategory.brands.map((brand: any) => (
+              {selectedCategory.brands.map((brand: Brand) => (
                 <ListItemButton
                   onClick={() => {
                     handleBrandClick(

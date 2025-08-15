@@ -5,6 +5,8 @@ import { useEffect, useState } from "react"
 import { getAllCategories, setSelectedCategory } from "../slices/categorySlice"
 import { AccordionDetails, AccordionSummary, Typography } from "@mui/material"
 import { useTranslation } from "react-i18next"
+import type { Brand, Category } from "./CategorySelect"
+import theme from "../theme/theme"
 
 type Props = {
   onBrandClick: (categoryName: string, brand: string, color: string) => void
@@ -12,9 +14,7 @@ type Props = {
 export default function CategoryAccordion({ onBrandClick }: Props) {
   const dispatch = useAppDispatch()
   const categories = useAppSelector(state => state.categories.categories)
-  const selectedCategory = useAppSelector(
-    state => state.categories.selectedCategory,
-  )
+
 
   const [open, setOpen] = useState(false)
   const { t } = useTranslation()
@@ -37,12 +37,12 @@ export default function CategoryAccordion({ onBrandClick }: Props) {
           padding: "8px ",
           borderRadius: "4px",
           fontSize: { xs: 13, sm: 14, md: 16, lg: 18, xl: 20 },
-          border: "1px solid #1976d2",
+          border: `1px solid ${theme.palette.primary.main}`,
           fontWeight: 500,
           textAlign: "center",
           transition: "background-color 0.3s ease",
           "&:hover": {
-            border: "1px solid #1565c0",
+            border: `1px solid ${theme.palette.secondary.dark}`,
           },
         }}
         gutterBottom
@@ -51,7 +51,7 @@ export default function CategoryAccordion({ onBrandClick }: Props) {
       </Typography>
 
       {open &&
-        categories.map((category: any) => (
+        categories.map((category: Category) => (
           <Accordion key={category.name}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
@@ -69,7 +69,7 @@ export default function CategoryAccordion({ onBrandClick }: Props) {
                 {category.name}
               </Typography>
             </AccordionSummary>
-            {category.brands && category.brands.length > 0 && (
+            {category.brands.length > 0 && (
               <AccordionDetails
                 sx={{
                   display: "flex",
@@ -80,7 +80,7 @@ export default function CategoryAccordion({ onBrandClick }: Props) {
                   padding: 0,
                 }}
               >
-                {category.brands.map((brand: any) => (
+                {category.brands.map((brand: Brand) => (
                   <Typography
                     sx={{
                       minWidth: 80,
@@ -92,9 +92,9 @@ export default function CategoryAccordion({ onBrandClick }: Props) {
                     }}
                     key={brand.name}
                     component="span"
-                    onClick={() =>
+                    onClick={() => {
                       onBrandClick(category.name, brand.name, brand.color)
-                    }
+                    }}
                   >
                     {brand.name}
                   </Typography>

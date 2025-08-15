@@ -32,7 +32,7 @@ const LanguageSwitcher = () => {
     >
       <PublicIcon sx={{ mr: 1 }} />
       <Select
-        value={lang}
+        value={lang || "en"}
         onChange={handleChange}
         variant="standard"
         disableUnderline

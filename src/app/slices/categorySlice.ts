@@ -1,20 +1,20 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
+import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit"
+import type { Brand, Category } from "../components/CategorySelect"
+import axios from "axios"
 
 export const getAllCategories = createAsyncThunk(
   "category/getAllCategories",
   async () => {
-    const response = await fetch("http://localhost:3004/categories")
-    const data = await response.json()
-    return data
+    const response = await axios.get("http://localhost:3004/categories")
+    return response.data
   },
 )
 
 export const getAllBrands = createAsyncThunk(
   "category/getAllBrands",
   async () => {
-    const response = await fetch("http://localhost:3004/brands")
-    const data = await response.json()
-    return data
+    const response = await axios.get("http://localhost:3004/brands")
+    return response.data
   },
 )
 
@@ -29,13 +29,13 @@ const CategoriesSlice = createSlice({
     selectedColor: null,
   },
   reducers: {
-    setSelectedCategory: (state, action) => {
+    setSelectedCategory: (state, action: PayloadAction<Category>) => {
       state.selectedCategory = action.payload
     },
-    setSelectedBrand: (state, action) => {
+    setSelectedBrand: (state, action: PayloadAction<Brand>) => {
       state.selectedBrand = action.payload
     },
-    setSelectedColor: (state, action) => {
+    setSelectedColor: (state, action: PayloadAction<string>) => {
       state.selectedColor = action.payload
     },
     resetBrand: state => {
@@ -52,12 +52,18 @@ const CategoriesSlice = createSlice({
     },
   },
   extraReducers: builder => {
-    builder.addCase(getAllCategories.fulfilled, (state, action) => {
-      state.categories = action.payload
-    })
-    builder.addCase(getAllBrands.fulfilled, (state, action) => {
-      state.brands = action.payload
-    })
+    builder.addCase(
+      getAllCategories.fulfilled,
+      (state, action: PayloadAction<Category[]>) => {
+        state.categories = action.payload
+      },
+    )
+    builder.addCase(
+      getAllBrands.fulfilled,
+      (state, action: PayloadAction<Brand[]>) => {
+        state.brands = action.payload
+      },
+    )
   },
 })
 

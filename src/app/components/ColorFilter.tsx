@@ -59,7 +59,6 @@ export default function ColorFilter({
               disablePadding
               secondaryAction={
                 <Badge
-                  // badgeContent={55}
                   color={isSelected ? "primary" : "default"}
                 />
               }

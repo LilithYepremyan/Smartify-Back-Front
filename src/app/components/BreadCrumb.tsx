@@ -2,14 +2,19 @@ import { Breadcrumbs, Typography, Link } from "@mui/material"
 import { useAppSelector } from "../hooks"
 import { useTheme } from "@mui/material/styles"
 import { Link as RouterLink } from "react-router-dom"
+import type { Product } from "./ProductCard"
 
-export default function Breadcrumb({ product }) {
+export default function Breadcrumb({ product }: { product: Product }) {
   const theme = useTheme()
   const selectedCategory = useAppSelector(
     state => state.categories.selectedCategory,
-  )
-  const selectedBrand = useAppSelector(state => state.categories.selectedBrand)
-  const selectedColor = useAppSelector(state => state.categories.selectedColor)
+  ) as string
+  const selectedBrand = useAppSelector(
+    state => state.categories.selectedBrand,
+  ) as string
+  const selectedColor = useAppSelector(
+    state => state.categories.selectedColor,
+  ) as string
 
   if (!product) return null
 
@@ -23,9 +28,10 @@ export default function Breadcrumb({ product }) {
   }) => {
     const params = new URLSearchParams()
 
-    if (include.category && category  && category !=="null") params.set("category", category)
-    if (include.brand && brand && brand !=="null") params.set("brand", brand)
-    if (include.color && selectedColor ) params.set("color", selectedColor)
+    if (include.category && category && category !== "null")
+      params.set("category", category)
+    if (include.brand && brand && brand !== "null") params.set("brand", brand)
+    if (include.color && selectedColor) params.set("color", selectedColor)
     return params.toString()
   }
 

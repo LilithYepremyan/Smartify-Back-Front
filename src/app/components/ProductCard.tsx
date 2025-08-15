@@ -136,7 +136,7 @@ const ProductCard = ({ product }: { product: Product }) => {
 
   const dispatch = useAppDispatch()
 
-  const handleOpen = () => setOpen(true)
+  const handleOpen = () => {setOpen(true)}
 
   const handleClose = () => {
     setOpen(false)
@@ -225,7 +225,7 @@ const ProductCard = ({ product }: { product: Product }) => {
           <SearchIcon
             sx={{ "&:hover": { color: theme.palette.secondary.dark } }}
             onClick={() => {
-              handleOpen(product.id)
+              handleOpen()
             }}
           />
           <Modal open={open} onClose={handleClose}>

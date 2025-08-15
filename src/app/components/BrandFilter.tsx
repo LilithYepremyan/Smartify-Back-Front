@@ -15,11 +15,11 @@ import CloseIcon from "@mui/icons-material/Close"
 import { useTranslation } from "react-i18next"
 import { setSelectedBrand } from "../slices/categorySlice"
 
-export default function BrandFilter({
-  onBrandClick,
-}: {
+type BrandFilterProps = {
   onBrandClick: (brand: string) => void
-}) {
+}
+
+export default function BrandFilter({ onBrandClick }: BrandFilterProps) {
   const dispatch = useAppDispatch()
 
   const { t } = useTranslation()
@@ -47,7 +47,7 @@ export default function BrandFilter({
         {t("brands")}
       </Typography>
       <List sx={{ maxHeight: 300, overflow: "auto" }}>
-        {brands.map(({ name, icon }) => {
+        {brands.map(({ name, icon }: { name: string; icon: string }) => {
           const isSelected = name === selectedBrand
 
           return (

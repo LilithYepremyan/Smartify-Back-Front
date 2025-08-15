@@ -11,14 +11,12 @@ import DeleteIcon from "@mui/icons-material/Delete"
 import theme from "../theme/theme"
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart"
 import { removeFromFavorites } from "../slices/favoritesSlice"
-import { useAppDispatch, useAppSelector } from "../hooks"
+import { useAppDispatch } from "../hooks"
 
 const FavoriteCard = ({ favorite }: { favorite: Product }) => {
   const dispatch = useAppDispatch()
-  const brands = useAppSelector(state => state.categories.brands)
 
-
-  const handleDeleteFavorite = id => {
+  const handleDeleteFavorite = (id: string) => {
     dispatch(removeFromFavorites(id))
   }
 

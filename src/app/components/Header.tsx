@@ -17,8 +17,9 @@ import { Link as RouterLink } from "react-router-dom"
 import logo from "../assets/logo-spotify.png"
 import LanguageSwitcher from "./LanguageSwitcher"
 import { useTranslation } from "react-i18next"
+import theme from "../theme/theme"
 
-interface Props {
+type Props = {
   window?: () => Window
 }
 
@@ -40,9 +41,8 @@ export default function Header(props: Props) {
 
   const drawer = (
     <Box
-
       onClick={handleDrawerToggle}
-      sx={{ textAlign: "center", color: "white"}}
+      sx={{ textAlign: "center", color: "white" }}
     >
       <Typography variant="h6" sx={{ my: 2 }}>
         Smartify
@@ -72,7 +72,7 @@ export default function Header(props: Props) {
   return (
     <Box sx={{ display: "flex", justifyContent: "center" }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{ backgroundColor: "#252b33" }}>
+      <AppBar component="nav" sx={{ backgroundColor: theme.palette.primary.main }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -117,7 +117,6 @@ export default function Header(props: Props) {
               </Button>
             ))}
           </Box>
-          {/* {mobileOpen && <LanguageSwitcher />} */}
           {!mobileOpen && <LanguageSwitcher />}
         </Toolbar>
       </AppBar>
@@ -135,7 +134,7 @@ export default function Header(props: Props) {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
-              backgroundColor: "#252b33",
+              backgroundColor: theme.palette.primary.main,
               alignItems: "center",
             },
           }}

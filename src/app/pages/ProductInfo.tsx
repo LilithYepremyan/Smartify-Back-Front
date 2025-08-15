@@ -7,6 +7,7 @@ import theme from "../theme/theme"
 import Breadcrumb from "../components/BreadCrumb"
 import { useEffect } from "react"
 import { setSelectedBrand, setSelectedCategory } from "../slices/categorySlice"
+import type { Product } from "../components/ProductCard"
 
 const ProductPage = () => {
   const { id } = useParams()
@@ -23,9 +24,9 @@ const ProductPage = () => {
 
     if (category && category !== "null") dispatch(setSelectedCategory(category))
     if (brand && brand !== "null") dispatch(setSelectedBrand(brand))
-  }, [location.search])
+  }, [location.search, dispatch])
 
-  const product = products.find(product => Number(product.id) === Number(id))
+  const product: Product = products.find(product => Number(product.id) === Number(id))
 
 
   if (!product)

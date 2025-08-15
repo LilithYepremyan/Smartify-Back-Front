@@ -13,7 +13,7 @@ const Footer = () => {
         py: 3,
         px: 2,
         mt: "auto",
-        backgroundColor: "#252b33",
+        backgroundColor: theme.palette.primary.main,
       }}
     >
       <Container  sx={{ color: "white" }}>
