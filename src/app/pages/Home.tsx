@@ -18,13 +18,10 @@ import {
 } from "../slices/categorySlice"
 import { useTranslation } from "react-i18next"
 import ProductCard from "../components/ProductCard"
-import useIsMobile from "../hooks/useIsMobile"
-import CategoryAccordion from "../components/CategoryAccordion"
 import { useNavigate, useSearchParams } from "react-router-dom"
-import BrandFilter from "../components/BrandFilter"
-import RangeSlider from "../components/RangeSlider"
 import SearchInput from "../components/SearchInput"
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder"
+import SideBar from "../components/SideBar"
 
 export default function Home() {
   const { t } = useTranslation()
@@ -51,30 +48,6 @@ export default function Home() {
   useEffect(() => {
     setCurrentPage(1)
   }, [searchQuery])
-
-  const showProductList = (
-    categoryName: string,
-    brandName: string,
-    color: string,
-  ) => {
-    const params = new URLSearchParams()
-
-    if (categoryName) {
-      dispatch(setSelectedCategory(categoryName))
-      params.set("category", categoryName)
-    }
-    if (brandName) {
-      dispatch(setSelectedBrand(brandName))
-      params.set("brand", brandName)
-    }
-    if (color) {
-      dispatch(setSelectedColor(color))
-      params.set("color", color)
-    }
-    navigate({ search: params.toString() })
-  }
-
-  const isMobile = useIsMobile()
 
   useEffect(() => {
     dispatch(getAllProducts())
@@ -153,49 +126,7 @@ export default function Home() {
         my: { xs: 2, md: 4 },
       }}
     >
-      <Box
-        sx={{
-          minHeight: "100vh",
-          width: "30%",
-          display: "flex",
-          flexDirection: "column",
-          gap: { xs: 1, md: 2 },
-          p: { xs: 1, md: 2 },
-          borderRadius: 2,
-          boxShadow: 1,
-        }}
-      >
-        {!isMobile ? (
-          <CategorySelect
-            onBrandClick={(
-              categoryName: string,
-              brandName: string,
-              color: string,
-            ) => showProductList(categoryName, brandName, color)}
-          />
-        ) : (
-          <CategoryAccordion
-            onBrandClick={(
-              categoryName: string,
-              brandName: string,
-              color: string,
-            ) => showProductList(categoryName, brandName, color)}
-          />
-        )}
-
-        <ColorFilter
-          onColorClick={(colorName: string) => {
-            showProductList(selectedCategory, selectedBrand, colorName)
-          }}
-        />
-        <BrandFilter
-          onBrandClick={(brandName: string) => {
-            showProductList(selectedCategory, brandName, selectedColor)
-          }}
-        />
-        <RangeSlider />
-      </Box>
-
+      <SideBar />
       <Box
         sx={{
           display: "flex",
