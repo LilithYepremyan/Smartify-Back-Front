@@ -1,27 +1,32 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 import axios from "axios"
+import type { Product } from "../components/ProductCard"
 
-export const getAllProducts = createAsyncThunk(
+export const getAllProducts = createAsyncThunk<Product[]>(
   "product/getAllProducts",
   async () => {
-    const response = await axios.get("http://localhost:3004/products")
+    const response = await axios.get<Product[]>(
+      "http://localhost:3004/products",
+    )
     return response.data
   },
 )
 
-interface initialState {
-  products: []
+type ProductState = {
+  products: Product[]
   loading: boolean
   error: string | null
 }
 
-const ProductsSlice: initialState = createSlice({
+const initialState: ProductState = {
+  products: [],
+  loading: false,
+  error: null,
+}
+
+const ProductsSlice = createSlice({
   name: "product",
-  initialState: {
-    products: [],
-    loading: false,
-    error: null,
-  },
+  initialState,
   reducers: {},
   extraReducers: builder => {
     builder.addCase(getAllProducts.pending, state => {
@@ -33,7 +38,7 @@ const ProductsSlice: initialState = createSlice({
     })
     builder.addCase(getAllProducts.rejected, (state, action) => {
       state.loading = false
-      state.error = action.error.message
+      state.error = action.error.message ?? "Failed to load products"
     })
   },
 })

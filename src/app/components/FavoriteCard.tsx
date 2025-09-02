@@ -20,6 +20,10 @@ const FavoriteCard = ({ favorite }: { favorite: Product }) => {
     dispatch(removeFromFavorites(id))
   }
 
+  const handleBuyFavorite = () => {
+    alert("Are you sure you want to buy this product?")
+  }
+
   return (
     <Card>
       <CardContent sx={{ display: "flex" }}>
@@ -66,6 +70,7 @@ const FavoriteCard = ({ favorite }: { favorite: Product }) => {
                 },
               }}
               startIcon={<ShoppingCartIcon />}
+              onClick={() => handleBuyFavorite(favorite.id)}
             >
               Buy
             </Button>

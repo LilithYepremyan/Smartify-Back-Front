@@ -27,7 +27,7 @@ export default function BrandFilter({ onBrandClick }: BrandFilterProps) {
   const selectedBrand = useAppSelector(state => state.categories.selectedBrand)
   const brands = useAppSelector(state => state.categories.brands)
 
-  function countProductsByBrand(brand: string) {
+  function countProductsByBrand(brand: string): number {
     return products.filter(product => product.brand === brand).length
   }
 

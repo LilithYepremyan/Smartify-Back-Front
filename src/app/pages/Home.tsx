@@ -1,5 +1,3 @@
-import CategorySelect from "../components/CategorySelect"
-import ColorFilter from "../components/ColorFilter"
 import {
   Badge,
   Box,

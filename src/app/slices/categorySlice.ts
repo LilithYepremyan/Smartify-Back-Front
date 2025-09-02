@@ -1,8 +1,9 @@
-import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit"
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
+import type { PayloadAction } from "@reduxjs/toolkit"
 import type { Brand, Category } from "../components/CategorySelect"
 import axios from "axios"
 
-export const getAllCategories = createAsyncThunk(
+export const getAllCategories = createAsyncThunk<Category[]>(
   "category/getAllCategories",
   async () => {
     const response = await axios.get("http://localhost:3004/categories")
@@ -10,7 +11,7 @@ export const getAllCategories = createAsyncThunk(
   },
 )
 
-export const getAllBrands = createAsyncThunk(
+export const getAllBrands = createAsyncThunk<Brand[]>(
   "category/getAllBrands",
   async () => {
     const response = await axios.get("http://localhost:3004/brands")
@@ -24,9 +25,9 @@ const CategoriesSlice = createSlice({
     categories: [],
     brands: [],
     priceRange: [50000, 1000000],
-    selectedCategory: null,
-    selectedBrand: null,
-    selectedColor: null,
+    selectedCategory: "",
+    selectedBrand: "",
+    selectedColor: "",
   },
   reducers: {
     setSelectedCategory: (state, action: PayloadAction<Category>) => {
