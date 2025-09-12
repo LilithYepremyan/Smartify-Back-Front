@@ -17,13 +17,13 @@ type Props = {
   onBrandClick: (categoryName: string, brand: string, color: string) => void
 }
 
- export type Category = {
+export type Category = {
   id: string
   name: string
   brands: Brand[]
 }
 
- export type Brand = {
+export type Brand = {
   id: number
   name: string
   icon: string
@@ -40,14 +40,15 @@ const CategorySelect = ({ onBrandClick }: Props) => {
 
   const selectedColor = useAppSelector(state => state.categories.selectedColor)
 
-
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
   const [open, setOpen] = useState(false)
   const timeoutRef = useRef<NodeJS.Timeout | null>(null)
   const [showAllCategories, setShowAllCategories] = useState(false)
 
   useEffect(() => {
-    dispatch(getAllCategories())
+    dispatch(getAllCategories()).catch((error: unknown) => {
+      console.log(error)
+    })
   }, [dispatch])
 
   const handleCategoryEnter = (

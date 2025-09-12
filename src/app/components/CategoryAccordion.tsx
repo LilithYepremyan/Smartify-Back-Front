@@ -15,7 +15,6 @@ export default function CategoryAccordion({ onBrandClick }: Props) {
   const dispatch = useAppDispatch()
   const categories = useAppSelector(state => state.categories.categories)
 
-
   const [open, setOpen] = useState(false)
   const { t } = useTranslation()
 
@@ -33,6 +32,7 @@ export default function CategoryAccordion({ onBrandClick }: Props) {
         onClick={handleClick}
         sx={{
           cursor: "pointer",
+          width: "100%",
           display: "inline-block",
           padding: "8px ",
           borderRadius: "4px",
@@ -73,6 +73,7 @@ export default function CategoryAccordion({ onBrandClick }: Props) {
               <AccordionDetails
                 sx={{
                   display: "flex",
+                  flexDirection: "column",  
                   flexWrap: "wrap",
                   justifyContent: "center",
                   gap: 0.5,
