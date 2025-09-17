@@ -14,6 +14,7 @@ type Props = {
 export default function CategoryAccordion({ onBrandClick }: Props) {
   const dispatch = useAppDispatch()
   const categories = useAppSelector(state => state.categories.categories)
+  const selectedColor = useAppSelector(state => state.categories.selectedColor)
 
   const [open, setOpen] = useState(false)
   const { t } = useTranslation()
@@ -23,7 +24,9 @@ export default function CategoryAccordion({ onBrandClick }: Props) {
   }
 
   useEffect(() => {
-    dispatch(getAllCategories())
+    dispatch(getAllCategories()).catch((error: unknown) => {
+      console.log(error)
+    })
   }, [dispatch])
 
   return (
@@ -73,7 +76,7 @@ export default function CategoryAccordion({ onBrandClick }: Props) {
               <AccordionDetails
                 sx={{
                   display: "flex",
-                  flexDirection: "column",  
+                  flexDirection: "column",
                   flexWrap: "wrap",
                   justifyContent: "center",
                   gap: 0.5,
@@ -94,7 +97,7 @@ export default function CategoryAccordion({ onBrandClick }: Props) {
                     key={brand.name}
                     component="span"
                     onClick={() => {
-                      onBrandClick(category.name, brand.name, brand.color)
+                      onBrandClick(category.name, brand.name, selectedColor)
                     }}
                   >
                     {brand.name}

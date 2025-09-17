@@ -58,7 +58,7 @@ export default function Home() {
     const noParams = !categoryFromURL && !brandFromURL && !colorFromURL
 
     if (noParams) {
-      dispatch(setSelectedCategory(""))
+      dispatch(setSelectedCategory(null))
       dispatch(setSelectedBrand(""))
       dispatch(setSelectedColor(""))
       return
@@ -67,7 +67,7 @@ export default function Home() {
     if (categoryFromURL) dispatch(setSelectedCategory(categoryFromURL))
     if (brandFromURL) dispatch(setSelectedBrand(brandFromURL))
     if (colorFromURL) dispatch(setSelectedColor(colorFromURL))
-  }, [dispatch, searchParams])
+  }, [dispatch])
 
   const filteredProducts = useMemo(() => {
     return products.filter(product => {
@@ -163,7 +163,7 @@ export default function Home() {
                   badgeContent={favoritesCount}
                   color="primary"
                   sx={{ "&:hover": { opacity: 0.8 } }}
-                  onClick={() => navigate("/favorites")}
+                  onClick={() => { navigate("/favorites"); }}
                 >
                   <FavoriteBorderIcon
                     sx={{ fontSize: 32, cursor: "pointer" }}

@@ -53,7 +53,7 @@ const CategorySelect = ({ onBrandClick }: Props) => {
 
   const handleCategoryEnter = (
     event: React.MouseEvent<HTMLElement>,
-    category: string,
+    category: Category,
   ) => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current)
     setAnchorEl(event.currentTarget)
@@ -120,7 +120,7 @@ const CategorySelect = ({ onBrandClick }: Props) => {
             {categories.map((category: Category) => (
               <ListItemButton
                 key={category.name}
-                onMouseEnter={e => handleCategoryEnter(e, category)}
+                onMouseEnter={e => { handleCategoryEnter(e, category); }}
                 onMouseLeave={handleLeave}
                 sx={{
                   display: "flex",
@@ -164,6 +164,7 @@ const CategorySelect = ({ onBrandClick }: Props) => {
               {selectedCategory.brands.map((brand: Brand) => (
                 <ListItemButton
                   onClick={() => {
+                    console.log(1212000000000000)
                     handleBrandClick(
                       dispatch,
                       selectedCategory.name,

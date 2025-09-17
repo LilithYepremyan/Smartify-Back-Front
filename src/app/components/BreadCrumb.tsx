@@ -8,15 +8,9 @@ export default function Breadcrumb({ product }: { product: Product }) {
   const theme = useTheme()
   const selectedCategory = useAppSelector(
     state => state.categories.selectedCategory,
-  ) as string
-  const selectedBrand = useAppSelector(
-    state => state.categories.selectedBrand,
-  ) as string
-  const selectedColor = useAppSelector(
-    state => state.categories.selectedColor,
-  ) as string
-
-  if (!product) return null
+  )
+  const selectedBrand = useAppSelector(state => state.categories.selectedBrand)
+  const selectedColor = useAppSelector(state => state.categories.selectedColor)
 
   const category = selectedCategory || product.category
   const brand = selectedBrand || product.brand
@@ -28,15 +22,14 @@ export default function Breadcrumb({ product }: { product: Product }) {
   }) => {
     const params = new URLSearchParams()
 
-    if (include.category && category && category !== "null")
-      params.set("category", category)
-    if (include.brand && brand && brand !== "null") params.set("brand", brand)
+    if (include.category && category  ) params.set("category", category as string)
+    if (include.brand && brand) params.set("brand", brand)
     if (include.color && selectedColor) params.set("color", selectedColor)
     return params.toString()
   }
 
   return (
-    <Breadcrumbs sx={{ mt: 2 }} aria-label="breadcrumb" separator=">">
+    <Breadcrumbs sx={{ mt: 2 }} aria-label="breadcrumb" separator="›">
       <Link
         component={RouterLink}
         underline="hover"
@@ -55,7 +48,7 @@ export default function Breadcrumb({ product }: { product: Product }) {
           to={`/?${getSearchParams({ category: true })}`}
           sx={{ cursor: "pointer" }}
         >
-          {category}
+          {category as string}
         </Link>
       )}
 

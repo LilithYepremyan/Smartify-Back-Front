@@ -2,11 +2,14 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 import type { PayloadAction } from "@reduxjs/toolkit"
 import type { Brand, Category } from "../components/CategorySelect"
 import axios from "axios"
+import type { Product } from "../components/ProductCard"
 
 export const getAllCategories = createAsyncThunk<Category[]>(
   "category/getAllCategories",
   async () => {
-    const response = await axios.get("http://localhost:3004/categories")
+    const response = await axios.get<Category[]>(
+      "http://localhost:3004/categories",
+    )
     return response.data
   },
 )
@@ -14,7 +17,7 @@ export const getAllCategories = createAsyncThunk<Category[]>(
 export const getAllBrands = createAsyncThunk<Brand[]>(
   "category/getAllBrands",
   async () => {
-    const response = await axios.get("http://localhost:3004/brands")
+    const response = await axios.get<Brand[]>("http://localhost:3004/brands")
     return response.data
   },
 )
@@ -22,18 +25,20 @@ export const getAllBrands = createAsyncThunk<Brand[]>(
 const CategoriesSlice = createSlice({
   name: "category",
   initialState: {
-    categories: [],
-    brands: [],
+    categories: [] as Category[],
+    brands: [] as Brand[],
     priceRange: [50000, 1000000],
-    selectedCategory: "",
-    selectedBrand: "",
+    selectedCategory: "" as Category | "" | null,
+    selectedBrand: null as string | null,
     selectedColor: "",
+    filteredProducts: [] as Product[],
+    products: [] as Product[],
   },
   reducers: {
-    setSelectedCategory: (state, action: PayloadAction<Category>) => {
+    setSelectedCategory: (state, action: PayloadAction<Category | null>) => {
       state.selectedCategory = action.payload
     },
-    setSelectedBrand: (state, action: PayloadAction<Brand>) => {
+    setSelectedBrand: (state, action: PayloadAction<string | null>) => {
       state.selectedBrand = action.payload
     },
     setSelectedColor: (state, action: PayloadAction<string>) => {

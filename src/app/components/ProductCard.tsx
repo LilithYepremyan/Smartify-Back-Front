@@ -105,6 +105,7 @@ export type Product = {
   inStock: boolean
   colors: { id: number; color: string; hex: string }[]
   parameters: ProductParameters
+  category: string
 }
 
 const style = {
