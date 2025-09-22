@@ -8,6 +8,7 @@ import Breadcrumb from "../components/BreadCrumb"
 import { useEffect } from "react"
 import { setSelectedBrand, setSelectedCategory } from "../slices/categorySlice"
 import type { Product } from "../components/ProductCard"
+import { Height, OpenInFull, WidthNormal } from "@mui/icons-material"
 
 const ProductPage = () => {
   const { id } = useParams()
@@ -26,8 +27,9 @@ const ProductPage = () => {
     if (brand && brand !== "null") dispatch(setSelectedBrand(brand))
   }, [location.search, dispatch])
 
-  const product: Product = products.find(product => Number(product.id) === Number(id))
-
+  const product: Product = products.find(
+    product => Number(product.id) === Number(id),
+  )
 
   if (!product)
     return <Typography sx={{ mt: 2 }}>{t("productNotFound")}</Typography>
@@ -115,7 +117,30 @@ const ProductPage = () => {
               <Typography variant="body1" sx={{ fontWeight: "bold" }}>
                 {key.toUpperCase()}
               </Typography>
-              <Box maxWidth={400}>{value}</Box>
+              <Box
+                maxWidth={400}
+                sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}
+              >
+                {typeof value === "object" &&
+                !Array.isArray(value) &&
+                value !== null
+                  ? Object.entries(value).map(([key, value]) => (
+                      <Chip
+                        key={key}
+                        label={value}
+                        icon={
+                          key == "depth" ? (
+                            <OpenInFull />
+                          ) : key == "width" ? (
+                            <WidthNormal />
+                          ) : key == "height" ? (
+                            <Height />
+                          ) : undefined
+                        }
+                      />
+                    ))
+                  : value}
+              </Box>
             </Stack>
           ))}
         </Stack>

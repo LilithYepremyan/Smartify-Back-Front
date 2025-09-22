@@ -3,7 +3,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore"
 import { useAppDispatch, useAppSelector } from "../hooks"
 import { useEffect, useState } from "react"
 import { getAllCategories, setSelectedCategory } from "../slices/categorySlice"
-import { AccordionDetails, AccordionSummary, Typography } from "@mui/material"
+import { AccordionDetails, AccordionSummary, ListItemButton, Typography } from "@mui/material"
 import { useTranslation } from "react-i18next"
 import type { Brand, Category } from "./CategorySelect"
 import theme from "../theme/theme"
@@ -27,7 +27,7 @@ export default function CategoryAccordion({ onBrandClick }: Props) {
     dispatch(getAllCategories()).catch((error: unknown) => {
       console.log(error)
     })
-  }, [dispatch])
+  }, [])
 
   return (
     <div>
@@ -60,17 +60,17 @@ export default function CategoryAccordion({ onBrandClick }: Props) {
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1-content"
               id="panel1-header"
+              onClick={() => dispatch(setSelectedCategory(category))}
             >
-              <Typography
+              <ListItemButton
                 component="span"
-                onClick={() => dispatch(setSelectedCategory(category))}
                 sx={{
                   cursor: "pointer",
                   fontSize: { xs: 13, sm: 14, md: 16, lg: 18, xl: 20 },
                 }}
               >
                 {category.name}
-              </Typography>
+              </ListItemButton>
             </AccordionSummary>
             {category.brands.length > 0 && (
               <AccordionDetails

@@ -1,4 +1,5 @@
 import { Box } from "@mui/material"
+import theme from "../theme/theme"
 
 function ColorDot({ color }: { color: string }) {
   return (
@@ -8,7 +9,8 @@ function ColorDot({ color }: { color: string }) {
         height: 20,
         borderRadius: "50%",
         backgroundColor: color,
-        border: "1px solid black",
+        border: "1px solid",
+        borderColor: theme.palette.primary.main,
         cursor: "pointer",
       }}
     />

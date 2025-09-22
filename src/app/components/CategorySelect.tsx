@@ -49,7 +49,7 @@ const CategorySelect = ({ onBrandClick }: Props) => {
     dispatch(getAllCategories()).catch((error: unknown) => {
       console.log(error)
     })
-  }, [dispatch])
+  }, [])
 
   const handleCategoryEnter = (
     event: React.MouseEvent<HTMLElement>,
@@ -119,8 +119,10 @@ const CategorySelect = ({ onBrandClick }: Props) => {
           <List>
             {categories.map((category: Category) => (
               <ListItemButton
-                key={category.name}
-                onMouseEnter={e => { handleCategoryEnter(e, category); }}
+                key={category.id}
+                onMouseEnter={e => {
+                  handleCategoryEnter(e, category)
+                }}
                 onMouseLeave={handleLeave}
                 sx={{
                   display: "flex",
