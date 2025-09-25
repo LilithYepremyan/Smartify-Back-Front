@@ -60,7 +60,7 @@ export default function CategoryAccordion({ onBrandClick }: Props) {
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1-content"
               id="panel1-header"
-              onClick={() => dispatch(setSelectedCategory(category))}
+              onClick={() => dispatch(setSelectedCategory(category.name))}//string
             >
               <ListItemButton
                 component="span"

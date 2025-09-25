@@ -28,15 +28,16 @@ const CategoriesSlice = createSlice({
     categories: [] as Category[],
     brands: [] as Brand[],
     priceRange: [50000, 1000000],
-    selectedCategory: "" as Category | "" | null,
+    selectedCategory: null as Category | string | null,
     selectedBrand: null as string | null,
     selectedColor: "",
     filteredProducts: [] as Product[],
     products: [] as Product[],
   },
   reducers: {
-    setSelectedCategory: (state, action: PayloadAction<Category | null>) => {
+    setSelectedCategory: (state, action: PayloadAction<Category | null | string>) => {
       state.selectedCategory = action.payload
+      console.log("Selected Category in Slice:", state.selectedCategory)
     },
     setSelectedBrand: (state, action: PayloadAction<string | null>) => {
       state.selectedBrand = action.payload

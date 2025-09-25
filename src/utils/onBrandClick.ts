@@ -8,6 +8,6 @@ export const handleBrandClick = (
   color: string,
   callback: (category: string, brand: string, color: string) => void,
 ) => {
-  dispatch(setSelectedCategory(category))
+  dispatch(setSelectedCategory(category))//string
   callback(category, brand, color)
 }

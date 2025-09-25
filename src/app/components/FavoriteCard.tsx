@@ -16,8 +16,8 @@ import { useAppDispatch } from "../hooks"
 const FavoriteCard = ({ favorite }: { favorite: Product }) => {
   const dispatch = useAppDispatch()
 
-  const handleDeleteFavorite = (id: string) => {
-    dispatch(removeFromFavorites(id))
+  const handleDeleteFavorite = (id: number) => {
+    void dispatch(removeFromFavorites(id))
   }
 
   const handleBuyFavorite = () => {
@@ -57,7 +57,9 @@ const FavoriteCard = ({ favorite }: { favorite: Product }) => {
                 },
               }}
               startIcon={<DeleteIcon />}
-              onClick={() => handleDeleteFavorite(favorite.id)}
+              onClick={() => {
+                handleDeleteFavorite(favorite.id)
+              }}
             >
               Delete
             </Button>
@@ -70,7 +72,7 @@ const FavoriteCard = ({ favorite }: { favorite: Product }) => {
                 },
               }}
               startIcon={<ShoppingCartIcon />}
-              onClick={() => handleBuyFavorite(favorite.id)}
+              onClick={handleBuyFavorite}
             >
               Buy
             </Button>

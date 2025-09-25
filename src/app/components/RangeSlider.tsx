@@ -34,7 +34,7 @@ const RangeSlider = () => {
         getAriaValueText={value => `${String(value)} AMD` }
         step={1000}
       ></Slider>
-      <Typography sx={{ fontSize: "14px" }}>{`${t("price")}: ${value[0]} AMD - ${value[1]} AMD`}</Typography>
+      <Typography sx={{ fontSize: "14px" }}>{`${t("price")}: ${String(value[0])} AMD - ${String(value[1])} AMD`}</Typography>
       <Button sx={{ mt: 2, fontSize: "14px" }} variant="outlined" onClick={handleFilterClick}>
         {t("filter")}
       </Button>

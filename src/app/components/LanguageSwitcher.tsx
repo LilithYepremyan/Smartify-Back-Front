@@ -15,10 +15,10 @@ const LanguageSwitcher = () => {
   const { i18n } = useTranslation()
   const [lang, setLang] = React.useState(i18n.language)
 
-  const handleChange = (event: SelectChangeEvent) => {
+  const handleChange = async (event: SelectChangeEvent) => {
     const newLang = event.target.value
-    setLang(newLang)
-    i18n.changeLanguage(newLang)
+    setLang(newLang)  
+    await i18n.changeLanguage(newLang)
   }
 
   return (

@@ -34,6 +34,7 @@ const CategorySelect = ({ onBrandClick }: Props) => {
   const { t } = useTranslation()
 
   const categories = useAppSelector(state => state.categories.categories)
+  console.log(categories, "categories")
   const selectedCategory = useAppSelector(
     state => state.categories.selectedCategory,
   )
@@ -160,7 +161,9 @@ const CategorySelect = ({ onBrandClick }: Props) => {
         onMouseEnter={handlePopoverEnter}
         onMouseLeave={handlePopoverLeave}
       >
-        {selectedCategory?.brands?.length > 0 && (
+        {console.log(selectedCategory, "selectedCategory")}
+
+        {selectedCategory && selectedCategory?.brands?.length > 0 && (
           <Paper sx={{ mt: 0.5, p: 1, width: 200 }}>
             <List>
               {selectedCategory.brands.map((brand: Brand) => (

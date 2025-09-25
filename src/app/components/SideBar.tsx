@@ -32,7 +32,7 @@ const SideBar = () => {
     const params = new URLSearchParams()
 
     if (categoryName) {
-      dispatch(setSelectedCategory(categoryName))
+      dispatch(setSelectedCategory(categoryName))//string
       params.set("category", categoryName)
     }
     if (brandName) {
@@ -43,7 +43,7 @@ const SideBar = () => {
       dispatch(setSelectedColor(color))
       params.set("color", color)
     }
-    navigate({ search: params.toString() })
+    void navigate({ search: params.toString() })
   }
 
   return (
@@ -65,7 +65,9 @@ const SideBar = () => {
             categoryName: string,
             brandName: string,
             color: string,
-          ) => showProductList(categoryName, brandName, color)}
+          ) => {
+            showProductList(categoryName, brandName, color)
+          }}
         />
       ) : (
         <CategoryAccordion
@@ -73,7 +75,9 @@ const SideBar = () => {
             categoryName: string,
             brandName: string,
             color: string,
-          ) => showProductList(categoryName, brandName, color)}
+          ) => {
+            showProductList(categoryName, brandName, color)
+          }}
         />
       )}
 

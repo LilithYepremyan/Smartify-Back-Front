@@ -54,6 +54,7 @@ export default function Home() {
     const categoryFromURL = searchParams.get("category")
     const brandFromURL = searchParams.get("brand")
     const colorFromURL = searchParams.get("color")
+    console.log("categoryFromURL", categoryFromURL)
 
     const noParams = !categoryFromURL && !brandFromURL && !colorFromURL
 
@@ -64,12 +65,13 @@ export default function Home() {
       return
     }
 
-    if (categoryFromURL) dispatch(setSelectedCategory(categoryFromURL))
+    if (categoryFromURL) dispatch(setSelectedCategory(categoryFromURL))//string
     if (brandFromURL) dispatch(setSelectedBrand(brandFromURL))
     if (colorFromURL) dispatch(setSelectedColor(colorFromURL))
   }, [dispatch])
 
   const filteredProducts = useMemo(() => {
+    console.log(products, " products")
     return products.filter(product => {
       const matchCategory = selectedCategory
         ? product.category === selectedCategory
@@ -163,7 +165,7 @@ export default function Home() {
                   badgeContent={favoritesCount}
                   color="primary"
                   sx={{ "&:hover": { opacity: 0.8 } }}
-                  onClick={() => { navigate("/favorites"); }}
+                  onClick={() => {void navigate("/favorites"); }}
                 >
                   <FavoriteBorderIcon
                     sx={{ fontSize: 32, cursor: "pointer" }}

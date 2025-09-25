@@ -137,7 +137,9 @@ const ProductCard = ({ product }: { product: Product }) => {
 
   const dispatch = useAppDispatch()
 
-  const handleOpen = () => {setOpen(true)}
+  const handleOpen = () => {
+    setOpen(true)
+  }
 
   const handleClose = () => {
     setOpen(false)
@@ -220,7 +222,9 @@ const ProductCard = ({ product }: { product: Product }) => {
                 : theme.palette.primary.main,
             }}
             onClick={() => {
-              !isFavorite && dispatch(addToFavorites(product))
+              if (!isFavorite) {
+                void dispatch(addToFavorites(product))
+              }
             }}
           />
           <SearchIcon
