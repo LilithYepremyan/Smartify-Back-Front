@@ -32,7 +32,7 @@ const SideBar = () => {
     const params = new URLSearchParams()
 
     if (categoryName) {
-      dispatch(setSelectedCategory(categoryName))//string
+      dispatch(setSelectedCategory(categoryName))
       params.set("category", categoryName)
     }
     if (brandName) {

@@ -32,14 +32,6 @@ export default function BrandFilter({ onBrandClick }: BrandFilterProps) {
     return products.filter(product => product.brand === brand).length
   }
 
-//   const productCounts = useMemo(() => {
-//   return products.reduce<Record<string, number>>((acc, product) => {
-//     acc[product.brand] = (acc[product.brand] || 0) + 1
-//     return acc
-//   }, {})
-// }, [products])
-
-
   return (
     <Box sx={{ borderBottom: "1px solid rgb(79, 84, 94)", pb: 2 }}>
       <Typography

@@ -155,8 +155,8 @@ const ProductCard = ({ product }: { product: Product }) => {
 
     const queryString = params.toString()
     const url = queryString
-      ? `/product/${product.id}?${queryString}`
-      : `/product/${product.id}`
+      ? `/product/${String(product.id)}?${queryString}`
+      : `/product/${String(product.id)}`
 
     navigate(url)
   }

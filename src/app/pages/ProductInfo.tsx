@@ -23,7 +23,7 @@ const ProductPage = () => {
     const category = params.get("category")
     const brand = params.get("brand")
 
-    if (category && category !== "null") dispatch(setSelectedCategory(category))//string
+    if (category && category !== "null") dispatch(setSelectedCategory(category))
     if (brand && brand !== "null") dispatch(setSelectedBrand(brand))
   }, [location.search, dispatch])
 

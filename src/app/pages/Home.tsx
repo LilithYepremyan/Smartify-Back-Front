@@ -65,7 +65,7 @@ export default function Home() {
       return
     }
 
-    if (categoryFromURL) dispatch(setSelectedCategory(categoryFromURL))//string
+    if (categoryFromURL) dispatch(setSelectedCategory(categoryFromURL))
     if (brandFromURL) dispatch(setSelectedBrand(brandFromURL))
     if (colorFromURL) dispatch(setSelectedColor(colorFromURL))
   }, [dispatch])
