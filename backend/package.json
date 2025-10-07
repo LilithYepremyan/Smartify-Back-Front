@@ -2,8 +2,8 @@
   "name": "backend",
   "version": "1.0.0",
   "scripts": {
-    "start": "json-server --host 0.0.0.0 --port $PORT --watch db.json"
-
+    "start": "json-server --host 0.0.0.0 --port $PORT --watch db.json --cors",
+    "dev": "json-server --port 3004 --watch db.json"
   },
   "dependencies": {
     "json-server": "^0.17.3"
