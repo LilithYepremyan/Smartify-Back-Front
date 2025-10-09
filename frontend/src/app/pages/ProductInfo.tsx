@@ -27,7 +27,7 @@ const ProductPage = () => {
     if (brand && brand !== "null") dispatch(setSelectedBrand(brand))
   }, [location.search, dispatch])
 
-  const product: Product = products.find(
+  const product: Product | undefined = products.find(
     product => Number(product.id) === Number(id),
   )
 

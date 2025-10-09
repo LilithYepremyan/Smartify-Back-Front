@@ -3,16 +3,20 @@ import { useTranslation } from "react-i18next"
 import { setPriceRange } from "../slices/categorySlice"
 import { useAppDispatch, useAppSelector } from "../hooks"
 import { useState } from "react"
+import type { SyntheticEvent } from "react"
 
 const RangeSlider = () => {
-  const priceRange = useAppSelector(state => state.categories.priceRange)  
+  const priceRange = useAppSelector(state => state.categories.priceRange)
   const { t } = useTranslation()
 
   const dispatch = useAppDispatch()
 
   const [value, setValue] = useState(priceRange as [number, number])
 
-  const handleChange = (e: Event, newValue: number | number[]) => {
+  const handleChange = (
+    _event: Event | SyntheticEvent,
+    newValue: number | number[],
+  ) => {
     setValue(newValue as [number, number])
   }
 
@@ -31,11 +35,17 @@ const RangeSlider = () => {
         valueLabelDisplay="auto"
         min={50000}
         max={1000000}
-        getAriaValueText={value => `${String(value)} AMD` }
+        getAriaValueText={value => `${String(value)} AMD`}
         step={1000}
       ></Slider>
-      <Typography sx={{ fontSize: "14px" }}>{`${t("price")}: ${String(value[0])} AMD - ${String(value[1])} AMD`}</Typography>
-      <Button sx={{ mt: 2, fontSize: "14px" }} variant="outlined" onClick={handleFilterClick}>
+      <Typography
+        sx={{ fontSize: "14px" }}
+      >{`${t("price")}: ${String(value[0])} AMD - ${String(value[1])} AMD`}</Typography>
+      <Button
+        sx={{ mt: 2, fontSize: "14px" }}
+        variant="outlined"
+        onClick={handleFilterClick}
+      >
         {t("filter")}
       </Button>
     </Box>

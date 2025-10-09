@@ -113,7 +113,7 @@ export default function Home() {
       currentPage * itemsPerPage,
     )
 
-  const handleChange = (_, value: number) => {
+  const handleChange = (_: React.ChangeEvent<unknown>, value: number) => {
     setCurrentPage(value)
     window.scrollTo({
       top: 0,

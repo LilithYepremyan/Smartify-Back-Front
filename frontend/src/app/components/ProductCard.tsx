@@ -126,7 +126,7 @@ const ProductCard = ({ product }: { product: Product }) => {
   const theme = useTheme()
   const { t } = useTranslation()
   const navigate = useNavigate()
-  const [searchParams, setSearchParams] = useSearchParams()
+  const [searchParams] = useSearchParams()
   const [open, setOpen] = useState(false)
 
   const favorites = useAppSelector(state => state.favorites.favorites)

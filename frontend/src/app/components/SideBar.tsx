@@ -25,9 +25,9 @@ const SideBar = () => {
   const selectedBrand = useAppSelector(state => state.categories.selectedBrand)
 
   const showProductList = (
-    categoryName: string,
-    brandName: string,
-    color: string,
+    categoryName: string | null ,
+    brandName: string | null,
+    color: string | null,
   ) => {
     const params = new URLSearchParams()
 
@@ -83,6 +83,7 @@ const SideBar = () => {
 
       <ColorFilter
         onColorClick={(colorName: string) => {
+          console.log( typeof selectedCategory, "selectedCategory100000")
           showProductList(selectedCategory, selectedBrand, colorName)
         }}
       />
