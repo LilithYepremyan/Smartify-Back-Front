@@ -1,15 +1,14 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 import type { PayloadAction } from "@reduxjs/toolkit"
 import type { Brand, Category } from "../components/CategorySelect"
-import axios from "axios"
 import type { Product } from "../components/ProductCard"
+import api from "../../api/api"
 
 export const getAllCategories = createAsyncThunk<Category[]>(
   "category/getAllCategories",
   async () => {
-    const response = await axios.get<Category[]>(
-      "http://localhost:3004/categories",
-    )
+    const response = await api.get<Category[]>("/categories")
+    console.log(response.data, "categories")
     return response.data
   },
 )
@@ -17,7 +16,7 @@ export const getAllCategories = createAsyncThunk<Category[]>(
 export const getAllBrands = createAsyncThunk<Brand[]>(
   "category/getAllBrands",
   async () => {
-    const response = await axios.get<Brand[]>("http://localhost:3004/brands")
+    const response = await api.get<Brand[]>("/brands")
     return response.data
   },
 )
@@ -35,7 +34,10 @@ const CategoriesSlice = createSlice({
     products: [] as Product[],
   },
   reducers: {
-    setSelectedCategory: (state, action: PayloadAction<Category | null | string>) => {
+    setSelectedCategory: (
+      state,
+      action: PayloadAction<Category | null | string>,
+    ) => {
       state.selectedCategory = action.payload
       console.log("Selected Category in Slice:", state.selectedCategory)
     },

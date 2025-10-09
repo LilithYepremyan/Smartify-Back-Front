@@ -117,30 +117,31 @@ const CategorySelect = ({ onBrandClick }: Props) => {
       {showAllCategories && (
         <Paper>
           <List>
-            {categories.map((category: Category) => (
-              <ListItemButton
-                key={category.id}
-                onMouseEnter={e => {
-                  handleCategoryEnter(e, category)
-                }}
-                onMouseLeave={handleLeave}
-                sx={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  textOverflow: "ellipsis",
-                  whiteSpace: "nowrap",
-                  overflow: "hidden",
-                }}
-              >
-                {category.name}
-                <KeyboardArrowDownIcon
-                  sx={{
-                    transition: "transform 0.3s ease",
-                    transform: "rotate(-90deg)",
+            {Array.isArray(categories) &&
+              categories.map((category: Category) => (
+                <ListItemButton
+                  key={category.id}
+                  onMouseEnter={e => {
+                    handleCategoryEnter(e, category)
                   }}
-                />
-              </ListItemButton>
-            ))}
+                  onMouseLeave={handleLeave}
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    textOverflow: "ellipsis",
+                    whiteSpace: "nowrap",
+                    overflow: "hidden",
+                  }}
+                >
+                  {category.name}
+                  <KeyboardArrowDownIcon
+                    sx={{
+                      transition: "transform 0.3s ease",
+                      transform: "rotate(-90deg)",
+                    }}
+                  />
+                </ListItemButton>
+              ))}
           </List>
         </Paper>
       )}
@@ -160,30 +161,32 @@ const CategorySelect = ({ onBrandClick }: Props) => {
         onMouseEnter={handlePopoverEnter}
         onMouseLeave={handlePopoverLeave}
       >
-
-        {selectedCategory && typeof selectedCategory === "object" && selectedCategory.brands.length > 0 && (
-          <Paper sx={{ mt: 0.5, p: 1, width: 200 }}>
-            <List>
-              {typeof selectedCategory === "object" &&   selectedCategory.brands.map((brand: Brand) => (
-                <ListItemButton
-                  onClick={() => {
-                    console.log(1212000000000000)
-                    handleBrandClick(
-                      dispatch,
-                      selectedCategory.name,
-                      brand.name,
-                      selectedColor,
-                      onBrandClick,
-                    )
-                  }}
-                  key={brand.id}
-                >
-                  {brand.name}
-                </ListItemButton>
-              ))}
-            </List>
-          </Paper>
-        )}
+        {selectedCategory &&
+          typeof selectedCategory === "object" &&
+          selectedCategory.brands.length > 0 && (
+            <Paper sx={{ mt: 0.5, p: 1, width: 200 }}>
+              <List>
+                {typeof selectedCategory === "object" &&
+                  selectedCategory.brands.map((brand: Brand) => (
+                    <ListItemButton
+                      onClick={() => {
+                        console.log(1212000000000000)
+                        handleBrandClick(
+                          dispatch,
+                          selectedCategory.name,
+                          brand.name,
+                          selectedColor,
+                          onBrandClick,
+                        )
+                      }}
+                      key={brand.id}
+                    >
+                      {brand.name}
+                    </ListItemButton>
+                  ))}
+              </List>
+            </Paper>
+          )}
       </Popper>
     </Box>
   )

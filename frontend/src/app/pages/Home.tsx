@@ -71,7 +71,8 @@ export default function Home() {
   }, [dispatch])
 
   const filteredProducts = useMemo(() => {
-    console.log(products, " products")
+    if (!Array.isArray(products)) return []
+
     return products.filter(product => {
       const matchCategory = selectedCategory
         ? product.category === selectedCategory
@@ -105,10 +106,12 @@ export default function Home() {
 
   const [currentPage, setCurrentPage] = useState(1)
 
-  const paginatedProducts = filteredProducts.slice(
-    (currentPage - 1) * itemsPerPage,
-    currentPage * itemsPerPage,
-  )
+  const paginatedProducts =
+    Array.isArray(filteredProducts) &&
+    filteredProducts.slice(
+      (currentPage - 1) * itemsPerPage,
+      currentPage * itemsPerPage,
+    )
 
   const handleChange = (_, value: number) => {
     setCurrentPage(value)
@@ -165,7 +168,9 @@ export default function Home() {
                   badgeContent={favoritesCount}
                   color="primary"
                   sx={{ "&:hover": { opacity: 0.8 } }}
-                  onClick={() => {void navigate("/favorites"); }}
+                  onClick={() => {
+                    void navigate("/favorites")
+                  }}
                 >
                   <FavoriteBorderIcon
                     sx={{ fontSize: 32, cursor: "pointer" }}
@@ -183,9 +188,10 @@ export default function Home() {
                   mt: 2,
                 }}
               >
-                {paginatedProducts.map(product => (
-                  <ProductCard key={product.id} product={product} />
-                ))}
+                {Array.isArray(paginatedProducts) &&
+                  paginatedProducts.map(product => (
+                    <ProductCard key={product.id} product={product} />
+                  ))}
               </Box>
             </>
           )}

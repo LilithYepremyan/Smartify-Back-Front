@@ -53,7 +53,7 @@ export default function CategoryAccordion({ onBrandClick }: Props) {
         {t("category")}
       </Typography>
 
-      {open &&
+      {open && Array.isArray(categories) &&
         categories.map((category: Category) => (
           <Accordion key={category.name}>
             <AccordionSummary

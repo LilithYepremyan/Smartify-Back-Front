@@ -1,13 +1,11 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
-import axios from "axios"
 import type { Product } from "../components/ProductCard"
+import api from "../../api/api"
 
 export const getAllFavorites = createAsyncThunk<Product[]>(
   "favorites/getAllFavorites",
   async () => {
-    const response = await axios.get<Product[]>(
-      "http://localhost:3004/favorites",
-    )
+    const response = await api.get<Product[]>("/favorites")
     console.log(response.data, "favorites")
     return response.data
   },
@@ -16,10 +14,7 @@ export const getAllFavorites = createAsyncThunk<Product[]>(
 export const addToFavorites = createAsyncThunk(
   "favorites/addFavorite",
   async (product: Product) => {
-    const response = await axios.post<Product>(
-      "http://localhost:3004/favorites",
-      product,
-    )
+    const response = await api.post<Product>("/favorites", product)
     return response.data
   },
 )
@@ -27,9 +22,7 @@ export const addToFavorites = createAsyncThunk(
 export const removeFromFavorites = createAsyncThunk(
   "favorites/removeFavorite",
   async (id: number) => {
-    const response = await axios.delete<Product>(
-      `http://localhost:3004/favorites/${id}`,
-    )
+    const response = await api.delete<Product>(`/favorites/${id}`)
     return response.data
   },
 )

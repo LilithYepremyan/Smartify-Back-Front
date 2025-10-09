@@ -48,68 +48,69 @@ export default function BrandFilter({ onBrandClick }: BrandFilterProps) {
         {t("brands")}
       </Typography>
       <List sx={{ maxHeight: 300, overflow: "auto" }}>
-        {brands.map(({ name, icon }: Brand) => {
-          const isSelected = name === selectedBrand
+        {Array.isArray(brands) &&
+          brands.map(({ name, icon }: Brand) => {
+            const isSelected = name === selectedBrand
 
-          return (
-            <ListItem
-              key={name}
-              disablePadding
-              secondaryAction={
-                <Badge
-                  badgeContent={countProductsByBrand(name)}
-                  color={isSelected ? "primary" : "default"}
-                />
-              }
-              sx={{ p: 0 }}
-            >
-              <ListItemButton
-                selected={isSelected}
-                onClick={() => {
-                  dispatch(setSelectedBrand(name))
-                  onBrandClick(name)
-                }}
-                sx={{
-                  ":hover": { opacity: 0.7 },
-                }}
+            return (
+              <ListItem
+                key={name}
+                disablePadding
+                secondaryAction={
+                  <Badge
+                    badgeContent={countProductsByBrand(name)}
+                    color={isSelected ? "primary" : "default"}
+                  />
+                }
+                sx={{ p: 0 }}
               >
-                <ListItemText
-                  primary={
-                    <Box display="flex" alignItems="center" gap={0.5}>
-                      <ListItemAvatar>
-                        <Avatar
-                          src={icon}
-                          alt={name}
-                          variant="square"
-                          sx={{
-                            width: 50,
-                            height: 30,
-                            "& img": { objectFit: "contain" },
-                          }}
-                        ></Avatar>
-                      </ListItemAvatar>
-                      <Typography sx={{ fontSize: { xs: 13, md: 14 } }}>
-                        {name}
-                      </Typography>
-                      {isSelected && (
-                        <IconButton
-                          size="small"
-                          sx={{ p: 0.3 }}
-                          onClick={e => {
-                            e.stopPropagation()
-                            dispatch(setSelectedBrand(null))
-                          }}
-                        >
-                          <CloseIcon fontSize="small" />
-                        </IconButton>
-                      )}
-                    </Box>
-                  }
-                />
-              </ListItemButton>
-            </ListItem>
-          )
-        })}
+                <ListItemButton
+                  selected={isSelected}
+                  onClick={() => {
+                    dispatch(setSelectedBrand(name))
+                    onBrandClick(name)
+                  }}
+                  sx={{
+                    ":hover": { opacity: 0.7 },
+                  }}
+                >
+                  <ListItemText
+                    primary={
+                      <Box display="flex" alignItems="center" gap={0.5}>
+                        <ListItemAvatar>
+                          <Avatar
+                            src={icon}
+                            alt={name}
+                            variant="square"
+                            sx={{
+                              width: 50,
+                              height: 30,
+                              "& img": { objectFit: "contain" },
+                            }}
+                          ></Avatar>
+                        </ListItemAvatar>
+                        <Typography sx={{ fontSize: { xs: 13, md: 14 } }}>
+                          {name}
+                        </Typography>
+                        {isSelected && (
+                          <IconButton
+                            size="small"
+                            sx={{ p: 0.3 }}
+                            onClick={e => {
+                              e.stopPropagation()
+                              dispatch(setSelectedBrand(null))
+                            }}
+                          >
+                            <CloseIcon fontSize="small" />
+                          </IconButton>
+                        )}
+                      </Box>
+                    }
+                  />
+                </ListItemButton>
+              </ListItem>
+            )
+          })}
       </List>
     </Box>
   )
