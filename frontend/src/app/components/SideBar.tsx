@@ -1,5 +1,6 @@
 import { Box } from "@mui/material"
 import CategorySelect from "./CategorySelect"
+import type { Category } from "./CategorySelect"
 import CategoryAccordion from "./CategoryAccordion"
 import ColorFilter from "./ColorFilter"
 import BrandFilter from "./BrandFilter"
@@ -25,7 +26,7 @@ const SideBar = () => {
   const selectedBrand = useAppSelector(state => state.categories.selectedBrand)
 
   const showProductList = (
-    categoryName: string | null ,
+    categoryName: string | null | Category ,
     brandName: string | null,
     color: string | null,
   ) => {
@@ -83,7 +84,7 @@ const SideBar = () => {
 
       <ColorFilter
         onColorClick={(colorName: string) => {
-          console.log( typeof selectedCategory, "selectedCategory100000")
+          console.log(typeof selectedCategory, "selectedCategory100000")
           showProductList(selectedCategory, selectedBrand, colorName)
         }}
       />
