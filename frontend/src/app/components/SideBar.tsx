@@ -26,15 +26,18 @@ const SideBar = () => {
   const selectedBrand = useAppSelector(state => state.categories.selectedBrand)
 
   const showProductList = (
-    categoryName: string | null | Category ,
+    categoryName: string | null | Category,
     brandName: string | null,
     color: string | null,
   ) => {
     const params = new URLSearchParams()
 
-    if (categoryName) {
-      dispatch(setSelectedCategory(categoryName))
-      params.set("category", categoryName)
+    const categoryString =
+      typeof categoryName === "string" ? categoryName : categoryName?.name
+
+    if (categoryString) {
+      dispatch(setSelectedCategory(categoryString))
+      params.set("category", categoryString)
     }
     if (brandName) {
       dispatch(setSelectedBrand(brandName))
