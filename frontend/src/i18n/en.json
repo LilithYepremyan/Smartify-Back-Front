@@ -19,7 +19,9 @@
   "category": "Category",
   "brands":"Brands",
   "filter": "Filter",
-  "search": "Search"
+  "search": "Search",
+  "favorites": "Favorite Products",
+  "noFavorites": "No favorite products"
 
 
 }
