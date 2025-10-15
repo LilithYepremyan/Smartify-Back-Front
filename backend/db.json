@@ -2179,12 +2179,7 @@
         "resolution": "Up to 8K HDR",
         "frameRate": "Up to 120 FPS",
         "opticalDrive": "4K UHD Blu-ray",
-        "connectivity": [
-          "HDMI 2.1",
-          "Wi-Fi 5",
-          "Ethernet",
-          "3x USB 3.1"
-        ],
+        "connectivity": ["HDMI 2.1", "Wi-Fi 5", "Ethernet", "3x USB 3.1"],
         "features": [
           "Ray Tracing",
           "Quick Resume",
@@ -2223,12 +2218,7 @@
         "resolution": "Up to 8K HDR",
         "frameRate": "Up to 120 FPS",
         "opticalDrive": "4K UHD Blu-ray",
-        "connectivity": [
-          "HDMI 2.1",
-          "Wi-Fi 5",
-          "Ethernet",
-          "3x USB 3.1"
-        ],
+        "connectivity": ["HDMI 2.1", "Wi-Fi 5", "Ethernet", "3x USB 3.1"],
         "features": [
           "Ray Tracing",
           "Quick Resume",
@@ -2267,12 +2257,7 @@
         "resolution": "Up to 8K HDR",
         "frameRate": "Up to 120 FPS",
         "opticalDrive": "4K UHD Blu-ray",
-        "connectivity": [
-          "HDMI 2.1",
-          "Wi-Fi 5",
-          "Ethernet",
-          "3x USB 3.1"
-        ],
+        "connectivity": ["HDMI 2.1", "Wi-Fi 5", "Ethernet", "3x USB 3.1"],
         "features": [
           "Ray Tracing",
           "Quick Resume",
@@ -2311,12 +2296,7 @@
         "resolution": "Up to 8K HDR",
         "frameRate": "Up to 120 FPS",
         "opticalDrive": "4K UHD Blu-ray",
-        "connectivity": [
-          "HDMI 2.1",
-          "Wi-Fi 5",
-          "Ethernet",
-          "3x USB 3.1"
-        ],
+        "connectivity": ["HDMI 2.1", "Wi-Fi 5", "Ethernet", "3x USB 3.1"],
         "features": [
           "Ray Tracing",
           "Quick Resume",
@@ -2355,12 +2335,7 @@
         "resolution": "Up to 8K HDR",
         "frameRate": "Up to 120 FPS",
         "opticalDrive": "4K UHD Blu-ray",
-        "connectivity": [
-          "HDMI 2.1",
-          "Wi-Fi 5",
-          "Ethernet",
-          "3x USB 3.1"
-        ],
+        "connectivity": ["HDMI 2.1", "Wi-Fi 5", "Ethernet", "3x USB 3.1"],
         "features": [
           "Ray Tracing",
           "Quick Resume",
@@ -2399,12 +2374,7 @@
         "resolution": "Up to 8K HDR",
         "frameRate": "Up to 120 FPS",
         "opticalDrive": "4K UHD Blu-ray",
-        "connectivity": [
-          "HDMI 2.1",
-          "Wi-Fi 5",
-          "Ethernet",
-          "3x USB 3.1"
-        ],
+        "connectivity": ["HDMI 2.1", "Wi-Fi 5", "Ethernet", "3x USB 3.1"],
         "features": [
           "Ray Tracing",
           "Quick Resume",
@@ -2443,12 +2413,7 @@
         "resolution": "Up to 8K HDR",
         "frameRate": "Up to 120 FPS",
         "opticalDrive": "4K UHD Blu-ray",
-        "connectivity": [
-          "HDMI 2.1",
-          "Wi-Fi 5",
-          "Ethernet",
-          "3x USB 3.1"
-        ],
+        "connectivity": ["HDMI 2.1", "Wi-Fi 5", "Ethernet", "3x USB 3.1"],
         "features": [
           "Ray Tracing",
           "Quick Resume",
@@ -2596,12 +2561,7 @@
         "capacity": "7.5 kg",
         "speed": "1200 RPM",
         "energyRating": "A+++",
-        "programs": [
-          "Cotton",
-          "Delicate",
-          "Quick Wash",
-          "Eco Wash"
-        ],
+        "programs": ["Cotton", "Delicate", "Quick Wash", "Eco Wash"],
         "noiseLevel": "54 dB",
         "dimensions": "60 x 85 x 55 cm",
         "warranty": "1 year"
@@ -2634,11 +2594,7 @@
         "capacity": "300 L",
         "energyRating": "A++",
         "coolingSystem": "No Frost",
-        "features": [
-          "LED Lighting",
-          "Fast Cooling",
-          "Humidity Control"
-        ],
+        "features": ["LED Lighting", "Fast Cooling", "Humidity Control"],
         "dimensions": "60 x 170 x 65 cm",
         "warranty": "2 years"
       }
@@ -2699,13 +2655,7 @@
         "capacity": "13 place settings",
         "energyRating": "A++",
         "noiseLevel": "44 dB",
-        "programs": [
-          "Eco",
-          "Intensive",
-          "Quick Wash",
-          "Auto",
-          "Pre-Rinse"
-        ],
+        "programs": ["Eco", "Intensive", "Quick Wash", "Auto", "Pre-Rinse"],
         "features": [
           "Flexible baskets",
           "Half load option",
@@ -2758,11 +2708,7 @@
           "Audio Jack"
         ],
         "os": "Windows 11 Home",
-        "features": [
-          "RGB Lighting",
-          "Wi-Fi 6",
-          "Bluetooth 5.2"
-        ],
+        "features": ["RGB Lighting", "Wi-Fi 6", "Bluetooth 5.2"],
         "dimensions": {
           "height": "40 cm",
           "width": "18 cm",
@@ -2807,11 +2753,7 @@
           "Audio Jack"
         ],
         "os": "Windows 11 Home",
-        "features": [
-          "RGB Lighting",
-          "Wi-Fi 6",
-          "Bluetooth 5.2"
-        ],
+        "features": ["RGB Lighting", "Wi-Fi 6", "Bluetooth 5.2"],
         "dimensions": {
           "height": "40 cm",
           "width": "18 cm",
@@ -2854,10 +2796,7 @@
           "Audio Jack"
         ],
         "operatingSystem": "Windows 11 Pro",
-        "connectivity": [
-          "Wi-Fi 6",
-          "Bluetooth 5.1"
-        ],
+        "connectivity": ["Wi-Fi 6", "Bluetooth 5.1"],
         "dimensions": {
           "height": "4.3 cm",
           "width": "11.5 cm",
@@ -2905,10 +2844,7 @@
           "Ethernet",
           "Audio Jack"
         ],
-        "connectivity": [
-          "Wi-Fi 5",
-          "Bluetooth 4.2"
-        ],
+        "connectivity": ["Wi-Fi 5", "Bluetooth 4.2"],
         "dimensions": {
           "height": "4.2 cm",
           "width": "53.4 cm",
@@ -2957,10 +2893,7 @@
           "Ethernet",
           "Audio Jack"
         ],
-        "connectivity": [
-          "Wi-Fi 6",
-          "Bluetooth 5.1"
-        ],
+        "connectivity": ["Wi-Fi 6", "Bluetooth 5.1"],
         "dimensions": {
           "height": "42.8 cm",
           "width": "54.1 cm",
@@ -3013,10 +2946,7 @@
           "Ethernet",
           "Audio Jacks"
         ],
-        "connectivity": [
-          "Wi-Fi 6E",
-          "Bluetooth 5.2"
-        ],
+        "connectivity": ["Wi-Fi 6E", "Bluetooth 5.2"],
         "features": [
           "Custom RGB lighting",
           "Tempered glass side panel",
@@ -3056,20 +2986,14 @@
         "refreshRate": "280Hz",
         "responseTime": "1ms",
         "panelType": "IPS",
-        "ports": [
-          "DisplayPort 1.2",
-          "HDMI 2.0",
-          "Audio Out"
-        ],
+        "ports": ["DisplayPort 1.2", "HDMI 2.0", "Audio Out"],
         "features": [
           "G-Sync Compatible",
           "HDR10 Support",
           "Flicker-Free Technology",
           "Shadow Boost"
         ],
-        "connectivity": [
-          "Headphone Jack"
-        ],
+        "connectivity": ["Headphone Jack"],
         "dimensions": {
           "height": "27.5 cm",
           "width": "54 cm",
@@ -3105,21 +3029,9 @@
         "refreshRate": "60Hz",
         "responseTime": "5ms",
         "panelType": "IPS",
-        "ports": [
-          "HDMI",
-          "DisplayPort",
-          "USB-C"
-        ],
-        "features": [
-          "HDR10",
-          "Reader Mode",
-          "Flicker Safe",
-          "AMD FreeSync"
-        ],
-        "connectivity": [
-          "Headphone Jack",
-          "USB Hub"
-        ],
+        "ports": ["HDMI", "DisplayPort", "USB-C"],
+        "features": ["HDR10", "Reader Mode", "Flicker Safe", "AMD FreeSync"],
+        "connectivity": ["Headphone Jack", "USB Hub"],
         "dimensions": {
           "height": "27.5 cm",
           "width": "54 cm",
@@ -3155,21 +3067,9 @@
         "refreshRate": "60Hz",
         "responseTime": "5ms",
         "panelType": "IPS",
-        "ports": [
-          "HDMI",
-          "DisplayPort",
-          "USB-C"
-        ],
-        "features": [
-          "HDR10",
-          "Reader Mode",
-          "Flicker Safe",
-          "AMD FreeSync"
-        ],
-        "connectivity": [
-          "Headphone Jack",
-          "USB Hub"
-        ],
+        "ports": ["HDMI", "DisplayPort", "USB-C"],
+        "features": ["HDR10", "Reader Mode", "Flicker Safe", "AMD FreeSync"],
+        "connectivity": ["Headphone Jack", "USB Hub"],
         "dimensions": {
           "height": "27.5 cm",
           "width": "54 cm",
@@ -3205,21 +3105,9 @@
         "refreshRate": "144Hz",
         "responseTime": "5ms",
         "panelType": "IPS",
-        "ports": [
-          "HDMI",
-          "DisplayPort",
-          "USB-C"
-        ],
-        "features": [
-          "HDR10",
-          "Reader Mode",
-          "Flicker Safe",
-          "AMD FreeSync"
-        ],
-        "connectivity": [
-          "Headphone Jack",
-          "USB Hub"
-        ],
+        "ports": ["HDMI", "DisplayPort", "USB-C"],
+        "features": ["HDR10", "Reader Mode", "Flicker Safe", "AMD FreeSync"],
+        "connectivity": ["Headphone Jack", "USB Hub"],
         "dimensions": {
           "height": "27.5 cm",
           "width": "54 cm",
@@ -3255,21 +3143,9 @@
         "refreshRate": "144Hz",
         "responseTime": "5ms",
         "panelType": "IPS",
-        "ports": [
-          "HDMI",
-          "DisplayPort",
-          "USB-C"
-        ],
-        "features": [
-          "HDR10",
-          "Reader Mode",
-          "Flicker Safe",
-          "AMD FreeSync"
-        ],
-        "connectivity": [
-          "Headphone Jack",
-          "USB Hub"
-        ],
+        "ports": ["HDMI", "DisplayPort", "USB-C"],
+        "features": ["HDR10", "Reader Mode", "Flicker Safe", "AMD FreeSync"],
+        "connectivity": ["Headphone Jack", "USB Hub"],
         "dimensions": {
           "height": "27.5 cm",
           "width": "54 cm",
@@ -3305,21 +3181,9 @@
         "refreshRate": "144Hz",
         "responseTime": "5ms",
         "panelType": "IPS",
-        "ports": [
-          "HDMI",
-          "DisplayPort",
-          "USB-C"
-        ],
-        "features": [
-          "HDR10",
-          "Reader Mode",
-          "Flicker Safe",
-          "AMD FreeSync"
-        ],
-        "connectivity": [
-          "Headphone Jack",
-          "USB Hub"
-        ],
+        "ports": ["HDMI", "DisplayPort", "USB-C"],
+        "features": ["HDR10", "Reader Mode", "Flicker Safe", "AMD FreeSync"],
+        "connectivity": ["Headphone Jack", "USB Hub"],
         "dimensions": {
           "height": "27.5 cm",
           "width": "54 cm",
@@ -3358,16 +3222,9 @@
           "Voice Control",
           "Screen Mirroring"
         ],
-        "ports": [
-          "HDMI x3",
-          "USB x2",
-          "Ethernet"
-        ],
+        "ports": ["HDMI x3", "USB x2", "Ethernet"],
         "refreshRate": "60Hz",
-        "connectivity": [
-          "Headphone Jack",
-          "USB Hub"
-        ],
+        "connectivity": ["Headphone Jack", "USB Hub"],
         "dimensions": {
           "height": "27.5 cm",
           "width": "54 cm",
@@ -3411,22 +3268,13 @@
           "HDMI-CEC",
           "USB Playback"
         ],
-        "ports": [
-          "HDMI x2",
-          "USB x1",
-          "Ethernet"
-        ],
+        "ports": ["HDMI x2", "USB x1", "Ethernet"],
         "refreshRate": "60Hz",
         "audio": {
           "speakers": "2 x 8W",
-          "audioTechnologies": [
-            "Dolby Audio"
-          ]
+          "audioTechnologies": ["Dolby Audio"]
         },
-        "connectivity": [
-          "Headphone Jack",
-          "USB Hub"
-        ],
+        "connectivity": ["Headphone Jack", "USB Hub"],
         "dimensions": {
           "height": "27.5 cm",
           "width": "54 cm",
@@ -3465,16 +3313,9 @@
           "HDMI-CEC",
           "USB Playback"
         ],
-        "ports": [
-          "HDMI x2",
-          "USB x1",
-          "Ethernet"
-        ],
+        "ports": ["HDMI x2", "USB x1", "Ethernet"],
         "refreshRate": "60Hz",
-        "connectivity": [
-          "Headphone Jack",
-          "USB Hub"
-        ],
+        "connectivity": ["Headphone Jack", "USB Hub"],
         "dimensions": {
           "height": "27.5 cm",
           "width": "54 cm",
@@ -3513,20 +3354,11 @@
           "HDMI-CEC",
           "USB Playback"
         ],
-        "ports": [
-          "HDMI x2",
-          "USB x1",
-          "Ethernet"
-        ],
+        "ports": ["HDMI x2", "USB x1", "Ethernet"],
         "refreshRate": "60Hz",
         "speakers": "2 x 8W",
-        "audioTechnologies": [
-          "Dolby Audio"
-        ],
-        "connectivity": [
-          "Headphone Jack",
-          "USB Hub"
-        ],
+        "audioTechnologies": ["Dolby Audio"],
+        "connectivity": ["Headphone Jack", "USB Hub"],
         "dimensions": {
           "height": "27.5 cm",
           "width": "54 cm",
@@ -3565,20 +3397,11 @@
           "HDMI-CEC",
           "USB Playback"
         ],
-        "ports": [
-          "HDMI x2",
-          "USB x1",
-          "Ethernet"
-        ],
+        "ports": ["HDMI x2", "USB x1", "Ethernet"],
         "refreshRate": "60Hz",
         "speakers": "2 x 8W",
-        "audioTechnologies": [
-          "Dolby Audio"
-        ],
-        "connectivity": [
-          "Headphone Jack",
-          "USB Hub"
-        ],
+        "audioTechnologies": ["Dolby Audio"],
+        "connectivity": ["Headphone Jack", "USB Hub"],
         "dimensions": {
           "height": "27.5 cm",
           "width": "54 cm",
@@ -3617,20 +3440,11 @@
           "HDMI-CEC",
           "USB Playback"
         ],
-        "ports": [
-          "HDMI x2",
-          "USB x1",
-          "Ethernet"
-        ],
+        "ports": ["HDMI x2", "USB x1", "Ethernet"],
         "refreshRate": "60Hz",
         "speakers": "2 x 8W",
-        "audioTechnologies": [
-          "Dolby Audio"
-        ],
-        "connectivity": [
-          "Headphone Jack",
-          "USB Hub"
-        ],
+        "audioTechnologies": ["Dolby Audio"],
+        "connectivity": ["Headphone Jack", "USB Hub"],
         "dimensions": {
           "height": "27.5 cm",
           "width": "54 cm",
@@ -3669,20 +3483,11 @@
           "HDMI-CEC",
           "USB Playback"
         ],
-        "ports": [
-          "HDMI x2",
-          "USB x1",
-          "Ethernet"
-        ],
+        "ports": ["HDMI x2", "USB x1", "Ethernet"],
         "refreshRate": "60Hz",
         "speakers": "2 x 8W",
-        "audioTechnologies": [
-          "Dolby Audio"
-        ],
-        "connectivity": [
-          "Headphone Jack",
-          "USB Hub"
-        ],
+        "audioTechnologies": ["Dolby Audio"],
+        "connectivity": ["Headphone Jack", "USB Hub"],
         "dimensions": {
           "height": "27.5 cm",
           "width": "54 cm",
@@ -3721,20 +3526,11 @@
           "HDMI-CEC",
           "USB Playback"
         ],
-        "ports": [
-          "HDMI x2",
-          "USB x1",
-          "Ethernet"
-        ],
+        "ports": ["HDMI x2", "USB x1", "Ethernet"],
         "refreshRate": "65Hz",
         "speakers": "2 x 8W",
-        "audioTechnologies": [
-          "Dolby Audio"
-        ],
-        "connectivity": [
-          "Headphone Jack",
-          "USB Hub"
-        ],
+        "audioTechnologies": ["Dolby Audio"],
+        "connectivity": ["Headphone Jack", "USB Hub"],
         "dimensions": {
           "height": "27.5 cm",
           "width": "54 cm",
@@ -3805,11 +3601,7 @@
       "parameters": {
         "type": "Bluetooth Wireless",
         "powerOutput": "20W RMS",
-        "connectivity": [
-          "Bluetooth 5.0",
-          "3.5mm AUX",
-          "USB"
-        ],
+        "connectivity": ["Bluetooth 5.0", "3.5mm AUX", "USB"],
         "features": [
           "Portable",
           "Rechargeable Battery",
@@ -3843,12 +3635,7 @@
       "parameters": {
         "type": "2.1 Channel Soundbar",
         "powerOutput": "40W RMS",
-        "connectivity": [
-          "Bluetooth 5.0",
-          "HDMI ARC",
-          "Optical",
-          "AUX"
-        ],
+        "connectivity": ["Bluetooth 5.0", "HDMI ARC", "Optical", "AUX"],
         "features": [
           "Wall-mountable",
           "Wireless Subwoofer",
@@ -3932,10 +3719,7 @@
       ],
       "parameters": {
         "type": "Condenser Microphone",
-        "connectivity": [
-          "USB",
-          "3.5mm Jack"
-        ],
+        "connectivity": ["USB", "3.5mm Jack"],
         "features": [
           "Plug and Play",
           "Cardioid Pickup Pattern",
@@ -3995,11 +3779,7 @@
           "Plug & Play",
           "Adjustable Clip Mount"
         ],
-        "includedComponents": [
-          "1x Webcam",
-          "1x USB Cable",
-          "1x User Manual"
-        ],
+        "includedComponents": ["1x Webcam", "1x USB Cable", "1x User Manual"],
         "compatibility": [
           "Windows",
           "macOS",
@@ -4036,10 +3816,7 @@
       ],
       "parameters": {
         "powerOutput": "100W RMS",
-        "connectivity": [
-          "USB",
-          "3.5mm Jack"
-        ],
+        "connectivity": ["USB", "3.5mm Jack"],
         "features": [
           "Plug and Play",
           "Cardioid Pickup Pattern",
@@ -4054,11 +3831,7 @@
           "1x USB Cable",
           "1x Pop Filter"
         ],
-        "compatibility": [
-          "Windows",
-          "macOS",
-          "Linux"
-        ],
+        "compatibility": ["Windows", "macOS", "Linux"],
         "dimensions": "45 x 150 mm (mic body)",
         "weight": "0.3 kg",
         "warranty": "12 months"
@@ -4097,11 +3870,7 @@
           "Plug & Play",
           "Adjustable Clip Mount"
         ],
-        "includedComponents": [
-          "1x Webcam",
-          "1x USB Cable",
-          "1x User Manual"
-        ],
+        "includedComponents": ["1x Webcam", "1x USB Cable", "1x User Manual"],
         "compatibility": [
           "Windows",
           "macOS",
@@ -4146,15 +3915,8 @@
           "Smartphones",
           "Tablets"
         ],
-        "features": [
-          "Fast Charging",
-          "Data Transfer",
-          "Durable Braided Cable"
-        ],
-        "includedComponents": [
-          "1x USB-C to USB-A Cable",
-          "1x User Manual"
-        ],
+        "features": ["Fast Charging", "Data Transfer", "Durable Braided Cable"],
+        "includedComponents": ["1x USB-C to USB-A Cable", "1x User Manual"],
         "warranty": "6 months",
         "weight": "0.02 kg"
       }
@@ -4182,20 +3944,14 @@
       ],
       "parameters": {
         "material": "Genuine Leather",
-        "compatibility": [
-          "iPhone 16",
-          "iPhone 16 Pro"
-        ],
+        "compatibility": ["iPhone 16", "iPhone 16 Pro"],
         "features": [
           "Shock Absorption",
           "Slim Fit",
           "Wireless Charging Compatible",
           "Scratch Resistant"
         ],
-        "includedComponents": [
-          "1x Leather Case",
-          "1x Cleaning Cloth"
-        ],
+        "includedComponents": ["1x Leather Case", "1x Cleaning Cloth"],
         "dimensions": "15 x 7.5 x 1 cm",
         "weight": "0.05 kg",
         "warranty": "12 months"
@@ -4224,20 +3980,14 @@
       ],
       "parameters": {
         "material": "Tempered Glass",
-        "compatibility": [
-          "iPhone 16",
-          "iPhone 16 Pro"
-        ],
+        "compatibility": ["iPhone 16", "iPhone 16 Pro"],
         "features": [
           "Anti-Scratch",
           "Oleophobic Coating",
           "High Transparency",
           "Bubble-Free Installation"
         ],
-        "includedComponents": [
-          "1x Screen Protector",
-          "1x Cleaning Kit"
-        ],
+        "includedComponents": ["1x Screen Protector", "1x Cleaning Kit"],
         "dimensions": "14.7 x 7.1 x 0.03 cm",
         "weight": "0.015 kg",
         "warranty": "6 months"
@@ -4271,11 +4021,7 @@
       ],
       "parameters": {
         "material": "Aluminum Alloy",
-        "compatibility": [
-          "Smartphones",
-          "Tablets",
-          "GPS Devices"
-        ],
+        "compatibility": ["Smartphones", "Tablets", "GPS Devices"],
         "features": [
           "Adjustable Angle",
           "360° Rotation",
@@ -4391,11 +4137,7 @@
       "parameters": {
         "connection": "Wireless Bluetooth",
         "layout": "QWERTY",
-        "features": [
-          "Rechargeable Battery",
-          "Compact Design",
-          "Quiet Keys"
-        ],
+        "features": ["Rechargeable Battery", "Compact Design", "Quiet Keys"],
         "dimensions": "28 x 12 x 2.5 cm",
         "weight": "0.045 kg",
         "warranty": "24 months"
@@ -4436,5 +4178,6 @@
       }
     }
   ],
-  "favorites": []
+  "favorites": [],
+  "comparableProducts": []
 }
