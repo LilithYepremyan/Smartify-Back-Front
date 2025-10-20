@@ -3,6 +3,7 @@ import {
   Box,
   CircularProgress,
   Pagination,
+  Tooltip,
   Typography,
 } from "@mui/material"
 import { useEffect, useMemo, useState } from "react"
@@ -20,6 +21,7 @@ import { useNavigate, useSearchParams } from "react-router-dom"
 import SearchInput from "../components/SearchInput"
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder"
 import SideBar from "../components/SideBar"
+import ShuffleIcon from "@mui/icons-material/Shuffle"
 
 export default function Home() {
   const { t } = useTranslation()
@@ -36,6 +38,9 @@ export default function Home() {
   const favoritesCount = useAppSelector(
     state => state.favorites.favorites.length,
   )
+  const comparableCount = useAppSelector(
+    state => state.compare.comparableProducts.length,
+  )
 
   const dispatch = useAppDispatch()
   const navigate = useNavigate()
@@ -48,8 +53,8 @@ export default function Home() {
   }, [searchQuery])
 
   useEffect(() => {
-    dispatch(getAllProducts())
-    dispatch(getAllBrands())
+    void dispatch(getAllProducts())
+    void dispatch(getAllBrands())
 
     const categoryFromURL = searchParams.get("category")
     const brandFromURL = searchParams.get("brand")
@@ -168,13 +173,29 @@ export default function Home() {
                   badgeContent={favoritesCount}
                   color="primary"
                   sx={{ "&:hover": { opacity: 0.8 } }}
-                  onClick={() => {
-                    void navigate("/favorites")
-                  }}
                 >
-                  <FavoriteBorderIcon
-                    sx={{ fontSize: 32, cursor: "pointer" }}
-                  />
+                  <Tooltip title={t("favorites")}>
+                    <FavoriteBorderIcon
+                      sx={{ fontSize: 32, cursor: "pointer" }}
+                      onClick={() => {
+                        void navigate("/favorites")
+                      }}
+                    />
+                  </Tooltip>
+                </Badge>
+                <Badge
+                  badgeContent={comparableCount}
+                  color="primary"
+                  sx={{ "&:hover": { opacity: 0.8 } }}
+                >
+                  <Tooltip title={t("compareProducts")}>
+                    <ShuffleIcon
+                      sx={{ fontSize: 32, cursor: "pointer" }}
+                      onClick={() => {
+                        void navigate("/compare")
+                      }}
+                    />
+                  </Tooltip>
                 </Badge>
               </Box>
 

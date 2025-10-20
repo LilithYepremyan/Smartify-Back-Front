@@ -12,9 +12,11 @@ import theme from "../theme/theme"
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart"
 import { removeFromFavorites } from "../slices/favoritesSlice"
 import { useAppDispatch } from "../hooks"
+import { useTranslation } from "react-i18next"
 
 const FavoriteCard = ({ favorite }: { favorite: Product }) => {
   const dispatch = useAppDispatch()
+  const { t } = useTranslation()
 
   const handleDeleteFavorite = (id: number) => {
     void dispatch(removeFromFavorites(id))
@@ -61,7 +63,7 @@ const FavoriteCard = ({ favorite }: { favorite: Product }) => {
                 handleDeleteFavorite(favorite.id)
               }}
             >
-              Delete
+             {t("delete")} 
             </Button>
             <Button
               variant="contained"
@@ -74,7 +76,7 @@ const FavoriteCard = ({ favorite }: { favorite: Product }) => {
               startIcon={<ShoppingCartIcon />}
               onClick={handleBuyFavorite}
             >
-              Buy
+             {t("buy")}
             </Button>
           </Box>
         </CardContent>

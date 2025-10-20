@@ -17,11 +17,14 @@
   "workingHours": "Working hours",
   "everyday": "Everyday",
   "category": "Category",
-  "brands":"Brands",
+  "brands": "Brands",
   "filter": "Filter",
   "search": "Search",
   "favorites": "Favorite Products",
-  "noFavorites": "No favorite products"
-
-
+  "noFavorites": "No favorite products",
+  "compareProducts": "Compare Products",
+  "remove": "Remove",
+  "noComparable": "No products to compare",
+  "buy": "Buy",
+  "delete": "Delete"
 }

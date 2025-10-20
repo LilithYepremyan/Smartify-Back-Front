@@ -72,7 +72,10 @@ export default function Header(props: Props) {
   return (
     <Box sx={{ display: "flex", justifyContent: "center" }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{ backgroundColor: theme.palette.primary.main }}>
+      <AppBar
+        component="nav"
+        sx={{ backgroundColor: theme.palette.primary.main }}
+      >
         <Toolbar>
           <IconButton
             color="inherit"

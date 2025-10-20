@@ -4,11 +4,13 @@ import { setupListeners } from "@reduxjs/toolkit/query"
 import { categoriesReducer } from "./slices/categorySlice"
 import { productsReducer } from "./slices/productsSlice"
 import { favoritesReducer } from "./slices/favoritesSlice"
+import { compareReducers } from "./slices/compareSlice"
 
 const rootReducer = combineSlices({
   categories: categoriesReducer,
   products: productsReducer,
   favorites: favoritesReducer,
+  compare: compareReducers,
 })
 
 export const makeStore = () => {
