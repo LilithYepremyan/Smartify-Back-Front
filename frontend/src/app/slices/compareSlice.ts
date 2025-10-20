@@ -6,7 +6,6 @@ export const getComparableProducts = createAsyncThunk(
   "compare/getComparableProducts",
   async () => {
     const response = await api.get<Product[]>("/comparableProducts")
-    console.log(response.data, "comparable products 1111111111111111")
     return response.data
   },
 )
@@ -15,7 +14,6 @@ export const addToCompare = createAsyncThunk(
   "compare/addCompareProduct",
   async (product: Product) => {
     const response = await api.post<Product>("/comparableProducts", product)
-    console.log(response.data, "comparable products adds")
     return response.data
   },
 )
@@ -23,8 +21,7 @@ export const addToCompare = createAsyncThunk(
 export const removeCompareProduct = createAsyncThunk(
   "compare/removeFromCompare",
   async (id: number) => {
-    const response = await api.delete<Product>(`/comparableProducts/${id}`)
-    console.log(response.data, "comparable products removes")
+    await api.delete<Product>(`/comparableProducts/${id}`)
     return id
   },
 )
@@ -39,7 +36,6 @@ const CompareSlice = createSlice({
   reducers: {},
   extraReducers: builder => {
     builder.addCase(getComparableProducts.pending, state => {
-      console.log("pending")
       state.error = null
     })
     builder.addCase(getComparableProducts.fulfilled, (state, action) => {
@@ -47,7 +43,6 @@ const CompareSlice = createSlice({
     })
     builder.addCase(getComparableProducts.rejected, (state, action) => {
       state.loading = false
-      console.log("rejected")
       console.error("Failed to load comparable products:", action.error.message)
     })
     builder.addCase(addToCompare.pending, state => {

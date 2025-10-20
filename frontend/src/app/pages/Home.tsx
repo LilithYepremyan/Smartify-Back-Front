@@ -59,7 +59,6 @@ export default function Home() {
     const categoryFromURL = searchParams.get("category")
     const brandFromURL = searchParams.get("brand")
     const colorFromURL = searchParams.get("color")
-    console.log("categoryFromURL", categoryFromURL)
 
     const noParams = !categoryFromURL && !brandFromURL && !colorFromURL
 

@@ -6,7 +6,6 @@ export const getAllFavorites = createAsyncThunk<Product[]>(
   "favorites/getAllFavorites",
   async () => {
     const response = await api.get<Product[]>("/favorites")
-    console.log(response.data, "favorites")
     return response.data
   },
 )
@@ -22,8 +21,7 @@ export const addToFavorites = createAsyncThunk(
 export const removeFromFavorites = createAsyncThunk(
   "favorites/removeFavorite",
   async (id: number) => {
-    const response = await api.delete<Product>(`/favorites/${id}`)
-    console.log(response.data, "removed from favorites")
+    await api.delete<Product>(`/favorites/${id}`)
     return id
   },
 )

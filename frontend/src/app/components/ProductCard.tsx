@@ -248,7 +248,6 @@ const ProductCard = ({ product }: { product: Product }) => {
                 : theme.palette.primary.main,
             }}
             onClick={() => {
-              console.log("compare clicked")
               if (!isCompared) {
                 void dispatch(addToCompare(product))
               }

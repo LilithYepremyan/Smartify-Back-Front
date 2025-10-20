@@ -171,7 +171,6 @@ const CategorySelect = ({ onBrandClick }: Props) => {
                   selectedCategory.brands.map((brand: Brand) => (
                     <ListItemButton
                       onClick={() => {
-                        console.log(1212000000000000)
                         handleBrandClick(
                           dispatch,
                           selectedCategory.name,

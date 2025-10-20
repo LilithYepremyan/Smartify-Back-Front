@@ -87,7 +87,6 @@ const SideBar = () => {
 
       <ColorFilter
         onColorClick={(colorName: string) => {
-          console.log(typeof selectedCategory, "selectedCategory100000")
           showProductList(selectedCategory, selectedBrand, colorName)
         }}
       />
