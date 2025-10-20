@@ -12,6 +12,7 @@ import { getAllCategories, setSelectedCategory } from "../slices/categorySlice"
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown"
 import { handleBrandClick } from "../../utils/onBrandClick"
 import { useTranslation } from "react-i18next"
+import theme from "../theme/theme"
 
 type Props = {
   onBrandClick: (categoryName: string, brand: string, color: string) => void
@@ -97,7 +98,7 @@ const CategorySelect = ({ onBrandClick }: Props) => {
         onMouseLeave={hideCategories}
         sx={{
           cursor: "pointer",
-          backgroundColor: "#f5f5f5",
+          backgroundColor: theme.palette.primary.dark,
           borderRadius: "5px",
           padding: "10px",
           display: "flex",

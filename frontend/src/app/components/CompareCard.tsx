@@ -16,6 +16,7 @@ import HighlightOffIcon from "@mui/icons-material/HighlightOff"
 import { useTranslation } from "react-i18next"
 import { removeCompareProduct } from "../slices/compareSlice"
 import type { Product } from "./ProductCard"
+import theme from "../theme/theme"
 
 const CompareCard = ({ product }: { product: Product }) => {
   const navigate = useNavigate()
@@ -72,7 +73,10 @@ const CompareCard = ({ product }: { product: Product }) => {
           >
             {product.title}
           </Typography>
-          <Typography>
+          <Typography
+            color={theme.palette.secondary.main}
+            sx={{ fontWeight: "bold" }}
+          >
             {product.price} {product.currency}
           </Typography>
           <Box

@@ -17,7 +17,7 @@ const LanguageSwitcher = () => {
 
   const handleChange = async (event: SelectChangeEvent) => {
     const newLang = event.target.value
-    setLang(newLang)  
+    setLang(newLang)
     await i18n.changeLanguage(newLang)
   }
 
@@ -37,7 +37,7 @@ const LanguageSwitcher = () => {
         variant="standard"
         disableUnderline
         sx={{
-          color: "white",
+          color: theme.palette.primary.contrastText,
           fontWeight: 500,
           ":hover": { color: theme.palette.secondary.main },
         }}
