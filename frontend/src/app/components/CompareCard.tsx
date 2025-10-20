@@ -30,7 +30,7 @@ const CompareCard = ({ product }: { product: Product }) => {
     <Card
       key={product.id}
       sx={{
-        maxWidth: 300,
+        width: 300,
         marginBottom: 2,
         gap: 1,
         display: "flex",
@@ -42,7 +42,6 @@ const CompareCard = ({ product }: { product: Product }) => {
       <CardActions>
         <Button
           onClick={() => {
-            console.log(product.id)
             handleRemove(product.id)
           }}
           endIcon={<CloseIcon />}
@@ -87,13 +86,15 @@ const CompareCard = ({ product }: { product: Product }) => {
             {product.inStock ? (
               <>
                 <CheckCircleOutlineIcon color="success" />
-                <Typography sx={{ fontWeight: "bold" }}>{t("inStock")}</Typography>
+                <Typography sx={{ fontWeight: "bold" }}>
+                  {t("inStock")}
+                </Typography>
               </>
             ) : (
               <>
                 <HighlightOffIcon color="error" />
                 <Typography sx={{ fontWeight: "bold" }}>
-                    {t("outOfStock")}
+                  {t("outOfStock")}
                 </Typography>
               </>
             )}

@@ -25,7 +25,7 @@ export const removeCompareProduct = createAsyncThunk(
   async (id: number) => {
     const response = await api.delete<Product>(`/comparableProducts/${id}`)
     console.log(response.data, "comparable products removes")
-    return response.data
+    return id
   },
 )
 
@@ -44,8 +44,6 @@ const CompareSlice = createSlice({
     })
     builder.addCase(getComparableProducts.fulfilled, (state, action) => {
       state.comparableProducts = action.payload
-      console.log("fulfilled")
-      console.log(action.payload, "comparable products in slice")
     })
     builder.addCase(getComparableProducts.rejected, (state, action) => {
       state.loading = false
@@ -75,7 +73,7 @@ const CompareSlice = createSlice({
     })
     builder.addCase(removeCompareProduct.fulfilled, (state, action) => {
       state.comparableProducts = state.comparableProducts.filter(
-        product => product.id !== action.payload.id,
+        product => product.id !== action.payload,
       )
     })
     builder.addCase(removeCompareProduct.rejected, (state, action) => {

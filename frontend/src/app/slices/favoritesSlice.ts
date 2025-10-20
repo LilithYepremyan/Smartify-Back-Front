@@ -23,7 +23,8 @@ export const removeFromFavorites = createAsyncThunk(
   "favorites/removeFavorite",
   async (id: number) => {
     const response = await api.delete<Product>(`/favorites/${id}`)
-    return response.data
+    console.log(response.data, "removed from favorites")
+    return id
   },
 )
 
@@ -63,7 +64,7 @@ const FavoritesSlice = createSlice({
     })
     builder.addCase(removeFromFavorites.fulfilled, (state, action) => {
       state.favorites = state.favorites.filter(
-        favorite => favorite.id !== action.payload.id,
+        favorite => favorite.id !== action.payload,
       )
     })
     builder.addCase(removeFromFavorites.rejected, (state, action) => {
