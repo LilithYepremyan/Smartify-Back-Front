@@ -46,24 +46,27 @@ const CompareSlice = createSlice({
       console.log(action.payload, "comparable products in slice")
     })
     builder.addCase(getComparableProducts.rejected, (state, action) => {
+      state.comparableProducts = []
       console.log("rejected")
       console.error("Failed to load comparable products:", action.error.message)
     })
     builder.addCase(addToCompare.pending, state => {
-      //TODO
+      state.comparableProducts = []
     })
     builder.addCase(addToCompare.fulfilled, (state, action) => {
       const exists = state.comparableProducts.some(
         product => product.id === action.payload.id,
       )
       if (!exists)
-        state.comparableProducts.push({ isCompare: true, ...action.payload })
+        state.comparableProducts.push({ isCompared: true, ...action.payload })
     })
     builder.addCase(addToCompare.rejected, (state, action) => {
+      state.comparableProducts = []
       console.error("Failed to add product to compare:", action.error.message)
     })
 
     builder.addCase(removeCompareProduct.pending, state => {
+      state.comparableProducts = []
       //TODO
     })
     builder.addCase(removeCompareProduct.fulfilled, (state, action) => {
@@ -72,6 +75,7 @@ const CompareSlice = createSlice({
       )
     })
     builder.addCase(removeCompareProduct.rejected, (state, action) => {
+      state.comparableProducts = []
       console.error(
         "Failed to remove product from compare:",
         action.error.message,
