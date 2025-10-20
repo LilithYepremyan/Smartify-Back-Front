@@ -6,13 +6,13 @@ import { getAllFavorites } from "../slices/favoritesSlice"
 import { useTranslation } from "react-i18next"
 
 const Favorites = () => {
+  const dispatch = useAppDispatch()
   const { t } = useTranslation()
   const favorites = useAppSelector(state => state.favorites.favorites)
 
-  const dispatch = useAppDispatch()
 
   useEffect(() => {
-    dispatch(getAllFavorites())
+    void dispatch(getAllFavorites())
   }, [])
 
   return (

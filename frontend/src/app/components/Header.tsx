@@ -42,7 +42,7 @@ export default function Header(props: Props) {
   const drawer = (
     <Box
       onClick={handleDrawerToggle}
-      sx={{ textAlign: "center", color: "white" }}
+      sx={{ textAlign: "center", color: theme.palette.primary.contrastText }}
     >
       <Typography variant="h6" sx={{ my: 2 }}>
         Smartify
@@ -72,7 +72,10 @@ export default function Header(props: Props) {
   return (
     <Box sx={{ display: "flex", justifyContent: "center" }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{ backgroundColor: theme.palette.primary.main }}>
+      <AppBar
+        component="nav"
+        sx={{ backgroundColor: theme.palette.primary.main }}
+      >
         <Toolbar>
           <IconButton
             color="inherit"
@@ -108,9 +111,9 @@ export default function Header(props: Props) {
                 to={path}
                 key={label}
                 sx={{
-                  color: "#fff",
+                  color: theme.palette.primary.contrastText,
                   transition: "all 0.15s",
-                  ":hover": { color: "#34f1d3" },
+                  ":hover": { color: theme.palette.secondary.main },
                 }}
               >
                 {t(label)}

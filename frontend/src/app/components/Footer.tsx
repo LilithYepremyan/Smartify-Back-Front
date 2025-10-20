@@ -16,7 +16,7 @@ const Footer = () => {
         backgroundColor: theme.palette.primary.main,
       }}
     >
-      <Container  sx={{ color: "white" }}>
+      <Container sx={{ color: theme.palette.primary.contrastText }}>
         <Typography variant="body1">
           {t("address")} : {t("location")}
         </Typography>
@@ -26,7 +26,7 @@ const Footer = () => {
           to="/about"
           sx={{
             textDecoration: "none",
-            color: "white",
+            color: theme.palette.primary.contrastText,
             ":hover": { color: theme.palette.secondary.main },
           }}
           variant="body1"

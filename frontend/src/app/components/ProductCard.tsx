@@ -15,6 +15,8 @@ import { addToFavorites } from "../slices/favoritesSlice"
 import { useAppDispatch, useAppSelector } from "../hooks"
 import { useState } from "react"
 import CloseIcon from "@mui/icons-material/Close"
+import ShuffleIcon from "@mui/icons-material/Shuffle"
+import { addToCompare } from "../slices/compareSlice"
 
 type ProductParameters = {
   core?: string
@@ -101,6 +103,7 @@ export type Product = {
   price: number
   currency: string
   isFavorite?: boolean
+  isCompared?: boolean
   image: string
   inStock: boolean
   colors: { id: number; color: string; hex: string }[]
@@ -131,8 +134,12 @@ const ProductCard = ({ product }: { product: Product }) => {
 
   const favorites = useAppSelector(state => state.favorites.favorites)
   const brands = useAppSelector(state => state.categories.brands)
+  const comparableProducts = useAppSelector(
+    state => state.compare.comparableProducts,
+  )
 
   const isFavorite = favorites.find(item => item.id === product.id)
+  const isCompared = comparableProducts.find(item => item.id === product.id)
   const brandLogo = brands.find(item => item.name === product.brand)
 
   const dispatch = useAppDispatch()
@@ -231,6 +238,19 @@ const ProductCard = ({ product }: { product: Product }) => {
             sx={{ "&:hover": { color: theme.palette.secondary.dark } }}
             onClick={() => {
               handleOpen()
+            }}
+          />  
+          <ShuffleIcon
+            sx={{
+              "&:hover": { color: theme.palette.secondary.dark },
+              color: isCompared
+                ? theme.palette.secondary.dark
+                : theme.palette.primary.main,
+            }}
+            onClick={() => {
+              if (!isCompared) {
+                void dispatch(addToCompare(product))
+              }
             }}
           />
           <Modal open={open} onClose={handleClose}>

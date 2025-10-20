@@ -6,7 +6,6 @@ export const getAllFavorites = createAsyncThunk<Product[]>(
   "favorites/getAllFavorites",
   async () => {
     const response = await api.get<Product[]>("/favorites")
-    console.log(response.data, "favorites")
     return response.data
   },
 )
@@ -22,8 +21,8 @@ export const addToFavorites = createAsyncThunk(
 export const removeFromFavorites = createAsyncThunk(
   "favorites/removeFavorite",
   async (id: number) => {
-    const response = await api.delete<Product>(`/favorites/${id}`)
-    return response.data
+    await api.delete<Product>(`/favorites/${id}`)
+    return id
   },
 )
 
@@ -63,7 +62,7 @@ const FavoritesSlice = createSlice({
     })
     builder.addCase(removeFromFavorites.fulfilled, (state, action) => {
       state.favorites = state.favorites.filter(
-        favorite => favorite.id !== action.payload.id,
+        favorite => favorite.id !== action.payload,
       )
     })
     builder.addCase(removeFromFavorites.rejected, (state, action) => {

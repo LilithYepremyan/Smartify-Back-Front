@@ -8,7 +8,6 @@ export const getAllCategories = createAsyncThunk<Category[]>(
   "category/getAllCategories",
   async () => {
     const response = await api.get<Category[]>("/categories")
-    console.log(response.data, "categories")
     return response.data
   },
 )
@@ -39,7 +38,6 @@ const CategoriesSlice = createSlice({
       action: PayloadAction<Category | null | string>,
     ) => {
       state.selectedCategory = action.payload
-      console.log("Selected Category in Slice:", state.selectedCategory)
     },
     setSelectedBrand: (state, action: PayloadAction<string | null>) => {
       state.selectedBrand = action.payload
